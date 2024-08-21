@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Cloud Backup\$env:computername-GDrive.log"
+Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Cloud Backups\$env:computername-GDrive.log"
 
 $Date = Get-Date
 
