@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Cloud Backup\$env:computername-NextCloudClient.log"
+Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Cloud Backups\$env:computername-NextCloudClient.log"
 
 $Date = Get-Date
 
