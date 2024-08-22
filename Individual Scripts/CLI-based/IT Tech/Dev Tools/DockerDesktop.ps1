@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Dev Tools\$env:computername-DockerDesktop.log"
+Start-Transcript -Path "C:\Logs\Powershell\Install\IT\Dev Tools\$env:computername-DockerDesktop.log"
 
 $Date = Get-Date
 
