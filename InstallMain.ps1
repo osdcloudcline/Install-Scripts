@@ -61,7 +61,7 @@ $selection = Read-Host 'Please choose an option'
   switch($selection)
   {
 '1' {cls
-       $Standard = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Custom%20Configurations/Standard/Standard.ps1")
+       $Standard = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/CLI-based%20Scripts/Standard.ps1")
        Invoke-Expression $($Standard.Content)
     }
  '2'{cls
