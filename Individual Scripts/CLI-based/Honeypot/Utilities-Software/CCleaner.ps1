@@ -1,5 +1,4 @@
-
-
+Start-Transcript -Path "C:\Logs\Powershell\Install\Honeypot\\Utilities-Software\$env:computername-CCleaner.log"
 
 $Date = Get-Date
 
