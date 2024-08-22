@@ -77,7 +77,7 @@ $selection = Read-Host 'Please choose an option'
        Invoke-Expression $($ClientVDI.Content)
     }
 '5'{cls
-       $ServerVDI = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Custom%20Configurations/VDI/ServerVirtualDesktopInterface.ps1")
+       $ServerVDI = Invoke-WebRequest ("https://github.com/osdcloudcline/Install-Scripts/raw/main/CLI-based%20Scripts/ServerVDI.ps1")
        Invoke-Expression $($ServerVDI.Content)
     } 
  '6'{cls
