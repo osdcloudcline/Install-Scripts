@@ -53,7 +53,8 @@ Write-Host " 5. Install Server VDI Software Configuration"
 Write-Host " 6. Install Management PC Software Configuration"
 Write-Host " 7. Install Honeypot Configuration"
 Write-Host " 8. Install IT Tech Configuration"
-Write-Host " 9. Return to Software Main Menu"
+Write-Host " 9. Install Server Software"
+Write-Host " 10. Return to Software Main Menu"
 
 do
 { 
@@ -89,15 +90,19 @@ $selection = Read-Host 'Please choose an option'
        Invoke-Expression $($Honeypot.Content)
     }
  '8'{cls
-       $ITTech = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Custom%20Configurations/IT%20Tech/ITTech.ps1")
+       $ITTech = Invoke-WebRequest ("https://github.com/osdcloudcline/Install-Scripts/raw/main/CLI-based%20Scripts/IT.ps1")
        Invoke-Expression $($ITTech.Content)
     }
-'9'{cls
+ '9'{cls
+       $Servers = Invoke-WebRequest ("https://github.com/osdcloudcline/Install-Scripts/raw/main/CLI-based%20Scripts/IT.ps1")
+       Invoke-Expression $($Servers.Content)
+    }
+'10'{cls
     Show-MainMenu
     }
      }
  }
- until ($selection -eq '9'){Show-MainMenu}
+ until ($selection -eq '10'){Show-MainMenu}
 }
 
 Function Show-GUIMenu(){
