@@ -85,7 +85,7 @@ $selection = Read-Host 'Please choose an option'
        Invoke-Expression $($ManagementPC.Content)
      }
  '7'{cls
-       $Honeypot = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Custom%20Configurations/Honeypot/Honeypot.ps1")
+       $Honeypot = Invoke-WebRequest ("https://github.com/osdcloudcline/Install-Scripts/raw/main/CLI-based%20Scripts/Honeypot.ps1")
        Invoke-Expression $($Honeypot.Content)
     }
  '8'{cls
