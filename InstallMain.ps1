@@ -65,7 +65,7 @@ $selection = Read-Host 'Please choose an option'
        Invoke-Expression $($Standard.Content)
     }
  '2'{cls
-      $Advanced = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Custom%20Configurations/Advanced/Advanced.ps1")
+      $Advanced = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/CLI-based%20Scripts/Advanced.ps1")
       Invoke-Expression $($Advanced.Content)
      }
  '3'{cls
