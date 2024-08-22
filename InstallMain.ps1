@@ -94,7 +94,7 @@ $selection = Read-Host 'Please choose an option'
        Invoke-Expression $($ITTech.Content)
     }
  '9'{cls
-       $Servers = Invoke-WebRequest ("https://github.com/osdcloudcline/Install-Scripts/raw/main/CLI-based%20Scripts/IT.ps1")
+       $Servers = Invoke-WebRequest ("https://github.com/osdcloudcline/Install-Scripts/raw/main/CLI-based%20Scripts/ServerSoftware.ps1")
        Invoke-Expression $($Servers.Content)
     }
 '10'{cls
