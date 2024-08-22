@@ -1,4 +1,4 @@
-# Corporate Hardware Utilities Configuration includes:
+# Corporate Utilities Hardware Configuration includes:
 
 
 - Crucial Storage
