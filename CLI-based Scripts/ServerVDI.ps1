@@ -19,6 +19,7 @@ Write-Host "Processing install for: Web Browsers..." -ForegroundColor DarkBlue -
 $DuckDuckGo = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Browsers/DuckDuckGo.ps1")
 Invoke-Expression $($Chrome.Content)
 
+
 Write-Host "Processing install for: Media software..." -ForegroundColor DarkBlue -BackgroundColor White
 
 $MediaInfo = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Media/MediaInfo.ps1")
@@ -28,3 +29,7 @@ $VLCPlayer = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/mai
 Invoke-Expression $($VLCPlayer.Content)
 
 
+Write-Host "Processing install for: Productivity software..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$AcrobatReaderDC = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Productivity/AcrobatReaderDC.ps1")
+Invoke-Expression $($AcrobatReaderDC.Content)
