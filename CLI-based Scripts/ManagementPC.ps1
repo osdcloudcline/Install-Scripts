@@ -29,6 +29,19 @@ Write-Host "Processing install for: Cloud Backup software..." -ForegroundColor D
 $UPBR = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Management%20PC/Cloud%20Backups/UPBR.ps1")
 Invoke-Expression $($UPBR.Content)
 
+
+Write-Host "Processing install for: File Transfer software..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$FileZilla = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Management%20PC/File%20Transfer/FileZilla.ps1")
+Invoke-Expression $($FileZilla.Content)
+
+$PuTTY = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Management%20PC/File%20Transfer/PuTTY.ps1")
+Invoke-Expression $($PuTTY.Content)
+
+$WinSCP = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Management%20PC/File%20Transfer/WinSCP.ps1")
+Invoke-Expression $($WinSCP.Content)
+
+
 $Programming = Invoke-WeBRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Programming/Management%20PC/ManagementPCProgramming.ps1")
 Invoke-Expression $($Programming.Content)
 
