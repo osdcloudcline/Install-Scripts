@@ -65,6 +65,10 @@ $WiseRegistryCleaner = Invoke-WebRequest("https://github.com/osdcloudcline/Insta
 Invoke-Expression $($WiseRegistryCleaner.Content)
 
 
+Write-Host "Processing install for: Windows Store Apps..." -ForegroundColor DarkBlue -BackgroundColor White
+
+
+
 Write-Host "Processing downloads for: Security software..." -ForegroundColor DarkBlue -BackgroundColor White
 
 $MBAM = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Security/Anti-Malware/MalwareBytes.ps1")
