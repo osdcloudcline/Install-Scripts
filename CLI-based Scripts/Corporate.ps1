@@ -25,58 +25,58 @@ pause
 
 Write-Host "Processing install for: Web Browsers..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$Chrome = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Browsers/Corporate/Chrome.ps1")
+$Chrome = Invoke-WebRequest ("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Browsers/Chrome.ps1")
 Invoke-Expression $($Chrome.Content)
 
 
 Write-Host "Processing install for: Cloud Backup software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$DropBox = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Cloud%20Backup/Corporate/DropBox.ps1")
+$DropBox = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Cloud%20Backups/DropBox.ps1")
 Invoke-Expression $($DropBox.Content)
 
-$GDrive = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Cloud%20Backup/Corporate/GDrive.ps1")
+$GDrive = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Cloud%20Backups/GDrive.ps1")
 Invoke-Expression $($GDrive.Content)
 
-$OneDrive = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Cloud%20Backup/Corporate/OneDrive.ps1")
+$OneDrive = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Cloud%20Backups/OneDrive.ps1")
 Invoke-Expression $($OneDrive.Content)
 
-$UPBR = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Cloud%20Backup/Corporate/UPBR.ps1")
+$UPBR = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Cloud%20Backups/UPBR.ps1")
 Invoke-Expression $($UPBR.Content)
 
 
 Write-Host "Processing install for: Media software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$MediaInfo = Invoke-WeBRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Media/Corporate/MediaInfo.ps1")
+$MediaInfo = Invoke-WeBRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Media/MediaInfo.ps1")
 Invoke-Expression $($MediaInfo.Content)
 
-$VLCPlayer = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Media/Corporate/VLCPlayer.ps1")
+$VLCPlayer = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Media/VLCPlayer.ps1")
 Invoke-Expression $($VLCPlayer.Content 
 
 
 Write-Host "Processing install for: Productivity software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$AdobeReaderDC = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Productivity/Corporate/AcrobatReaderDC.ps1")
+$AdobeReaderDC = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Productivity/AcrobatReaderDC.ps1")
 Invoke-Expression $($AdobeReaderDC.Content)
 
-$MSO365 = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Productivity/Corporate/MSO365.ps1")
+$MSO365 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Productivity/MSO365.ps1")
 Invoke-Expression $($MSO365.Content)
 
-$Office2021 = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Productivity/Corporate/Office2021.ps1")
+$Office2021 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Productivity/Office2021.ps1")
 Invoke-Expression $($Office2021.Content)
 
-$Office365AppsENT = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Productivity/Corporate/Office365AppsEnterprise.ps1")
+$Office365AppsENT = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Productivity/Office365AppsEnterprise.ps1")
 Invoke-Expression $($Office365AppsENT.Content)
 
 
 Write-Host "Processing install for: Vitual Desktop Interface software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$AnyDesk = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/VDI-Remote%20Desktop/Corporate/AnyDesk.ps1")
+$AnyDesk = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/VDI-Remote%20Desktop/AnyDesk.ps1")
 Invoke-Expression $($AnyDesk.Content)
 
-$MSRemoteDesktop = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/VDI-Remote%20Desktop/Corporate/MSRemoteDesktop.ps1")
+$MSRemoteDesktop = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/VDI-Remote%20Desktop/MSRemoteDesktop.ps1")
 Invoke-Expression $($MSRemoteDesktop.Content)
 
-$VMWareHorizon = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/VDI-Remote%20Desktop/Corporate/VMWareHorizon.ps1")
+$VMWareHorizon = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/VDI-Remote%20Desktop/VMWareHorizon.ps1")
 Invoke-Expression $($VMWareHorizon.Content)
 
 
