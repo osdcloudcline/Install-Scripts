@@ -24,6 +24,11 @@ Write-Host "Processing install for: Web Browsers..." -ForegroundColor DarkBlue -
 $Chrome = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Management%20PC/Browsers/Chrome.ps1")
 Invoke-Expression $($Chrome.Content)
 
+Write-Host "Processing install for: Cloud Backup software..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$UPBR = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Management%20PC/Cloud%20Backups/UPBR.ps1")
+Invoke-Expression $($UPBR.Content)
+
 $Programming = Invoke-WeBRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Programming/Management%20PC/ManagementPCProgramming.ps1")
 Invoke-Expression $($Programming.Content)
 
