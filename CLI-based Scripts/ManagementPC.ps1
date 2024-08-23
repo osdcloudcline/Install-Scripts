@@ -56,6 +56,8 @@ $OSKits = Invoke-WebRequest ("https://github.com/osdcloudcline/Install-Scripts/r
 Invoke-Expression $($OSKits.Content)
 
 
+Write-Host "Processing downloads for: Security software..." -ForegroundColor DarkBlue -BackgroundColor White
+
 
 $Uninstall = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Uninstall/UninstallMainMenu.ps1")
 Invoke-Expression $($Uninstall.Content)
