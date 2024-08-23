@@ -19,8 +19,10 @@ pause
 
 Write-Host "Applying configuration to $env:computername..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$Browsers = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Browsers/Management%20PC/ManagementPCBrowsers.ps1")
-Invoke-Expression $($Browsers.Content)
+Write-Host "Processing install for: Web Browsers..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$Chrome = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Management%20PC/Browsers/Chrome.ps1")
+Invoke-Expression $($Chrome.Content)
 
 $Programming = Invoke-WeBRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Programming/Management%20PC/ManagementPCProgramming.ps1")
 Invoke-Expression $($Programming.Content)
