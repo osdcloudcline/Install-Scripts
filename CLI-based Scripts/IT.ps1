@@ -126,46 +126,34 @@ $VMWareHorizon = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scr
 Invoke-Expression $($VMWareHorizon.Content)
 
 
-Write-Host "Processing install for: Virtualization software..." -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host "Processing install for: System Utilities - Software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$VMWareWSPro = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Virtualization/Advanced/VMWareWSPro.ps1")
-Invoke-Expression $($VMWareWSPro.Content)
-
-
-Write-Host "Processing install for: System Utilities software..." -ForegroundColor DarkBlue -BackgroundColor White
-
-$7Zip = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Utilities/Advanced/7Zip.ps1")
+$7Zip = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Utilities-Software/7Zip.ps1")
 Invoke-Expression $($7Zip.Content)
 
-$CCleaner = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Utilities/Advanced/CCleaner.ps1")
+$CCleaner = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Utilities-Software/CCleaner.ps1")
 Invoke-Expression $($CCleaner.Content)
 
-$DDU = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Utilities/Advanced/DDU.ps1")
+$DDU = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Utilities-Software/DDU.ps1")
 Invoke-Expression $($DDU.Content)
 
-$SmartDefrag = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Utilities/Advanced/SmartDefrag.ps1")
+$SmartDefrag = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Utilities-Software/SmartDefrag.ps1")
 Invoke-Expression $($SmartDefrag.Content)
 
-$OSKits = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Utilities/Advanced/Win11-22H2-OSKits.ps1")
+$OSKits = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Utilities-Software/Win11-22H2-OSKits.ps1")
 Invoke-Expression $($OSKits.Content)
 
-$LogitechOptions = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Utilities/Advanced/LogitechOptions.ps1")
-Invoke-Expression $($LogitechOptions.Content)
-
-$LogitechUnifying = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Utilities/Advanced/LogitechUnifyingSoftware.ps1")
-Invoke-Expression $($LogitechUnifying.Content)
-
-$SamsungMagician = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Utilities/Advanced/SamsungMagician.ps1")
-Invoke-Expression $($SamsungMagician.Content)
-
-$CrucialStorage = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Utilities/Advanced/CrucialStorage.ps1")
-Invoke-Expression $($CrucialStorage.Content)
-
-$WiseRegistryCleaner = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Utilities/Advanced/WiseRegistryCleaner.ps1")
+$WiseRegistryCleaner = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Utilities-Software/WiseRegistryCleaner.ps1")
 Invoke-Expression $($WiseRegistryCleaner.Content)
+
+
+Write-Host "Processing install for: Virtualization software..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$VMWareWSPro = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Virtualization/VMWareWorkstationPro.ps1")
+Invoke-Expression $($VMWareWSPro.Content)
 
 
 Write-Host "Processing downloads for: Security software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$Security = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Security/Advanced/AdvancedSecurity.ps1")
-Invoke-Expression $($Security.Content)
+$MBAM = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Security/Anti-Malware/MalwareBytes.ps1)
+Invoke-Expression $($MBAM.Content)
