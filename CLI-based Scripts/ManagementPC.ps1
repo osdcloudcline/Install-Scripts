@@ -58,6 +58,8 @@ Invoke-Expression $($OSKits.Content)
 
 Write-Host "Processing downloads for: Security software..." -ForegroundColor DarkBlue -BackgroundColor White
 
+$MBAM = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Management%20PC/Security/Anti-Malware/MalwareBytes.ps1")
+Invoke-Expression $($MBAM.Content)
 
 $Uninstall = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Uninstall/UninstallMainMenu.ps1")
 Invoke-Expression $($Uninstall.Content)
