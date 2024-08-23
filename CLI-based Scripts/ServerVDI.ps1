@@ -44,3 +44,21 @@ $AICursor = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/
 Invoke-Expression $($AICursor.Content)
 
 
+Write-Host "Processing install for: System Utilities software..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$7Zip = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Utilities-Software/7Zip.ps1")
+Invoke-Expression $($7Zip.Content)
+
+$CCleaner = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Utilities-Software/CCleaner.ps1")
+Invoke-Expression $($CCleaner.Content)
+
+$DDU = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Utilities-Software/DDU.ps1")
+Invoke-Expression $($DDU.Content)
+
+$SmartDefrag = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Utilities-Software/SmartDefrag.ps1")
+Invoke-Expression $($SmartDefrag.Content)
+
+$WiseRegistryCleaner = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Utilities-Software/WiseRegistryCleaner.ps1")
+Invoke-Expression $($WiseRegistryCleaner.Content)
+
+
