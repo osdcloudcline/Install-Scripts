@@ -33,3 +33,14 @@ Write-Host "Processing install for: Productivity software..." -ForegroundColor D
 
 $AcrobatReaderDC = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Productivity/AcrobatReaderDC.ps1")
 Invoke-Expression $($AcrobatReaderDC.Content)
+
+
+Write-Host "Processing install for: Programming software..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$VSCode = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Programming/VSCode.ps1")
+Invoke-Expression $($VSCode.Content)
+
+$AICursor = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Programming/AICursorEditor.ps1")
+Invoke-Expression $($AICursor.Content)
+
+
