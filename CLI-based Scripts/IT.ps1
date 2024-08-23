@@ -155,5 +155,5 @@ Invoke-Expression $($VMWareWSPro.Content)
 
 Write-Host "Processing downloads for: Security software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$MBAM = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Security/Anti-Malware/MalwareBytes.ps1)
+$MBAM = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Security/Anti-Malware/MalwareBytes.ps1")
 Invoke-Expression $($MBAM.Content)
