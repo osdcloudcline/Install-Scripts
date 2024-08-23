@@ -65,7 +65,7 @@ $ADVprocesses = @(
   },
   @{
   Name = "Processing: Web Browser Software"
-  Script = "https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/GUI/Advanced/Browsers.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Browsers.ps1"
   },
   @{
   Name = "Processing: Cloud Backup Software" 
