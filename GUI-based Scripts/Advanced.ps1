@@ -12,8 +12,48 @@ $ADVprocesses = @(
    Script = "https://github.com/osdcloudcline/Scripts/raw/main/PowerShell%20Modules/Version%207.x/Install.ps1"
    },
   @{
-  Name = "Processing: Client Operating System Registry Entries"
-  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/ClientRegistry.ps1"
+  Name = "Processing: Client Operating System SYSTEM Registry Entries - Windows Safe Mode"
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Client%20Operating%20System/Scripts/AddSafeMode.ps1"
+  },
+  @{
+  Name = "Processing: Client Operating System SYSTEM Registry Entries - Check For Updates"
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Client%20Operating%20System/Scripts/CheckForUpdates.ps1"
+  },
+  @{
+  Name = "Processing: Client Operating System SYSTEM Registry Entries - CopyTo/MoveTo"
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Client%20Operating%20System/Scripts/CopyToMoveTo.ps1"
+  },
+  @{
+  Name = "Processing: Client Operating System SYSTEM Registry Entries - Disable BitLocker Drive Encryption"
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Client%20Operating%20System/Scripts/DisableBitLockerDeviceEncryption.ps1"
+  },
+  @{
+  Name = "Processing: Client Operating System SYSTEM Registry Entries - Disable Windows Co-Pilot"
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Client%20Operating%20System/Scripts/DisableWindowsCopilot.ps1"
+  },
+  @{
+  Name = "Processing: Client Operating System SYSTEM Registry Entries - Disable Windows Recall"
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Client%20Operating%20System/Scripts/DisableWindowsRecall.ps1"
+  },
+  @{
+  Name = "Processing: Client Operating System SYSTEM Registry Entries - OS Desktop Icons"
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Client%20Operating%20System/Scripts/OSDesktopIcons.ps1"
+  },
+  @{
+  Name = "Processing: Client Operating System SYSTEM Registry Entries - Enabling Show Hidden Files and Folders"
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Client%20Operating%20System/Scripts/ShowHiddenFilesFolders.ps1"
+  },
+  @{
+  Name = "Processing: Client Operating System SOFTWARE Registry Entries - Adobe Inc."
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Software/Scripts/Adobe.ps1"
+  },
+  @{
+  Name = "Processing: Client Operating System SOFTWARE Registry Entries - 3D Mark Benchmarking"
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Software/Scripts/3DMark.ps1"
+  },
+  @{
+  Name = "Processing: Client Operating System SYSTEM Registry Entries - PC Mark 10 Benchmarking"
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Software/Scripts/PCMark10.ps1"
   },
   @{
   Name = "Processing: Windows Client - Remote System Administration Tools"
