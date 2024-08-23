@@ -42,11 +42,18 @@ $WinSCP = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/ra
 Invoke-Expression $($WinSCP.Content)
 
 
-$Programming = Invoke-WeBRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Programming/Management%20PC/ManagementPCProgramming.ps1")
-Invoke-Expression $($Programming.Content)
+Write-Host "Processing install for: Programming software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$Utilities = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Utilities/Management%20PC/ManagementPCUtilities.ps1")
-Invoke-Expression $($Utilities.Content)
+$VSCode = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Management%20PC/Programming/VSCode.ps1")
+Invoke-Expression $($VSCode.Content)
+
+$AICursor = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Management%20PC/Programming/AICursorEditor.ps1")
+Invoke-Expression $($AICursor.Content)
+
+
+
+$OSKits = Invoke-WebRequest ("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Utilities-Software/Win11-22H2-OSKits.ps1")
+Invoke-Expression $($OSKits.Content)
 
 $Uninstall = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Uninstall/UninstallMainMenu.ps1")
 Invoke-Expression $($Uninstall.Content)
