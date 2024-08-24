@@ -134,6 +134,9 @@ Invoke-Expression $($CrucialStorage.Content)
 $MSMouseKB = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Standard/Utilities-Hardware/MSMouseKeyboard.ps1")
 Invoke-Expression $($MSMouseKB.Content)
 
+$FanUtilities = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Manufacturer-Specific%20Scripts/Lian-Li/Lian-Li.ps1")
+Invoke-WebRequest $($FanUtilities.Content)
+
 
 Write-Host "Processing install for: System Utilities - Software..." -ForegroundColor DarkBlue -BackgroundColor White
 
