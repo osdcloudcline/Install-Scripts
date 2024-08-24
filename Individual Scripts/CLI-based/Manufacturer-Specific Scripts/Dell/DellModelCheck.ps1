@@ -4,7 +4,7 @@ $CPUName = (Get-CimInstance -Class Win32_Processor).Name
 
 If($PCModel -like "*Alienware*"){
 Write-Verbose "Downloading Alienware-related Dell software..." -Verbose
-$Alienware = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Manufacturer%20Specific/Dell%20/Laptops/Alienware/Alienware.ps1")
+$Alienware = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Manufacturer-Specific%20Scripts/Dell/Files/Alienware/Alienware.ps1")
 Invoke-Expression $($Alienware.Content)
 }
 ElseIf($PCModel -like "*Copilot*"){
