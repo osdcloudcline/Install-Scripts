@@ -44,6 +44,18 @@ $ADVprocesses = @(
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Client%20Operating%20System/Scripts/ShowHiddenFilesFolders.ps1"
   },
   @{
+  Name = "Processing: Client Operating System SYSTEM Registry Entries - Enable SUDO Command in New Window"
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Client%20Operating%20System/Scripts/EnableSUDO.ps1"
+  },
+  @{
+  Name = "Processing: Client Operating System SYSTEM Registry Entries - Disable Windows Defender"
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Client%20Operating%20System/Scripts/DisableWindowsDefender.ps1"
+  },
+  @{
+  Name = "Processing: Client Operating System SYSTEM Registry Entries - Remove Windows 11 Start Menu Recommended Section"
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Client%20Operating%20System/Scripts/RemoveRecommendedStartMenu.ps1"
+  },
+  @{
   Name = "Processing: Client Operating System SOFTWARE Registry Entries - Adobe Inc."
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Software/Scripts/Adobe.ps1"
   },
@@ -52,7 +64,7 @@ $ADVprocesses = @(
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Software/Scripts/3DMark.ps1"
   },
   @{
-  Name = "Processing: Client Operating System SYSTEM Registry Entries - PC Mark 10 Benchmarking"
+  Name = "Processing: Client Operating System SOFTWARE Registry Entries - PC Mark 10 Benchmarking"
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Software/Scripts/PCMark10.ps1"
   },
   @{
