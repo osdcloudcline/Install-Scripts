@@ -239,7 +239,20 @@ Invoke-Expression $($NordVPN.Content)
 
 Write-Host "Processing install for: Windows Store Apps..." -ForegroundColor DarkBlue -BackgroundColor White
 
+$BusinessStoreApps = Invoke-WebRequest("")
+Invoke-Expression $($BusinessStoreApps.Content)
 
+$DevToolsStoreApps = Invoke-WebRequest("")
+Invoke-Expression $($DevToolsStoreApps.Content)
+
+$EntertainmentStoreApps = Invoke-WebRequest("")
+Invoke-Expression $($EntertainmentStoreApps.Content)
+
+$NetworkToolsStoreApps = Invoke-WebRequest("")
+Invoke-Expression $($NetworkToolsStoreApps.Content)
+
+$OSStoreApps = Invoke-WebRequest("")
+Invoke-Expression $($OSStoreApps.Content)
 
 Write-Host "Detecting PC CPU to determine related file downloads..." -ForegroundColor DarkBlue -BackgroundColor White
 
