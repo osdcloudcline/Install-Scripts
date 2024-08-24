@@ -266,7 +266,7 @@ Invoke-Expression $($AMD.Content)
 }
 ElseIf($CPU -eq "GenuineIntel"){
 Write-Host      "This PC has an $CPU $CPUName" -ForegroundColor DarkBlue -BackgroundColor White
-$Intel = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Manufacturer%20Specific/Intel/Intel.ps1")
+$Intel = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Manufacturer-Specific%20Scripts/Intel/Intel.ps1")
 Invoke-Expression $($Intel.Content)
 }
 
