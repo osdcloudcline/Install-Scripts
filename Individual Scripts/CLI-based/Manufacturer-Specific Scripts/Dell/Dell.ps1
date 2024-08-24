@@ -164,3 +164,7 @@ Write-Verbose "Installing: $DellSoftware5..." -Verbose
 Write-Host
 winget install --id 9PPRLNT023WC --accept-source-agreements  --accept-source-agreements --force
 
+
+Write-Host "Determining the model type of the computer..."
+$DellModelCheck = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Manufacturer-Specific%20Scripts/Dell/DellModelCheck.ps1")
+Invoke-Expression $($DellModelCheck.Content)
