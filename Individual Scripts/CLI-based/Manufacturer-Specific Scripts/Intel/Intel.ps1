@@ -17,5 +17,5 @@ Write-Verbose "Installing: $IntelSoftware3..." -Verbose
 choco.exe install intel-dsa -y
 Write-Verbose "Installing: $IntelSoftware4..." -Verbose
 choco.exe install intel-killer-performance-suite -y
-Write-Verbose "Installing: $IntelSoftware4..." -Verbose
+Write-Verbose "Installing: $IntelSoftware5..." -Verbose
 choco.exe install intel-processor-identification-utility -y
