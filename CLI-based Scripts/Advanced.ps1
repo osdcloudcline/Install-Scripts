@@ -291,7 +291,7 @@ Invoke-Expression $($Acer.Content)
 }
 ElseIf($PCManufacturer -like "*Lenovo*"){
 Write-Host "Installing Lenovo Software...." -ForegroundColor Cyan
-$Lenovo = Invoke-WebRequest("")
+$Lenovo = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Manufacturer-Specific%20Scripts/Lenovo/Lenovo.ps1")
 Invoke-Expression $($Lenovo.Content)
 }
 ElseIf($PCManufacturer -like "*HP*"){
