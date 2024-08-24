@@ -9,36 +9,36 @@ Invoke-Expression $($Alienware.Content)
 }
 ElseIf($PCModel -like "*Copilot*"){
 Write-Verbose "Downloading Copilot + PC-related Dell Software..." -Verbose
-$Copilot = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Manufacturer%20Specific/Dell%20/Laptops/Copilot%20+%20PCs/Copilot.ps1")
+$Copilot = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Manufacturer-Specific%20Scripts/Dell/Files/Copilot%20+%20PCs/Copilot.ps1")
 Invoke-Expression $($Copilot.Content)
 }
 ElseIf($PCModel -like "*G-Series*"){
 Write-Verbose "Downloading G-Series PC-related Dell Software..." -Verbose
-$GSeries = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Manufacturer%20Specific/Dell%20/Laptops/G-Series/G-Series.ps1")
+$GSeries = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Manufacturer-Specific%20Scripts/Dell/Files/G-Series/G-Series.ps1")
 Invoke-Expression $($GSeries.Content)
 }
 ElseIf($PCModel -like "*Inspiron*"){
 Write-Verbose "Downloading Inspiron-related Dell Software..." -Verbose
-$Inspiron = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Manufacturer%20Specific/Dell%20/Laptops/Inspiron/Inspiron.ps1")
+$Inspiron = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Manufacturer-Specific%20Scripts/Dell/Files/Inspiron/Inspiron.ps1")
 Invoke-Expression $($Inspiron.Content)
 }
 ElseIf($PCModel -like "*Latitude*"){
 Write-Verbose "Downloading Latitude-related Dell Software..." -Verbose
-$Latitude = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Manufacturer%20Specific/Dell%20/Laptops/Latitude/Latitude.ps1")
+$Latitude = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Manufacturer-Specific%20Scripts/Dell/Files/Latitude/Latitude.ps1")
 Invoke-Expression $($Latitude.Content)
 }
 ElseIf($PCModel -like "*Precision Mobile Workstation*"){
 Write-Verbose "Downloading Precision Mobile Workstation-related Dell Software..." -Verbose
-$PrecisionMobileWorkstation = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Manufacturer%20Specific/Dell%20/Laptops/Precision%20Mobile%20Workstations/PMW.ps1")
+$PrecisionMobileWorkstation = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Manufacturer-Specific%20Scripts/Dell/Files/Precision%20Mobile%20Workstations/PMW.ps1")
 Invoke-Expression $($PrecisionMobileWorkstation.Content)
 }
 ElseIf($PCModel -like "*XPS*"){
 Write-Verbose "Downloading XPS-related Dell Software..." -Verbose
-$XPS = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Manufacturer%20Specific/Dell%20/Laptops/XPS/XPS.ps1")
+$XPS = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Manufacturer-Specific%20Scripts/Dell/Files/XPS/XPS.ps1")
 Invoke-Expression $($XPS.Content)
 }
 ElseIf($PCModel -like "*Optiplex*"){
 Write-Verbose "Downloading Optiplex Micro Form Factor-related Dell Software..." -Verbose
-$OptiplexMFF = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Manufacturer%20Specific/Dell%20/Desktops/Optiplex%20Micro%20Form%20Factor/Optiplex.ps1")
+$OptiplexMFF = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Manufacturer-Specific%20Scripts/Dell/Files/Optiplex%20-%20Micro%20Form%20Factor/Optiplex.ps1")
 Invoke-Expression $($OptiplexMFF.Content)
 }
