@@ -248,7 +248,7 @@ Invoke-Expression $($DevToolsStoreApps.Content)
 $EntertainmentStoreApps = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Windows%20Store%20Apps/Entertainment-related/EntertainmentStoreApps.ps1")
 Invoke-Expression $($EntertainmentStoreApps.Content)
 
-$NetworkToolsStoreApps = Invoke-WebRequest("")
+$NetworkToolsStoreApps = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Windows%20Store%20Apps/Network%20Tools-related/NetworkToolsStoreApps.ps1")
 Invoke-Expression $($NetworkToolsStoreApps.Content)
 
 $OSStoreApps = Invoke-WebRequest("")
