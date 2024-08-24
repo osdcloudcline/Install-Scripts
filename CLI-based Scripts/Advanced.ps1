@@ -296,7 +296,7 @@ Invoke-Expression $($Lenovo.Content)
 }
 ElseIf($PCManufacturer -like "*HP*"){
 Write-Host "Installing HP Software...." -ForegroundColor Cyan
-$HP = Invoke-WebRequest("")
+$HP = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Manufacturer-Specific%20Scripts/HP/HP.ps1")
 Invoke-Expression $($HP.Content)
 ElseIf($PCManufacturer -like "*VMWare, Inc.*"){
 Write-Host "This PC is a virtual machine operating in a VDI environment. No OEM Software is needed" -ForegroundColor Cyan
