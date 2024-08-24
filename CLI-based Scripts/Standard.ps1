@@ -183,6 +183,22 @@ Invoke-Expression $($NetworkToolsStoreApps.Content)
 $OSStoreApps = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Windows%20Store%20Apps/OS%20SYSTEM-related/OSStoreApps.ps1")
 Invoke-Expression $($OSStoreApps.Content)
 
+Write-Host "Detecting PC CPU to determine related file downloads..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$CPU = (Get-CimInstance -Class Win32_Processor).Manufacturer
+$CPUName = (Get-CimInstance -Class Win32_Processor).Name
+
+If($CPU -eq "AuthenticAMD"){
+Write-Host      "This PC has an $CPU $CPUName" -ForegroundColor DarkBlue -BackgroundColor White
+$AMD = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Manufacturer-Specific%20Scripts/AMD/AMD.ps1")
+Invoke-Expression $($AMD.Content)
+}
+ElseIf($CPU -eq "GenuineIntel"){
+Write-Host      "This PC has an $CPU $CPUName" -ForegroundColor DarkBlue -BackgroundColor White
+$Intel = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Manufacturer-Specific%20Scripts/Intel/Intel.ps1")
+Invoke-Expression $($Intel.Content)
+}
+
 Write-Verbose "Detecting PC Manufacturer..." -Verbose
 
 $PCManufacturer = (Get-CimInstance -Class Win32_ComputerSystem).Manufacturer
