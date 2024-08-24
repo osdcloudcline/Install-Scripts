@@ -242,7 +242,7 @@ Write-Host "Processing install for: Windows Store Apps..." -ForegroundColor Dark
 $BusinessStoreApps = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Windows%20Store%20Apps/Business-related/BusinessStoreApps.ps1")
 Invoke-Expression $($BusinessStoreApps.Content)
 
-$DevToolsStoreApps = Invoke-WebRequest("")
+$DevToolsStoreApps = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Windows%20Store%20Apps/Dev%20Tools-related/DevToolsStoreApps.ps1")
 Invoke-Expression $($DevToolsStoreApps.Content)
 
 $EntertainmentStoreApps = Invoke-WebRequest("")
