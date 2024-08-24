@@ -251,7 +251,7 @@ Invoke-Expression $($EntertainmentStoreApps.Content)
 $NetworkToolsStoreApps = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Windows%20Store%20Apps/Network%20Tools-related/NetworkToolsStoreApps.ps1")
 Invoke-Expression $($NetworkToolsStoreApps.Content)
 
-$OSStoreApps = Invoke-WebRequest("")
+$OSStoreApps = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Windows%20Store%20Apps/OS%20SYSTEM-related/OSStoreApps.ps1")
 Invoke-Expression $($OSStoreApps.Content)
 
 Write-Host "Detecting PC CPU to determine related file downloads..." -ForegroundColor DarkBlue -BackgroundColor White
