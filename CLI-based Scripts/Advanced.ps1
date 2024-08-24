@@ -281,7 +281,7 @@ Invoke-Expression $($Dell.Content)
 }
 ElseIf($PCManufacturer -like "*ASUS*"){
 Write-Host "Installing ASUS Software...." -ForegroundColor Cyan
-$ASUS = Invoke-WebRequest("")
+$ASUS = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Manufacturer-Specific%20Scripts/ASUS/ASUS.ps1")
 Invoke-Expression $($ASUS.Content)
 }
 ElseIf($PCManufacturer -like "*Acer*"){
