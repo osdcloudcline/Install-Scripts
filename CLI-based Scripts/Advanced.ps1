@@ -239,7 +239,7 @@ Invoke-Expression $($NordVPN.Content)
 
 Write-Host "Processing install for: Windows Store Apps..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$BusinessStoreApps = Invoke-WebRequest("")
+$BusinessStoreApps = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Windows%20Store%20Apps/Business-related/BusinessStoreApps.ps1")
 Invoke-Expression $($BusinessStoreApps.Content)
 
 $DevToolsStoreApps = Invoke-WebRequest("")
