@@ -158,6 +158,9 @@ Invoke-Expression $($OSKits.Content)
 $WiseRegistryCleaner = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Standard/Utilities-Software/WiseRegistryCleaner.ps1")
 Invoke-Expression $($WiseRegistryCleaner.Content)
 
+$HardwareMonitorPRO = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Standard/Utilities-Software/HardwareMonitorPRO.ps1")
+Invoke-Expression $($HardwareMonitorPro.Content)
+
 Write-Host "Processing downloads for: Security software..." -ForegroundColor DarkBlue -BackgroundColor White
 
 $MBAM = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Standard/Security/Anti-Malware/MalwareBytes.ps1")
