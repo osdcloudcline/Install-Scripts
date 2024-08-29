@@ -136,7 +136,7 @@ $selection = Read-Host 'Please choose an option'
        }
  '2'{cls
       Install-Script -Name Start-SplashScreen
-      $Advanced = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Custom%20Configurations/Advanced/Advanced.ps1")
+      $Advanced = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/GUI-based%20Scripts/Advanced.ps1")
       Invoke-Expression $($Advanced.Content)
      }
  '3'{cls
