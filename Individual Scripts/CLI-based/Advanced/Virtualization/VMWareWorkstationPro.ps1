@@ -6,7 +6,20 @@ Write-Host "Installed on: $Date"
 
 $app1 = "VMWare Workstation Professional"
 
-Write-Host "Installing: $app1 ..." -ErrorAction SilentlyContinue -WarningAction SilentlyContinue -InformationAction SilentlyContinue -ForegroundColor Cyan  
-choco install vmwareworkstation --params='"/SERIALNUMBER=VV7RA-0YZ0N-M89EP-JFN7C-P62RF"' -y
+Install-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck
+Import-Module -Name OSD -Force
+
+$VMWareWSProDLURL = "https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.0/24238078/windows/core/VMware-workstation-17.6.0-24238078.exe.tar"
+$destination = "C:\downloads"
+
+
+Write-Host "Downloading: $app1 ..." -ErrorAction SilentlyContinue -WarningAction SilentlyContinue -InformationAction SilentlyContinue -ForegroundColor Cyan  
+Save-WebFile -SourceUrl $VMWareWSProDLURL -DestinationDirectory $destination
+
+Write-Host 
+Write-Host "Extracting: $app1 ..." -ErrorAction SilentlyContinue -WarningAction SilentlyContinue -InformationAction SilentlyContinue -ForegroundColor Cyan 
+Expand-7Zip "C:\downloads\VMware-workstation-17.6.0-24238078.exe.tar" $destination
+
+
 
 Stop-Transcript
