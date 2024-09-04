@@ -20,6 +20,7 @@ Write-Host
 Write-Host "Extracting: $app1 ..." -ErrorAction SilentlyContinue -WarningAction SilentlyContinue -InformationAction SilentlyContinue -ForegroundColor Cyan 
 Expand-7Zip "C:\downloads\VMware-workstation-17.6.0-24238078.exe.tar" $destination
 
-
-
 Stop-Transcript
+
+$VMWareWSPro = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Virtualization/InstallVMWarePro.ps1")
+Invoke-Expression $($VMWareWSPro.Content)
