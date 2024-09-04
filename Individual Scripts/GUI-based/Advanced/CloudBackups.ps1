@@ -1,4 +1,4 @@
-$CloudBackupsUpgradeLog = "C:\Logs\Installs\Software\GUI\$env:computername-CloudBackups.log"
+$CloudBackupsUpgradeLog = "C:\Logs\Installs\Software\Advanced\GUI\$env:computername-CloudBackups.log"
 
 Start-Transcript -Path $CloudBackupsUpgradeLog
 
