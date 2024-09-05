@@ -85,7 +85,7 @@ $STDprocesses = @(
   },
   @{
   Name = "Processing: Downloading VMWare Workstation Professional 17.6.0 Build 24238078"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Virtualization/VMWareWorkstationPro.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Standard/Virtualization.ps1"
   },
   @{
   Name = "Processing: Web Browser Software"
@@ -93,55 +93,51 @@ $STDprocesses = @(
   },
   @{
   Name = "Processing: Cloud Backup Software" 
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/CloudBackups.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Standard/CloudBackups.ps1"
   },
   @{
   Name = "Processing: File Transfer Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/FileTransfer.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Standard/FileTransfer.ps1"
   },
   @{
   Name = "Processing: Gaming Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Gaming.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Standard/Gaming.ps1"
   },
   @{
   Name = "Processing: Media Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Media.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Standard/Media.ps1"
   },
   @{
   Name = "Processing: Productivity Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Productivity.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Standard/Productivity.ps1"
   },
   @{
   Name = "Processing: Downloading Microsoft Office 2021 GitHub Files"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Office2021GHDownload.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Standard/Office2021GHDownload.ps1"
   },
   @{
   Name = "Processing: Downloading Microsoft Office 2021 LTSC"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Office2021Download.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Standard/Office2021Download.ps1"
   },
   @{
   Name = "Processing: Microsoft Office 2021 LTSC"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Office2021Install.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Standard/Office2021Install.ps1"
   },
   @{
   Name = "Processing: Programming Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Programming.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Standard/Programming.ps1"
   },
   @{
   Name = "Processing: Security Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Security.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Standard/Security.ps1"
   },
   @{
   Name = "Processing: Remote Connection Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/RemoteConnections.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Standard/RemoteConnections.ps1"
   },
   @{
   Name = "Processing: Utilities Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Utilities.ps1"
-  },
-   @{
-  Name = "Processing: Virtualization Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Virtualization/InstallVMWarePro.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Standard/Utilities.ps1"
   },
   @{
   Name = "Processing: Updating Windows"
