@@ -73,7 +73,7 @@ $ADVprocesses = @(
   },
   @{
   Name = "Processing: Client Operating System SOFTWARE Registry Entries - VMWare Workstation Pro 17.6.0 Build 24238078"
-  Script = ""
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Software/Scripts/VMWare.ps1"
   },
   @{
   Name = "Processing: Windows Client - Remote System Administration Tools"
