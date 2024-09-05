@@ -84,6 +84,10 @@ $ADVprocesses = @(
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/SYSTEM/OS-Mandated%20Software/SYSTEM.ps1"
   },
   @{
+  Name = "Processing: Downloading VMWare Workstation Professional 17.6.0 Build 24238078"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Virtualization/VMWareWorkstationPro.ps1"
+  },
+  @{
   Name = "Processing: Web Browser Software"
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Browsers.ps1"
   },
@@ -114,12 +118,10 @@ $ADVprocesses = @(
   @{
   Name = "Processing: Downloading Microsoft Office 2021 GitHub Files"
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Office2021GHDownload.ps1"
-  Start-Sleep -Seconds 30
   },
   @{
   Name = "Processing: Downloading Microsoft Office 2021 LTSC"
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Office2021Download.ps1"
-  Start-Sleep -Seconds 45
   },
   @{
   Name = "Processing: Microsoft Office 2021 LTSC"
@@ -141,17 +143,20 @@ $ADVprocesses = @(
   Name = "Processing: Utilities Software"
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Utilities.ps1"
   },
+   @{
+  Name = "Processing: Virtualization Software"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Virtualization/InstallVMWarePro.ps1"
+  },
   @{
   Name = "Processing: Updating Windows"
   Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/OS%20SYSTEM/OSUpdate.ps1"
   },
-   @{
+  @{
   Name = "Processing: Updating Windows - Drivers"
   Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/OS%20SYSTEM/OSUpdateDrivers.ps1"
-  },
   }
   )
 
-  Start-SplashScreen -Processes $ADVprocesses -MessageHeader "Advanced Client Installation Configuration - Configuring $env:computername"
+  Start-SplashScreen -Processes $ADVprocesses -MessageHeader "Advanced Client Installation - Configuring $env:computername"
  
   
