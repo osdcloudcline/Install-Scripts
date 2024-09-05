@@ -101,7 +101,7 @@ $ADVprocesses = @(
   },
   @{
   Name = "Processing: Gaming Software"
-  Script = "https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/GUI/Advanced/Gaming.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Gaming.ps1"
   },
   @{
   Name = "Processing: Media Software"
