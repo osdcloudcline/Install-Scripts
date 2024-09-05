@@ -89,15 +89,11 @@ $STDprocesses = @(
   },
   @{
   Name = "Processing: Web Browser Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Browsers.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Standard/Browsers.ps1"
   },
   @{
   Name = "Processing: Cloud Backup Software" 
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/CloudBackups.ps1"
-  },
-  @{
-  Name = "Processing: Dev Tools Software" 
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/DevTools.ps1"
   },
   @{
   Name = "Processing: File Transfer Software"
