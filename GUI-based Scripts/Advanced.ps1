@@ -93,7 +93,7 @@ $ADVprocesses = @(
   },
   @{
   Name = "Processing: Dev Tools Software" 
-  Script = "https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/GUI/Advanced/DevTools.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/DevTools.ps1"
   },
   @{
   Name = "Processing: File Transfer Software"
