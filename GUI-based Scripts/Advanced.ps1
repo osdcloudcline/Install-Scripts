@@ -139,14 +139,19 @@ $ADVprocesses = @(
   },
   @{
   Name = "Processing: Utilities Software"
-  Script = "https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/GUI/Advanced/Utilities.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Utilities.ps1"
   },
   @{
   Name = "Processing: Updating Windows"
-  Script = ""
+  Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/OS%20SYSTEM/OSUpdate.ps1"
+  },
+   @{
+  Name = "Processing: Updating Windows - Drivers"
+  Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/OS%20SYSTEM/OSUpdateDrivers.ps1"
+  },
   }
   )
 
-  Start-SplashScreen -Processes $ADVprocesses -MessageHeader "Windows Post-Install OOBE System Advanced Client Configuration"
+  Start-SplashScreen -Processes $ADVprocesses -MessageHeader "Advanced Client Installation Configuration - Configuring $env:computername"
  
   
