@@ -130,16 +130,16 @@ $ADVprocesses = @(
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Programming.ps1"
   },
   @{
+  Name = "Processing: Security Software"
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/GUI/Advanced/Security.ps1"
+  },
+  @{
   Name = "Processing: Remote Connection Software"
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/GUI/Advanced/RemoteConnections.ps1"
   },
   @{
   Name = "Processing: Utilities Software"
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/GUI/Advanced/Utilities.ps1"
-  },
-  @{
-  Name = "Processing: Security Software"
-  Script = "https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/GUI/Advanced/Security.ps1"
   },
   @{
   Name = "Processing: Updating Windows"
