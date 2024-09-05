@@ -84,6 +84,10 @@ $ADVprocesses = @(
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/GUI/Advanced/CloudBackups.ps1"
   },
   @{
+  Name = "Processing: Dev Tools Software" 
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/GUI/Advanced/DevTools.ps1"
+  },
+  @{
   Name = "Processing: File Transfer Software"
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/GUI/Advanced/FileTransfer.ps1"
   },
@@ -102,7 +106,7 @@ $ADVprocesses = @(
   @{
   Name = "Processing: Downloading Microsoft Office 2021 GitHub Files"
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/Productivity/Advanced/GUI%20Scripts/Office2021GHDownload.ps1"
-  Start-Sleep -Seconds 10
+  Start-Sleep -Seconds 30
   },
   @{
   Name = "Processing: Downloading Microsoft Office 2021 LTSC"
