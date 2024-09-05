@@ -1,4 +1,4 @@
-$SecurityDownloadLog = ""
+$SecurityDownloadLog = "C:\Logs\Installs\Software\Advanced\GUI\$env:computername-Security.log"
 
 Start-Transcript $SecurityDownloadLog
 
