@@ -89,7 +89,7 @@ $ADVprocesses = @(
   },
   @{
   Name = "Processing: Cloud Backup Software" 
-  Script = "https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/GUI/Advanced/CloudBackups.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/CloudBackups.ps1"
   },
   @{
   Name = "Processing: Dev Tools Software" 
