@@ -1,4 +1,4 @@
-$ADVprocesses = @(
+$ITprocesses = @(
   @{
     Name = "Processing: Microsoft Windows PowerShell Providers"
     Script = "https://github.com/osdcloudcline/Scripts/raw/main/PowerShell%20Modules/Package%20Providers/Install.ps1"
@@ -64,14 +64,6 @@ $ADVprocesses = @(
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Software/Scripts/Adobe.ps1"
   },
   @{
-  Name = "Processing: Client Operating System SOFTWARE Registry Entries - 3D Mark Benchmarking"
-  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Software/Scripts/3DMark.ps1"
-  },
-  @{
-  Name = "Processing: Client Operating System SOFTWARE Registry Entries - PC Mark 10 Benchmarking"
-  Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Software/Scripts/PCMark10.ps1"
-  },
-  @{
   Name = "Processing: Client Operating System SOFTWARE Registry Entries - VMWare Workstation Pro 17.6.0 Build 24238078"
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Software/Scripts/VMWare.ps1"
   },
@@ -85,67 +77,63 @@ $ADVprocesses = @(
   },
   @{
   Name = "Processing: Downloading VMWare Workstation Professional 17.6.0 Build 24238078"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Virtualization/VMWareWorkstationPro.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/IT%20Tech/Virtualization.ps1"
   },
   @{
   Name = "Processing: Web Browser Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Browsers.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/IT%20Tech/Browsers.ps1"
   },
   @{
   Name = "Processing: Cloud Backup Software" 
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/CloudBackups.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/IT%20Tech/CloudBackups.ps1"
   },
   @{
   Name = "Processing: Dev Tools Software" 
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/DevTools.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/IT%20Tech/DevTools.ps1"
   },
   @{
   Name = "Processing: File Transfer Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/FileTransfer.ps1"
-  },
-  @{
-  Name = "Processing: Gaming Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Gaming.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/IT%20Tech/FileTransfer.ps1"
   },
   @{
   Name = "Processing: Media Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Media.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/IT%20Tech/Media.ps1"
   },
   @{
   Name = "Processing: Productivity Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Productivity.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/IT%20Tech/Productivity.ps1"
   },
   @{
   Name = "Processing: Downloading Microsoft Office 2021 GitHub Files"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Office2021GHDownload.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/IT%20Tech/Office2021GHDownloads.ps1"
   },
   @{
   Name = "Processing: Downloading Microsoft Office 2021 LTSC"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Office2021Download.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/IT%20Tech/Office2021Download.ps1"
   },
   @{
   Name = "Processing: Microsoft Office 2021 LTSC"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Office2021Install.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/IT%20Tech/Office2021Install.ps1"
   },
   @{
   Name = "Processing: Programming Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Programming.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/IT%20Tech/Programming.ps1"
   },
   @{
   Name = "Processing: Security Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Security.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/IT%20Tech/Security.ps1"
   },
   @{
   Name = "Processing: Remote Connection Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/RemoteConnections.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/IT%20Tech/RemoteConnections.ps1"
   },
   @{
   Name = "Processing: Utilities Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Utilities.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/IT%20Tech/Utilities.ps1"
   },
    @{
   Name = "Processing: Virtualization Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Virtualization/InstallVMWarePro.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/IT%20Tech/VMWare.ps1"
   },
   @{
   Name = "Processing: Updating Windows"
@@ -157,7 +145,7 @@ $ADVprocesses = @(
   }
   )
 
-  Start-SplashScreen -Processes $ADVprocesses -MessageHeader "Advanced Client Installation - Configuring $env:computername"
+  Start-SplashScreen -Processes $ITprocesses -MessageHeader "IT Tech Client Installation - Configuring $env:computername"
  
   
 
