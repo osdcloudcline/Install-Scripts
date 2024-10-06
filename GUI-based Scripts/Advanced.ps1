@@ -81,7 +81,7 @@ $ADVprocesses = @(
   },
   @{
   Name = "Processing: Mandatory Operating System-related SYSTEM Software"
-  Script = "https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/SYSTEM/OS-Mandated%20Software/SYSTEM.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/SYSTEM/OS-Mandated%20Software/SYSTEM.ps1"
   },
   @{
   Name = "Processing: Downloading VMWare Workstation Professional 17.6.0 Build 24238078"
