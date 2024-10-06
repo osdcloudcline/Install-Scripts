@@ -31,4 +31,7 @@ $DOCKERprocesses = @(
   Name = "Processing: Lian-Li LConnect 3 Software"
   Script = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/Lian-Li/L-Connect%203/v%202.0.18/LConnect3.ps1"
   }
-  
+  @{
+  Name = "Processing: Security Software"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Docker%20Images/Security.ps1"
+  }
