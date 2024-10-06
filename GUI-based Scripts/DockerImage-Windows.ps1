@@ -23,3 +23,7 @@ $DOCKERprocesses = @(
   Name = "Processing: Client Operating System SYSTEM Registry Entries - CopyTo/MoveTo"
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Client%20Operating%20System/Scripts/CopyToMoveTo.ps1"
   },
+  @{
+  Name = "Processing: Mandatory Operating System-related SYSTEM Software"
+  Script = "https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Individual%20Scripts/SYSTEM/OS-Mandated%20Software/SYSTEM.ps1"
+  },
