@@ -1,6 +1,6 @@
 $DOCKERprocesses = @(
   @{
-        Name = "Processing: Microsoft Windows PowerShell Providers"
+    Name = "Processing: Microsoft Windows PowerShell Providers"
     Script = "https://github.com/osdcloudcline/Scripts/raw/main/PowerShell%20Modules/Package%20Providers/Install.ps1"
     },
   @{
@@ -27,3 +27,8 @@ $DOCKERprocesses = @(
   Name = "Processing: Mandatory Operating System-related SYSTEM Software"
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/SYSTEM/OS-Mandated%20Software/SYSTEM.ps1"
   },
+  @{
+  Name = "Processing: Lian-Li LConnect 3 Software"
+  Script = ""
+  }
+  
