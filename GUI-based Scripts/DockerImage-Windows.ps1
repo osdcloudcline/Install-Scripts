@@ -29,6 +29,6 @@ $DOCKERprocesses = @(
   },
   @{
   Name = "Processing: Lian-Li LConnect 3 Software"
-  Script = ""
+  Script = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/Lian-Li/L-Connect%203/v%202.0.18/LConnect3.ps1"
   }
   
