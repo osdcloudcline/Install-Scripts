@@ -145,7 +145,7 @@ $ADVprocesses = @(
   },
    @{
   Name = "Processing: Virtualization Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Virtualization/InstallVMWarePro.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/Advanced/Virtualization.ps1"
   },
   @{
   Name = "Processing: Updating Windows"
