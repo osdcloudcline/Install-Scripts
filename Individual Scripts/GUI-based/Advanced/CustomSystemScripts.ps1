@@ -1,4 +1,4 @@
-$CustomScriptLogs = ""
+$CustomScriptLogs = "C:\Logs\CustomSystemSpecific-$env:computername"
 
 Start-Transcript -Path $CustomScriptLogs
 
