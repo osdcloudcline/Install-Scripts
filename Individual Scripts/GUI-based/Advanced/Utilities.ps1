@@ -69,6 +69,9 @@ $VMWareToolsdestination = "C:\downloads"
 Save-WebFile -SourceUrl $VMWareToolsURL -DestinationDirectory $VMWareToolsdestination
 
 If ($env:computername -eq "BTDESKTOP"){
+$LianLi = Invoke-WebRequest("")
+Invoke-Expression $($LianLi.Content)
 
+}
 
 Stop-Transcript
