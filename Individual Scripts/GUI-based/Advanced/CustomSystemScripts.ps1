@@ -13,5 +13,4 @@ Invoke-Expression $($SignalRGB.Content)
 
 }
 
-
 Stop-Transcript
