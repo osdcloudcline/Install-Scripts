@@ -68,4 +68,7 @@ $VMWareToolsdestination = "C:\downloads"
 
 Save-WebFile -SourceUrl $VMWareToolsURL -DestinationDirectory $VMWareToolsdestination
 
+If ($env:computername -eq "BTDESKTOP"){
+
+
 Stop-Transcript
