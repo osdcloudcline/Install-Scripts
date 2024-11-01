@@ -147,6 +147,9 @@ $ADVprocesses = @(
   Name = "Processing: Virtualization Software"
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/Advanced/Virtualization.ps1"
   },
+  If($env:computername -eq "BTDESKTOP){
+  Name = "Processing: Signal RGB"
+  Script = ""
   @{
   Name = "Processing: Updating Windows"
   Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/OS%20SYSTEM/OSUpdate.ps1"
