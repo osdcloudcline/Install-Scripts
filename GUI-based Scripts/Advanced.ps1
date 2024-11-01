@@ -85,7 +85,7 @@ $ADVprocesses = @(
   },
   @{
   Name = "Processing: Downloading VMWare Workstation Professional 17.6.1 Build 24319023"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Virtualization/VMWareWorkstationPro.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/Advanced/Virtualization.ps1"
   },
   @{
   Name = "Processing: Web Browser Software"
