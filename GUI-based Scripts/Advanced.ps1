@@ -153,7 +153,7 @@ $ADVprocesses = @(
   },
   @{
   Name = "Processing: System Rescue Downloads - Hiren's Boot CD PE x64"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/Advanced/Virtualization.ps1"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/System%20Rescue/HirenBootCD.ps1"
   },
   @{
   Name = "Processing: Updating Windows"
