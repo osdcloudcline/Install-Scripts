@@ -143,13 +143,17 @@ $ADVprocesses = @(
   Name = "Processing: Utilities Software"
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Utilities.ps1"
   },
-   @{
+  @{
   Name = "Processing: Virtualization Software"
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/Advanced/Virtualization.ps1"
   },
   If($env:computername -eq "BTDESKTOP"){
   Name = "Processing: Signal RGB"
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/System-Specific%20Scripts/Desktop%20Computers/Bryan%20Desktop/SignalRGB.ps1"
+  },
+  @{
+  Name = "Processing: System Rescue Downloads - Hiren's Boot CD PE x64"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/Advanced/Virtualization.ps1"
   },
   @{
   Name = "Processing: Updating Windows"
