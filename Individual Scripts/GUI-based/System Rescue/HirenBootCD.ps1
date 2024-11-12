@@ -23,3 +23,5 @@ $DLDestination = "C:\downloads\SystemRescue"
 Write-Verbose "Processing: Downloading Hiren's BootCD PE x64..."
 
 Save-WebFile -SourceUrl $HirenBootCDPEURL -DestinationDirectory $DLDestination
+
+Stop-Transcript
