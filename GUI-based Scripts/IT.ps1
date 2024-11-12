@@ -131,9 +131,13 @@ $ITprocesses = @(
   Name = "Processing: Utilities Software"
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/IT%20Tech/Utilities.ps1"
   },
-   @{
+  @{
   Name = "Processing: Virtualization Software"
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/IT%20Tech/VMWare.ps1"
+  },
+  @{
+  Name = "Processing: System Rescue Downloads - Hiren's Boot CD PE x64"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/System%20Rescue/HirenBootCD.ps1"
   },
   @{
   Name = "Processing: Updating Windows"
