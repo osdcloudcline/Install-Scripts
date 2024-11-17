@@ -1,3 +1,14 @@
+Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Utilities-Software\$env:computername-GlaryUtilities.log"
+
+$Date = Get-Date
+
+Write-Host "Installed on: $Date"
+
+$app1 = "Glary Utilities"
+
+Write-Host
+Write-Verbose "Installing $app1..." -Verbose
+
 winget install --id Glarysoft.GlaryUtilities --exact --accept-source-agreements  --accept-package-agreements --force
 
 $OSDCloudGHdownloads = "C:\downloads"
@@ -10,3 +21,5 @@ Save-WebFile -SourceUrl $GlaryZipURL2 -DestinationDirectory $OSDCloudGHdownloads
 Expand-7Zip -ArchiveFileName "$OSDCloudGHdownloads\GlaryUtilities1.zip" -TargetPath $GlaryUnZipPath 
 Expand-7Zip -ArchiveFileName "$OSDCloudGHdownloads\GlaryUtilities2.zip" -TargetPath $GlaryUnZipPath 
 Copy-Item -Path $GlaryUnZipPath -Destination "C:\Program Files (x86)\Glary Utilities" -Recurse -Force 
+
+Stop-Transcript
