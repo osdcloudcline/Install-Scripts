@@ -81,7 +81,7 @@ $CORPprocesses = @(
   },
   @{
   Name = "Processing: Messaging Software" 
-  Script = ""
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/Corporate/Messaging.ps1"
   },
   @{
   Name = "Processing: Media Software"
