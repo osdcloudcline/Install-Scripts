@@ -144,6 +144,10 @@ $STDprocesses = @(
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/System%20Rescue/HirenBootCD.ps1"
   },
   @{
+  Name = "Processing: System Rescue Downloads - CloneZilla 3.2.0-5 x64"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/System%20Rescue/Clonezilla.ps1"
+  },
+  @{
   Name = "Processing: Updating Windows"
   Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/OS%20SYSTEM/OSUpdate.ps1"
   },
