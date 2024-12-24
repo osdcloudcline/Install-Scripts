@@ -84,7 +84,7 @@ $ADVprocesses = @(
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/SYSTEM/OS-Mandated%20Software/SYSTEM.ps1"
   },
   @{
-  Name = "Processing: Downloading VMWare Workstation Professional 17.6.1 Build 24319023"
+  Name = "Processing: VMWare Workstation Professional 17.6.2 Build 24409262"
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/Advanced/Virtualization.ps1"
   },
   @{
@@ -142,10 +142,6 @@ $ADVprocesses = @(
   @{
   Name = "Processing: Utilities Software"
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Utilities.ps1"
-  },
-  @{
-  Name = "Processing: Virtualization Software"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/Advanced/Virtualization.ps1"
   },
   If($env:computername -eq "BTDESKTOP"){
   Name = "Processing: Signal RGB"
