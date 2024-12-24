@@ -1,7 +1,7 @@
 Install-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck
 Import-Module -Name OSD -Force
 
-$OfficeGHdownloads = "C:\downloads\Office\2024" 
+$OfficeGHdownloads = "C:\downloads\Office\MSO365" 
 mkdir $OfficeGHdownloads
 $Office365Files1Url = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Productivity/Microsoft/Office%202024/Office2024.zip"
 $Office365Files2Url = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Productivity/Microsoft/Office%202024/Office365ProPlus-OfficeSetup.exe"
