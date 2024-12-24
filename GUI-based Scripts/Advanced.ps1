@@ -120,12 +120,12 @@ $ADVprocesses = @(
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Office2021GHDownload.ps1"
   },
   @{
-  Name = "Processing: Downloading Microsoft Office 2021 LTSC"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Office2021Download.ps1"
+  Name = "Processing: Downloading Microsoft Office 2024 GitHub Files"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/Advanced/Office2024GHDownload.ps1"
   },
   @{
-  Name = "Processing: Microsoft Office 2021 LTSC"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Office2021Install.ps1"
+  Name = "Processing: Downloading Microsoft Office 365 GitHub Files"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/Advanced/Office365GHDownload.ps1"
   },
   @{
   Name = "Processing: Programming Software"
