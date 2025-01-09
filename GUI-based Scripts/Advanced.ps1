@@ -116,10 +116,6 @@ $ADVprocesses = @(
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Productivity.ps1"
   },
   @{
-  Name = "Processing: Downloading Microsoft Office 2021 GitHub Files"
-  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Office2021GHDownload.ps1"
-  },
-  @{
   Name = "Processing: Downloading Microsoft Office 2024 GitHub Files"
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/Advanced/Office2024GHDownload.ps1"
   },
@@ -143,7 +139,7 @@ $ADVprocesses = @(
   Name = "Processing: Utilities Software"
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/GUI-based/Advanced/Utilities.ps1"
   },
-  If($env:computername -eq "BTDESKTOP"){
+  @{
   Name = "Processing: Signal RGB"
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/System-Specific%20Scripts/Desktop%20Computers/Bryan%20Desktop/SignalRGB.ps1"
   },
