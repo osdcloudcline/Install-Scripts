@@ -12,8 +12,9 @@ Clear-Host
 Write-Host "======= $Title ======"
 Write-Host " 1. CLI Install Scripts"
 Write-Host " 2. GUI Install Scripts"
-Write-Host " 3. Return to OSD Software Main Menu"
-Write-Host " 4. Exit PowerShell"
+Write-Host " 3. Custom Configuration Install Scripts"
+Write-Host " 4. Return to OSD Software Main Menu"
+Write-Host " 5. Exit PowerShell"
 
 do
 { 
@@ -27,13 +28,16 @@ $selection = Read-Host 'Please choose an option'
      Show-GUIMenu
      }
  '3'{cls
+     Show-CustomMenu
+     }
+ '4'{cls
      $OSDMain = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/OSDMain.ps1")
      Invoke-Expression ($OSDMain.Content)
     }
- '4'{exit}
+ '5'{exit}
     }
     }
- until ($selection -eq '4'){exit}
+ until ($selection -eq '5'){exit}
 }
 
 Function Show-CLIMenu{
@@ -168,6 +172,70 @@ $selection = Read-Host 'Please choose an option'
        Install-Script -Name Start-SplashScreen
        $ITTech = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Install%20/Custom%20Configurations/IT%20Tech/ITTech.ps1")
        Invoke-Expression $($ITTech.Content)
+    }
+  '9'{cls
+    Show-MainMenu
+    }
+     }
+ }
+ until ($selection -eq '9'){Show-MainMenu}
+}
+
+Function Show-CustomMenu(){
+    [CmdletBinding()]
+    param(
+    [string]$Title = 'GUI-based Software Installation Main Menu',
+    [string]$Question = 'What type of action do you want to perform?'
+)
+
+Clear-Host
+Write-Host "======= $Title ======"
+Write-Host " 1. Install Bryan Desktop Configuration"
+Write-Host " 2. Install Bryan Laptop Configuration"
+Write-Host " 3. Install Mike Laptop Configuration"
+Write-Host " 4. Install Billy Desktop Configuration"
+Write-Host " 5. Install Dad PC Configuration"
+Write-Host " 6. Install Mom PC Configuration"
+Write-Host " 7. Install Sean PC Configuration"
+Write-Host " 8. Install Dave V Configuration"
+Write-Host " 9. Return to Software Main Menu"
+
+do
+{ 
+$selection = Read-Host 'Please choose an option'
+  switch($selection)
+  {
+  '1' {cls
+       $BryanDesktop = Invoke-WebRequest("")
+       Invoke-Expression $($BryanDesktop.Content)
+       }
+ '2'{cls
+       $BryanLaptop = Invoke-WebRequest("")
+       Invoke-Expression $($BryanLaptop.Content)
+     }
+ '3'{cls 
+      $MikeLaptop = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/System-Specific%20Scripts/Laptops/Mike-Alienware%20M18R2.ps1")
+     Invoke-Expression $($MikeLaptop.Content)
+    }
+ '4'{cls
+      $BillyDesktop = Invoke-WebRequest("")
+     Invoke-Expression $($BillyDesktop.Content)
+    }
+'5'{cls
+       $DadDesktop = Invoke-WebRequest("")
+      Invoke-Expression $($DadDesktop.Content)
+    } 
+ '6'{cls
+        $MomDesktop = Invoke-WebRequest("")
+       Invoke-Expression $($MomDesktop.Content)
+     }
+ '7'{cls
+       $SeanPC = Invoke-WebRequest("")
+       Invoke-Expression $($SeanPC.Content)
+    }
+ '8'{cls
+       $DavePC = Invoke-WebRequest("")
+       Invoke-Expression $($DavePC.Content)
     }
   '9'{cls
     Show-MainMenu
