@@ -60,6 +60,10 @@ $STDprocesses = @(
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Client%20Operating%20System/Scripts/RemoveRecommendedStartMenu.ps1"
   },
   @{
+  Name = "Processing: Client Operating System SYSTEM Registry Entries - Disable and Preventing OS BSOD Reboots "
+  Script = "https://github.com/osdcloudcline/Scripts/raw/refs/heads/main/Registry%20Modifications/Client%20Operating%20System/Scripts/PreventBSODReboots.ps1"
+  },
+  @{
   Name = "Processing: Client Operating System SOFTWARE Registry Entries - Adobe Inc."
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Software/Scripts/Adobe.ps1"
   },
