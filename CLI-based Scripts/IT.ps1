@@ -147,6 +147,14 @@ $WiseRegistryCleaner = Invoke-WebRequest("https://github.com/osdcloudcline/Insta
 Invoke-Expression $($WiseRegistryCleaner.Content)
 
 
+Write-Host "Processing install for: System Rescue Downloads..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$Clonezilla = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/System%20Rescue/Clonezilla.ps1")
+Invoke-Expression $($Clonezilla.Content)
+
+$HirenBootCD = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/System%20Rescue/HirenBootCD.ps1")
+Invoke-Expression $($HirenBootCD.Content)
+
 Write-Host "Processing install for: Virtualization software..." -ForegroundColor DarkBlue -BackgroundColor White
 
 $VMWareWSPro = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Virtualization/VMWareWorkstationPro.ps1")
