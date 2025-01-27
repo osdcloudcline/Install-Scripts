@@ -60,6 +60,10 @@ $HoneypotPprocesses = @(
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Client%20Operating%20System/Scripts/RemoveRecommendedStartMenu.ps1"
   },
   @{
+  Name = "Processing: Client Operating System SYSTEM Registry Entries - Disable and Preventing OS BSOD Reboots "
+  Script = "https://github.com/osdcloudcline/Scripts/raw/refs/heads/main/Registry%20Modifications/Client%20Operating%20System/Scripts/PreventBSODReboots.ps1"
+  },
+  @{
   Name = "Processing: Mandatory Operating System-related SYSTEM Software"
   Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/SYSTEM/OS-Mandated%20Software/SYSTEM.ps1"
   },
