@@ -1,4 +1,4 @@
-$OSThemeLog = ""
+$OSThemeLog = "C:\Logs\OSDCloud\SYSTEM\Themes\OS-Themes.log"
 
 Start-Transcript -Path $OSThemeLog
 
