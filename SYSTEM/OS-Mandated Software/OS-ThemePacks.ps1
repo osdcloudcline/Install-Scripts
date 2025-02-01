@@ -353,7 +353,8 @@ $OSThemePack333URL = ""
 $OSThemePackDownloadDirectory = "C:\downloads\OS\Themes"
 $ExtractDir = "C:\downloads\OS\Themes\Extract"
 
-Write-Verbose "Processing: Acquiring Retired downloadable Windows Themes" -Verbose
+Write-Verbose "Processing: Acquiring Retired downloadable Windows OS Themes" -Verbose
+Write-Host
 
 Save-WebFile -SourceUrl $OSThemePack1URL -DestinationDirectory $OSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack2URL -DestinationDirectory $OSThemePackDownloadDirectory
@@ -689,4 +690,48 @@ Save-WebFile -SourceUrl $OSThemePack331URL -DestinationDirectory $OSThemePackDow
 Save-WebFile -SourceUrl $OSThemePack332URL -DestinationDirectory $OSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack333URL -DestinationDirectory $OSThemePackDownloadDirectory
 
-Write-Verbose "Completed: Download of Retired Windows Themes" -Verbose
+Write-Verbose "Completed: Download of Retired Windows OS Themes" -Verbose
+Write-Host
+
+Write-Verbose "Processing: Extracting ZIP Files" -Verbose
+Write-Host
+
+Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\BingMapsEurope.zip.001" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\BingMapsEurope.zip.002" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\BingMapsUnitedStates.zip.001" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\BingMapsUnitedStates.zip.002" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\BingMapsUnitedStates.zip.003" -TargetPath $ExtractDir -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\CommunityShowcaseAqua3.zip.001" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\CommunityShowcaseAqua3.zip.002" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\CommunityShowcaseAqua3.zip.003" -TargetPath $ExtractDir -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\CommunityShowcaseAqua4.zip.001" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\CommunityShowcaseAqua4.zip.002" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\CommunityShowcaseAqua4.zip.003" -TargetPath $ExtractDir -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\PanoramasEurope.zip.001" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\PanoramasEurope.zip.002" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+
+Write-Verbose "Completed: Extracting ZIP Files" -Verbose
+Write-Host
+
+Write-Verbose "Processing: Copying Extracted OS Theme Files" -Verbose
+Write-Host
+
+Copy-Item -Path "$OSThemePackDownloadDirectory\BingMapsEurope.themepack" -Destination $OSThemePackDownloadDirectory
+Copy-Item -Path "$OSThemePackDownloadDirectory\BingMapsUnitedStates.themepack" -Destination $OSThemePackDownloadDirectory
+Copy-Item -Path "$OSThemePackDownloadDirectory\CommunityShowcaseAqua3.themepack" -Destination $OSThemePackDownloadDirectory
+Copy-Item -Path "$OSThemePackDownloadDirectory\CommunityShowcaseAqua4.themepack" -Destination $OSThemePackDownloadDirectory
+Copy-Item -Path "$OSThemePackDownloadDirectory\PanoramasEurope.deskthemepack" -Destination $OSThemePackDownloadDirectory
+
+Write-Verbose "Completed: Copying Extracted OS Theme Files" -Verbose
+Write-Host
+
+Write-Verbose "Processing: Copying OS Theme Files to C:\Windows\Resources\Themes" -Verbose
+Write-Host
+
+Copy-Item -Path "$OSThemePackDownloadDirectory\*.themepack" -Destination "C:\Windows\Resources\Themes" -Recurse -Force
+Copy-Item -Path "$OSThemePackDownloadDirectory\*.deskthemepack" -Destination "C:\Windows\Resources\Themes" -Recurse -Force
+
+Write-Verbose "Completed: Copying OS Theme Files to C:\Windows\Resources\Themes" -Verbose
+Write-Host
+
+stop-Transcript
