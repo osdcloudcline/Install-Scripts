@@ -325,25 +325,19 @@ $OSThemePack311URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/
 $OSThemePack312URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Retired%20By%20Microsoft/TwinkleWish.themepack"
 $OSThemePack313URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Retired%20By%20Microsoft/UbisoftChildOfLight.themepack"
 $OSThemePack314URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Retired%20By%20Microsoft/V8SupercarsXboxOneRacing.themepack"
-$OSThemePack315URL = ""
-$OSThemePack316URL = ""
-$OSThemePack317URL = ""
-$OSThemePack318URL = ""
-$OSThemePack319URL = ""
-$OSThemePack320URL = ""
-$OSThemePack321URL = ""
-$OSThemePack322URL = ""
-$OSThemePack323URL = ""
-$OSThemePack324URL = ""
-$OSThemePack325URL = ""
-$OSThemePack326URL = ""
-$OSThemePack327URL = ""
-$OSThemePack328URL = ""
-$OSThemePack329URL = ""
-$OSThemePack330URL = ""
-$OSThemePack331URL = ""
-$OSThemePack332URL = ""
-$OSThemePack333URL = ""
+$OSThemePack315URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Retired%20By%20Microsoft/Watch_Dogs.themepack"
+$OSThemePack316URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Retired%20By%20Microsoft/WaterdropsByJPP.themepack"
+$OSThemePack317URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Retired%20By%20Microsoft/WaterscapesMarkNelson.themepack"
+$OSThemePack318URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Retired%20By%20Microsoft/WebsWaterdrops.themepack"
+$OSThemePack319URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Retired%20By%20Microsoft/WestCoastNZIanRushton.themepack"
+$OSThemePack320URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Retired%20By%20Microsoft/WildBeautyCharlesBergman.themepack"
+$OSThemePack321URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Retired%20By%20Microsoft/WinterGardenHayleyElizabeth.themepack"
+$OSThemePack322URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Retired%20By%20Microsoft/WintryWebs.themepack"
+$OSThemePack323URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Retired%20By%20Microsoft/Wolves.themepack"
+$OSThemePack324URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Retired%20By%20Microsoft/YearOfTheDragon.themepack"
+$OSThemePack325URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Retired%20By%20Microsoft/YearOfTheRabbit_en.themepack"
+$OSThemePack326URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Retired%20By%20Microsoft/ZagrebNightsTiborRogulja.themepack"
+$OSThemePack327URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Retired%20By%20Microsoft/maplestory.themepack"
 
 
 ######################################
@@ -683,12 +677,6 @@ Save-WebFile -SourceUrl $OSThemePack324URL -DestinationDirectory $OSThemePackDow
 Save-WebFile -SourceUrl $OSThemePack325URL -DestinationDirectory $OSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack326URL -DestinationDirectory $OSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack327URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack328URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack329URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack330URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack331URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack332URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack333URL -DestinationDirectory $OSThemePackDownloadDirectory
 
 Write-Verbose "Completed: Download of Retired Windows OS Themes" -Verbose
 Write-Host
@@ -724,6 +712,8 @@ Copy-Item -Path "$OSThemePackDownloadDirectory\PanoramasEurope.deskthemepack" -D
 
 Write-Verbose "Completed: Copying Extracted OS Theme Files" -Verbose
 Write-Host
+
+pause
 
 Write-Verbose "Processing: Copying OS Theme Files to C:\Windows\Resources\Themes" -Verbose
 Write-Host
