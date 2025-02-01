@@ -16,7 +16,7 @@ $MCUOSThemePack2URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads
 $MCUOSThemePack3URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Movie%20Themes/MCU%20Theme%20Packs/marvel1.deskthemepack"
 $MCUOSThemePack4URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Movie%20Themes/MCU%20Theme%20Packs/spider-man-no-way-home%20.deskthemepack"
 $MCUOSThemePack5URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Movie%20Themes/MCU%20Theme%20Packs/amazing-spider-man-2.deskthemepack"
-
+$MCUOSThemePack6URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Movie%20Themes/MCU%20Theme%20Packs/rocket-raccoon.deskthemepack"
 
 
 ######################################
@@ -35,6 +35,8 @@ Save-WebFile -SourceUrl $MCUOSThemePack2URL -DestinationDirectory $MCUOSThemePac
 Save-WebFile -SourceUrl $MCUOSThemePack3URL -DestinationDirectory $MCUOSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $MCUOSThemePack4URL -DestinationDirectory $MCUOSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $MCUOSThemePack5URL -DestinationDirectory $MCUOSThemePackDownloadDirectory
+Save-WebFile -SourceUrl $MCUOSThemePack6URL -DestinationDirectory $MCUOSThemePackDownloadDirectory
+
 
 Write-Verbose "Completed: Download of Marvel Cinematic Universe Windows OS Themes" -Verbose
 Write-Host
