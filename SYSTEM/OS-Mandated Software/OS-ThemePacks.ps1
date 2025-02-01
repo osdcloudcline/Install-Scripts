@@ -345,6 +345,7 @@ $OSThemePack327URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/
 #######################################
 
 $OSThemePackDownloadDirectory = "C:\downloads\OS\Themes"
+$OSThemePackZIPDownloadDirectory = "C:\downloads\OS\Themes\ZIP"
 $ExtractDir = "C:\downloads\OS\Themes\Extract"
 
 Write-Verbose "Processing: Acquiring Retired downloadable Windows OS Themes" -Verbose
@@ -377,11 +378,11 @@ Save-WebFile -SourceUrl $OSThemePack24URL -DestinationDirectory $OSThemePackDown
 Save-WebFile -SourceUrl $OSThemePack25URL -DestinationDirectory $OSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack26URL -DestinationDirectory $OSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack27URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack28URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack29URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack30URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack31URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack32URL -DestinationDirectory $OSThemePackDownloadDirectory
+Save-WebFile -SourceUrl $OSThemePack28URL -DestinationDirectory $OSThemePackZIPDownloadDirectory
+Save-WebFile -SourceUrl $OSThemePack29URL -DestinationDirectory $OSThemePackZIPDownloadDirectory
+Save-WebFile -SourceUrl $OSThemePack30URL -DestinationDirectory $OSThemePackZIPDownloadDirectory
+Save-WebFile -SourceUrl $OSThemePack31URL -DestinationDirectory $OSThemePackZIPDownloadDirectory
+Save-WebFile -SourceUrl $OSThemePack32URL -DestinationDirectory $OSThemePackZIPDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack33URL -DestinationDirectory $OSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack34URL -DestinationDirectory $OSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack35URL -DestinationDirectory $OSThemePackDownloadDirectory
@@ -412,12 +413,12 @@ Save-WebFile -SourceUrl $OSThemePack59URL -DestinationDirectory $OSThemePackDown
 Save-WebFile -SourceUrl $OSThemePack60URL -DestinationDirectory $OSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack61URL -DestinationDirectory $OSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack62URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack63URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack64URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack65URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack66URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack67URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack68URL -DestinationDirectory $OSThemePackDownloadDirectory
+Save-WebFile -SourceUrl $OSThemePack63URL -DestinationDirectory $OSThemePackZIPDownloadDirectory
+Save-WebFile -SourceUrl $OSThemePack64URL -DestinationDirectory $OSThemePackZIPDownloadDirectory
+Save-WebFile -SourceUrl $OSThemePack65URL -DestinationDirectory $OSThemePackZIPDownloadDirectory
+Save-WebFile -SourceUrl $OSThemePack66URL -DestinationDirectory $OSThemePackZIPDownloadDirectory
+Save-WebFile -SourceUrl $OSThemePack67URL -DestinationDirectory $OSThemePackZIPDownloadDirectory
+Save-WebFile -SourceUrl $OSThemePack68URL -DestinationDirectory $OSThemePackZIPDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack69URL -DestinationDirectory $OSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack70URL -DestinationDirectory $OSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack71URL -DestinationDirectory $OSThemePackDownloadDirectory
@@ -587,8 +588,8 @@ Save-WebFile -SourceUrl $OSThemePack234URL -DestinationDirectory $OSThemePackDow
 Save-WebFile -SourceUrl $OSThemePack235URL -DestinationDirectory $OSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack236URL -DestinationDirectory $OSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack237URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack238URL -DestinationDirectory $OSThemePackDownloadDirectory
-Save-WebFile -SourceUrl $OSThemePack239URL -DestinationDirectory $OSThemePackDownloadDirectory
+Save-WebFile -SourceUrl $OSThemePack238URL -DestinationDirectory $OSThemePackZIPDownloadDirectory
+Save-WebFile -SourceUrl $OSThemePack239URL -DestinationDirectory $OSThemePackZIPDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack240URL -DestinationDirectory $OSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack241URL -DestinationDirectory $OSThemePackDownloadDirectory
 Save-WebFile -SourceUrl $OSThemePack242URL -DestinationDirectory $OSThemePackDownloadDirectory
@@ -684,19 +685,19 @@ Write-Host
 Write-Verbose "Processing: Extracting ZIP Files" -Verbose
 Write-Host
 
-Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\BingMapsEurope.zip.001" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\BingMapsEurope.zip.002" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\BingMapsUnitedStates.zip.001" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\BingMapsUnitedStates.zip.002" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\BingMapsUnitedStates.zip.003" -TargetPath $ExtractDir -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\CommunityShowcaseAqua3.zip.001" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\CommunityShowcaseAqua3.zip.002" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\CommunityShowcaseAqua3.zip.003" -TargetPath $ExtractDir -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\CommunityShowcaseAqua4.zip.001" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\CommunityShowcaseAqua4.zip.002" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\CommunityShowcaseAqua4.zip.003" -TargetPath $ExtractDir -ErrorAction SilentlyContinue
-Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\PanoramasEurope.zip.001" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
-Expand-7Zip -ArchiveFileName "$OSThemePackDownloadDirectory\PanoramasEurope.zip.002" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackZIPDownloadDirectory\BingMapsEurope.zip.001" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackZIPDownloadDirectory\BingMapsEurope.zip.002" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackZIPDownloadDirectory\BingMapsUnitedStates.zip.001" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackZIPDownloadDirectory\BingMapsUnitedStates.zip.002" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackZIPDownloadDirectory\BingMapsUnitedStates.zip.003" -TargetPath $ExtractDir -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$OSThemePackZIPDownloadDirectory\CommunityShowcaseAqua3.zip.001" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackZIPDownloadDirectory\CommunityShowcaseAqua3.zip.002" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackZIPDownloadDirectory\CommunityShowcaseAqua3.zip.003" -TargetPath $ExtractDir -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$OSThemePackZIPDownloadDirectory\CommunityShowcaseAqua4.zip.001" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackZIPDownloadDirectory\CommunityShowcaseAqua4.zip.002" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackZIPDownloadDirectory\CommunityShowcaseAqua4.zip.003" -TargetPath $ExtractDir -ErrorAction SilentlyContinue
+Expand-7Zip -ArchiveFileName "$OSThemePackZIPDownloadDirectory\PanoramasEurope.zip.001" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
+Expand-7Zip -ArchiveFileName "$OSThemePackZIPDownloadDirectory\PanoramasEurope.zip.002" -TargetPath $ExtractDir -ErrorAction SilentlyContinue 
 
 Write-Verbose "Completed: Extracting ZIP Files" -Verbose
 Write-Host
