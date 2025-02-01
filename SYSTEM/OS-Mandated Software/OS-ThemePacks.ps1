@@ -704,11 +704,11 @@ Write-Host
 Write-Verbose "Processing: Copying Extracted OS Theme Files" -Verbose
 Write-Host
 
-Copy-Item -Path "$OSThemePackDownloadDirectory\BingMapsEurope.themepack" -Destination $OSThemePackDownloadDirectory -Force
-Copy-Item -Path "$OSThemePackDownloadDirectory\BingMapsUnitedStates.themepack" -Destination $OSThemePackDownloadDirectory -Force
-Copy-Item -Path "$OSThemePackDownloadDirectory\CommunityShowcaseAqua3.themepack" -Destination $OSThemePackDownloadDirectory -Force
-Copy-Item -Path "$OSThemePackDownloadDirectory\CommunityShowcaseAqua4.themepack" -Destination $OSThemePackDownloadDirectory -Force
-Copy-Item -Path "$OSThemePackDownloadDirectory\PanoramasEurope.deskthemepack" -Destination $OSThemePackDownloadDirectory -Force
+Copy-Item -Path "$ExtractDir\BingMapsEurope.themepack" -Destination $OSThemePackDownloadDirectory -Force
+Copy-Item -Path "$ExtractDir\BingMapsUnitedStates.themepack" -Destination $OSThemePackDownloadDirectory -Force
+Copy-Item -Path "$ExtractDir\CommunityShowcaseAqua3.themepack" -Destination $OSThemePackDownloadDirectory -Force
+Copy-Item -Path "$ExtractDir\CommunityShowcaseAqua4.themepack" -Destination $OSThemePackDownloadDirectory -Force
+Copy-Item -Path "$ExtractDir\PanoramasEurope.deskthemepack" -Destination $OSThemePackDownloadDirectory -Force
 
 Write-Verbose "Completed: Copying Extracted OS Theme Files" -Verbose
 Write-Host
