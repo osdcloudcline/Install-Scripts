@@ -80,6 +80,14 @@ $ADVprocesses = @(
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/Software/Scripts/VMWare.ps1"
   },
   @{
+  Name = "Processing: CLIENT OS Theme Pack files from Microsoft"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/SYSTEM/OS-Mandated%20Software/OS-ThemePacks.ps1"
+  },
+  @{
+  Name = "Processing: Custom CLIENT OS Theme Pack files"
+  Script = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/SYSTEM/OS-Mandated%20Software/Custom-OS-ThemePacks.ps1"
+  },
+  @{
   Name = "Processing: Windows Client - Remote System Administration Tools"
   Script = "https://github.com/osdcloudcline/Scripts/raw/main/PostInstall/Client%20OS%20Roles%20/InstallClientRSAT.ps1"
   },
