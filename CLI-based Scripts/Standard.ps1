@@ -23,7 +23,7 @@ Write-Host '    after script completes                                       ' -
 Write-Host '                                                                 ' -BackgroundColor White
 pause
 
-Write-Host "Beginning System Configuration..." -ForegroundColor Cyan
+Write-Host "Processing: Mandatory System Configuration Pre-Requisites..." -ForegroundColor Cyan
 
 Write-Verbose "Step 1 - PowerShell Package Providers..." -Verbose
 
@@ -60,6 +60,7 @@ Invoke-Expression $($OSThemePacks.Content)
 
 $CustomOSThemePacks = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/SYSTEM/OS-Mandated%20Software/Custom-OS-ThemePacks.ps1")
 Invoke-Expression $($CustomOSThemePacks.Content)
+
 
 Write-Host "Processing install for: Web Browsers..." -ForegroundColor DarkBlue -BackgroundColor White
 
