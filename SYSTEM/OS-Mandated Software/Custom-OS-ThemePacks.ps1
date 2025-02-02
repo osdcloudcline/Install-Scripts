@@ -19,11 +19,14 @@ $MCUOSThemePack5URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads
 $MCUOSThemePack6URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Movie%20Themes/MCU%20Theme%20Packs/rocket-raccoon.deskthemepack"
 
 
+$StarWarsOSThemePack1URL = "https://github.com/osdcloudcline/OS-Items-/raw/refs/heads/main/OS%20Theme%20Files/Movie%20Themes/Star%20Wars/star-wars.deskthemepack"
+
 ######################################
 # Windows OS Theme Download Location
 #######################################
 
 $MCUOSThemePackDownloadDirectory = "C:\downloads\OS\Themes\MCU"
+$StarWarsOSThemePackDownloadDirectory = "C:\downloads\OS\Themes\StarWars"
 $OSThemePackZIPDownloadDirectory = "C:\downloads\OS\Themes\ZIP"
 $ExtractDir = "C:\downloads\OS\Themes\Extract"
 
@@ -44,7 +47,7 @@ Write-Host
 Write-Verbose "Processing: Acquiring Star Wars Windows OS Themes" -Verbose
 Write-Host
 
-
+Save-WebFile -SourceUrl $StarWarsOSThemePack1URL -DestinationDirectory $StarWarsOSThemePackDownloadDirectory
 
 Write-Verbose "Completed: Download of Star Wars Windows OS Themes" -Verbose
 Write-Host
