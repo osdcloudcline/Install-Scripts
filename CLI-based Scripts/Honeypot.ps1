@@ -13,22 +13,30 @@ Write-Host '    after script completes                                       ' -
 Write-Host '                                                                 ' -BackgroundColor White
 pause
 
+Write-Host "Applying configuration to $env:computername..." -ForegroundColor DarkBlue -BackgroundColor White
+
+Write-Host "Processing: Mandatory System Configuration Pre-Requisites..." -ForegroundColor Cyan
+
 Write-Verbose "Step 1 - PowerShell Package Providers..." -Verbose
+Write-Host
 
 $PSProviders = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/PowerShell%20Modules/Package%20Providers/Install.ps1")
 Invoke-Expression $($PSProviders.Content)
 
 Write-Verbose "Step 2 - PowerShell 5.1 Modules..." -Verbose
+Write-Host
 
 $PS5Modules = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/PowerShell%20Modules/Version%205.1/Install.ps1")
 Invoke-Expression $($PS5Modules.Content)
 
 Write-Verbose "Step 3 - PowerShell 7.x Modules..." -Verbose 
+Write-Host
 
 $PS7Modules = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/PowerShell%20Modules/Version%207.x/Install.ps1")
 pwsh Invoke-Expression $($PS7Modules.Content)
 
 Write-Verbose "Step 4 - Merging Registry Entries..." -Verbose
+Write-Host
 
 $ClientRegistry = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/ClientRegistry.ps1")
 Invoke-Expression $($ClientRegistry.Content)
