@@ -41,6 +41,18 @@ Write-Host
 $ClientRegistry = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/ClientRegistry.ps1")
 Invoke-Expression $($ClientRegistry.Content)
 
+Write-Verbose "Step 5 - Client Operating System RSAT Tools..." -Verbose
+Write-Host
+
+$ClientRSAT = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/PostInstall/Client%20OS%20Roles%20/InstallClientRSAT.ps1")
+Invoke-Expression $($ClientRSAT.Content)
+
+Write-Verbose "Step 6 - Mandatory OS Pre-Requirements..." -Verbose
+Write-Host
+
+$OS = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/SYSTEM/OS-Mandated%20Software/SYSTEM.ps1")
+Invoke-Expression $($OS.Content)
+
 Write-Host "Processing install for: Web Browsers..." -ForegroundColor DarkBlue -BackgroundColor White
 
 $Chrome = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Honeypot/Browsers/Chrome.ps1")
