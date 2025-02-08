@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Media\$env:computername-HDVideoConverterPro.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\Media\$env:computername-HDVideoConverterPro.log"
 
 $Date = Get-Date
 
@@ -15,5 +15,7 @@ $HDVideoSetup = "C:\OSDCloud\GitHub\downloads\hd-video-converter-pro.exe"
 Save-WebFile -SourceUrl $HDVideoSource  -DestinationDirectory $HDVideoDestination
 
 Write-Host ' ATTN: Manual install needed!  ' -ForegroundColor DarkRed -BackgroundColor White
+
+Start-Process -FilePath $HDVideoSetup
 
 Stop-Transcript
