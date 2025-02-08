@@ -1,3 +1,5 @@
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\Productivity\$env:computername-Office2024.log"
+
 Install-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck
 Import-Module -Name OSD -Force
 
@@ -11,5 +13,7 @@ $Office2024Files3Url = "https://github.com/osdcloudcline/Software/raw/refs/heads
 Save-WebFile -SourceUrl $Office2024Files1Url -DestinationDirectory $OfficeGHdownloads
 Save-WebFile -SourceUrl $Office2024Files2Url -DestinationDirectory $OfficeGHdownloads
 Save-WebFile -SourceUrl $Office2024Files3Url -DestinationDirectory $OfficeGHdownloads
+
+Stop-Transcript
 
 
