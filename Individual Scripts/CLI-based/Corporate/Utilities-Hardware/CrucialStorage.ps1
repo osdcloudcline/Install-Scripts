@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Corporate\Utilities-Hardware\$env:computername-CrucialStorage.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Corporate\Utilities-Hardware\$env:computername-CrucialStorage.log"
 
 $Date = Get-Date
 
