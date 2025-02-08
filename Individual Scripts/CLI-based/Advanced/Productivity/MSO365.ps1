@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Productivity\$env:computername-MSO365.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\Productivity\$env:computername-MSO365.log"
 
 $app1 = "Microsoft 365 (Office)"
 
