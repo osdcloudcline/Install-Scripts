@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Corporate\Utilities-Hardware\$env:computername-SamsungMagician.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Corporate\Utilities-Hardware\$env:computername-SamsungMagician.log"
 
 $Date = Get-Date
 
