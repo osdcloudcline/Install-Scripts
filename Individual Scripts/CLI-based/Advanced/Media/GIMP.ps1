@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Media\$env:computername-GIMP.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\Media\$env:computername-GIMP.log"
 
 $Date = Get-Date
 
