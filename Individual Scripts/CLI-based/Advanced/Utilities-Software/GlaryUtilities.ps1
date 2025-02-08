@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Utilities-Software\$env:computername-GlaryUtilities.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\Utilities-Software\$env:computername-GlaryUtilities.log"
 
 $Date = Get-Date
 
