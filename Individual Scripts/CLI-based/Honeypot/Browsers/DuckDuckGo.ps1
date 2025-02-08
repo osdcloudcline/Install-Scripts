@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Honeypot\$env:computername-DuckDuckGo.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Honeypot\$env:computername-DuckDuckGo.log"
 
 $Date = Get-Date
 
