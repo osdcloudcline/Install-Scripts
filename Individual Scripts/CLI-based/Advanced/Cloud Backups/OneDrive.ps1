@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Cloud Backups\$env:computername-OneDrive.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\Cloud Backups\$env:computername-OneDrive.log"
 
 $Date = Get-Date
 
