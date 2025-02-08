@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Security\$env:computername-IPVanishDownload.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\Security\$env:computername-IPVanishDownload.log"
 
 $app1 = "IP Vanish VPN"
 
