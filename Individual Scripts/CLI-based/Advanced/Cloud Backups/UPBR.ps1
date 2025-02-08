@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\CloudBackups\$env:computername-UPBR.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\CloudBackups\$env:computername-UPBR.log"
 
 $Date = Get-Date
 
