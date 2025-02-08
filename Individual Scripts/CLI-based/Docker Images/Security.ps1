@@ -1,4 +1,4 @@
-$DockerSecurityLog = "C:\Logs\DockerImages\Security.log"
+$DockerSecurityLog = "C:\Logs\OSDCloud\Install\DockerImages\Security.log"
 
 $MBAMURL = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Security/MalwareBytes/MBSetup.exe"
 $destination = "C:\download"
