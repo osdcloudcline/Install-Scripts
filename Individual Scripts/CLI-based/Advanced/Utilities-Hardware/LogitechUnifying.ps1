@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Utilities-Hardware\$env:computername-LogitechUnifyingSoftware.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\Utilities-Hardware\$env:computername-LogitechUnifyingSoftware.log"
 
 $Date = Get-Date
 
