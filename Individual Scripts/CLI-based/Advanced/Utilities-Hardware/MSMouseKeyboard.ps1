@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Utilities-Hardware\$env:computername-MSMouseKBCenter.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\Utilities-Hardware\$env:computername-MSMouseKBCenter.log"
 
 $Date = Get-Date
 
