@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Corporate\Productivity\$env:computername-Office2024.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Corporate\Productivity\$env:computername-Office2024.log"
 
 Install-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck
 Import-Module -Name OSD -Force
