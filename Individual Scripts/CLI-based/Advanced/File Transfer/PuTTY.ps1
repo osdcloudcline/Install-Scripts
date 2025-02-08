@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\File Transfer\$env:computername-PuTTY.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\File Transfer\$env:computername-PuTTY.log"
 
 $Date = Get-Date
 
