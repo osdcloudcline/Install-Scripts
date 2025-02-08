@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Security\$env:computername-BitDefenderDownload.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\Security\$env:computername-BitDefenderDownload.log"
 
 $app1 = "Bitdefender Total Security"
 
