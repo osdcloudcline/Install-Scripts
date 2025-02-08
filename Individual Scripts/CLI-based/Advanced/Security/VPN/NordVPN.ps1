@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Security\$env:computername-NordVPNDownload.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\Security\$env:computername-NordVPNDownload.log"
 
 $app1 = "Nord VPN"
 
