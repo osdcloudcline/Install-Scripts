@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Media\$env:computername-Kodi.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\Media\$env:computername-Kodi.log"
 
 $Date = Get-Date
 
