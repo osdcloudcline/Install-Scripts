@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\VDI\$env:computername-MSRemoteDesktop.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\VDI\$env:computername-MSRemoteDesktop.log"
 
 $Date = Get-Date
 
@@ -11,6 +11,7 @@ Import-Module -Name 7Zip4Powershell -Force
 
 Write-Host
 Write-Verbose "Processing: Downloading $app1..."  -Verbose
+
 $RDP1URL = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/Microsoft%20Remote%20Desktop/RemoteDesktop.zip.001"
 $RDP2URL = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/Microsoft%20Remote%20Desktop/RemoteDesktop.zip.002"
 
