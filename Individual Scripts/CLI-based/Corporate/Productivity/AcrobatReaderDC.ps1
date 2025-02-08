@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Corporate\Productivity\$env:computername-AcrobatReaderDC.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Corporate\Productivity\$env:computername-AcrobatReaderDC.log"
 
 $app1 = "Adobe Acrobat Reader DC"
 
