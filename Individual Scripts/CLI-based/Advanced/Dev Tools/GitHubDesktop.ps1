@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Advanced\Dev Tools\$env:computername-GitHubDesktop.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\Dev Tools\$env:computername-GitHubDesktop.log"
 
 $Date = Get-Date
 
