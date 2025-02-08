@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Corporate\Utilities-Software\$env:computername-7Zip.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Corporate\Utilities-Software\$env:computername-7Zip.log"
 
 $Date = Get-Date
 
