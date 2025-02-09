@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\IT\Virtualization\$env:computername-VMWareWSPro.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\IT\Virtualization\$env:computername-VMWareWSPro.log"
 
 $Date = Get-Date
 
