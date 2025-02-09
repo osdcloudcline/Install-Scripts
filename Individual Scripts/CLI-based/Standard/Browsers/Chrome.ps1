@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Standard\Browsers\$env:computername-Chrome.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Standard\Browsers\$env:computername-Chrome.log"
 
 $Date = Get-Date
 
