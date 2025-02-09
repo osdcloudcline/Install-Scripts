@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Standard\Gaming\$env:computername-Steam.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Standard\Gaming\$env:computername-Steam.log"
 
 $Date = Get-Date
 
