@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\IT\Media\$env:computername-MediaInfo.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\IT\Media\$env:computername-MediaInfo.log"
 
 $Date = Get-Date
 
