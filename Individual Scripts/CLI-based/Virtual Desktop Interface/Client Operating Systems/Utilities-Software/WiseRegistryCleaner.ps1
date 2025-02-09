@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Client VDI\Utilities-Software\$env:computername-WRC.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Client VDI\Utilities-Software\$env:computername-WRC.log"
 
 $Date = Get-Date
 
