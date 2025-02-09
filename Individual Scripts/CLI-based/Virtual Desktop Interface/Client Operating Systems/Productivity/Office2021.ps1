@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Client VDI\Productivity\$env:computername-Office2021.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Client VDI\Productivity\$env:computername-Office2021.log"
 
 Install-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck
 Import-Module -Name OSD -Force
