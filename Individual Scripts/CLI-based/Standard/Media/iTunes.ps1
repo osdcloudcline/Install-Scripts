@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Standard\Media\$env:computername-iTunes.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Standard\Media\$env:computername-iTunes.log"
 
 $Date = Get-Date
 
