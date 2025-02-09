@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Standard\Security\$env:computername-Norton360Download.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Standard\Security\$env:computername-Norton360Download.log"
 
 $app1 = "Norton 360"
 
