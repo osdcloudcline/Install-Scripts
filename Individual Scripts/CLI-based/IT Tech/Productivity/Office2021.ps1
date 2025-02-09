@@ -3,21 +3,22 @@ Start-Transcript -Path "C:\Logs\OSDCloud\Install\IT\Productivity\$env:computerna
 Install-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck
 Import-Module -Name OSD -Force
 
-$app1 = "Microsoft Office 2021 LTSC"
+$app1 = "Microsoft Office 2024 LTSC"
 
 Write-Host "Processing: $app1..." -ForegroundColor Cyan
-$OfficeGHdownloads = "C:\OSDCloud\GitHub\downloads\Office" 
+
+Install-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck
+Import-Module -Name OSD -Force
+
+$OfficeGHdownloads = "C:\Office\2024" 
 mkdir $OfficeGHdownloads
-$Office2021FilesUrl = "https://github.com/osdcloudcline/Software/raw/main/Productivity/Microsoft/Office%202021/OSDCloud-Office2021.zip"
-Save-WebFile -SourceUrl $Office2021FilesUrl -DestinationDirectory $OfficeGHdownloads
-Expand-Archive -Path "$OfficeGHdownloads\OSDCloud-Office2021.zip" -DestinationPath $OfficeGHdownloads
-pause
-Write-Host "Processing: $app1 download..." -ForegroundColor Cyan
-$O21DLCMD = "C:\OSDCloud\GitHub\downloads\Office\OfficeCDNDownload.cmd"
-Start-Process -FilePath $O21DLCMD
-pause
-Write-Host "Processing: $app1 setup install..." -ForegroundColor Cyan
-$O21SetupCMD = "C:\OSDCloud\GitHub\downloads\Office\OfficeCDNSetup.cmd"
-Start-Process -FilePath $O21SetupCMD
+$Office2024Files1Url = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Productivity/Microsoft/Office%202024/Configuration-Office2024-EntireSuiteVL.xml"
+$Office2024Files2Url = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Productivity/Microsoft/Office%202024/officedeploymenttool_18227-20162.exe"
+$Office2024Files3Url = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Productivity/Microsoft/Office%202024/setup.exe"
+
+
+Save-WebFile -SourceUrl $Office2024Files1Url -DestinationDirectory $OfficeGHdownloads
+Save-WebFile -SourceUrl $Office2024Files2Url -DestinationDirectory $OfficeGHdownloads
+Save-WebFile -SourceUrl $Office2024Files3Url -DestinationDirectory $OfficeGHdownloads
 
 Stop-Transcript
