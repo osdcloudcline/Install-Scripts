@@ -3,6 +3,10 @@ Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\Productivity\$env:comp
 Install-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck
 Import-Module -Name OSD -Force
 
+$app1 = "Microsoft Office 2024 LTSC"
+
+Write-Host "Processing: $app1..." -ForegroundColor Cyan
+
 $OfficeGHdownloads = "C:\Office\2024" 
 mkdir $OfficeGHdownloads
 $Office2024Files1Url = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Productivity/Microsoft/Office%202024/Configuration-Office2024-EntireSuiteVL.xml"
