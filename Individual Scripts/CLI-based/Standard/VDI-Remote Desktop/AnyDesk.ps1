@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Standard\VDI\$env:computername-AnyDesk.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Standard\VDI\$env:computername-AnyDesk.log"
 
 $Date = Get-Date
 
