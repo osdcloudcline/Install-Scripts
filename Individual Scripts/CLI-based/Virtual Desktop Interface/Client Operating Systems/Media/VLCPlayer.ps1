@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Client VDI\Media\$env:computername-VLCPlayer.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Client VDI\Media\$env:computername-VLCPlayer.log"
 
 $Date = Get-Date
 
