@@ -1,5 +1,5 @@
-$Filelocation = "C:\downloads\VMware-workstation-17.6.1-24319023.exe"
+$Filelocation = "C:\downloads\VMware-workstation-17.6.2-24409262.exe"
 
-Write-Verbose "Installing VMWare Workstation Professional 17.6.1 Build 24319023..." -Verbose
+Write-Verbose "Installing VMWare Workstation Professional 17.6.2 Build 24409262..." -Verbose
 Write-Host
 Start-Process -FilePath $Filelocation -ArgumentList '/s','/v"/qn"'
