@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\Powershell\Install\Client VDI\Browsers\$env:computername-DuckDuckGo.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Client VDI\Browsers\$env:computername-DuckDuckGo.log"
 
 $Date = Get-Date
 
