@@ -123,3 +123,25 @@ Invoke-Expression $($AcrobatReaderDC.Content)
 $Office2024 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Productivity/Office2024.ps1")
 Invoke-Expression $($Office2024.Content)
 
+Write-Host "Processing install for: Media software..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$VLCPlayer = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Media/VLCPlayer.ps1")
+Invoke-Expression $($VLCPlayer.Content)
+
+Write-Host "Processing install for: Vitual Desktop Interface software..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$AnyDesk = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/VDI-RemoteDesktop/AnyDesk.ps1")
+Invoke-Expression $($AnyDesk.Content)
+
+Write-Host "Processing install for: System Utilities - Software..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$7Zip = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Utilities-Software/7Zip.ps1")
+Invoke-Expression $($7Zip.Content)
+
+$WiseRegistryCleaner = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Utilities-Software/WiseRegistryCleaner.ps1")
+Invoke-Expression $($WiseRegistryCleaner.Content)
+
+Write-Host "Processing downloads for: Security software..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$MBAM = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Security/Anti-Malware/MalwareBytes.ps1")
+Invoke-Expression $($MBAM.Content)
