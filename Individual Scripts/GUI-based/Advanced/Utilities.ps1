@@ -76,7 +76,7 @@ $SmartDefragdestination = "C:\downloads"
 
 Save-WebFile -SourceUrl $SmartDefragSetupURL -DestinationDirectory $SmartDefragdestination
 
-$VMWareToolsURL = "https://packages.vmware.com/tools/releases/latest/windows/x64/VMware-tools-12.4.5-23787635-x86_64.exe"
+$VMWareToolsURL = "https://packages.vmware.com/tools/releases/latest/windows/x64/VMware-tools-12.5.0-24276846-x64.exe"
 $VMWareToolsdestination = "C:\downloads"
 
 Save-WebFile -SourceUrl $VMWareToolsURL -DestinationDirectory $VMWareToolsdestination
