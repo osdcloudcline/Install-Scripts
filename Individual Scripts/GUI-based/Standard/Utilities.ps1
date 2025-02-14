@@ -12,6 +12,8 @@ winget install --id Microsoft.MouseandKeyboardCenter --exact --accept-source-agr
 
 winget install --id Samsung.SamsungMagician --exact --accept-source-agreements  --accept-package-agreements --force
 
+winget install --id WesternDigital.Dashboard --exact --accept-source-agreements  --accept-package-agreements --force
+
 Stop-Transcript
 
 $UtilitiesSoftwareInstallLog = "C:\Logs\Installs\Software\Standard\GUI\$env:computername-SoftwareUtilities.log"
