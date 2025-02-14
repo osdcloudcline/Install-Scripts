@@ -44,10 +44,6 @@ Invoke-Expression $($Adobe.Content)
 $GlaryUtilities = Invoke-WebReques("https://github.com/osdcloudcline/Scripts/raw/refs/heads/main/Registry%20Modifications/Software/Scripts/GlaryUtilities.ps1")
 Invoke-Expression $($GlaryUtilities.Content)
 
-
-pause
-
-
 Write-Verbose "Step 2 - PowerShell Package Providers..." -Verbose
 
 $PSProviders = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/PowerShell%20Modules/Package%20Providers/Install.ps1")
