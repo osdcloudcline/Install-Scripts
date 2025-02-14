@@ -183,6 +183,9 @@ Invoke-Expression $($MSMouseKB.Content)
 $FanUtilities = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Manufacturer-Specific%20Scripts/Lian-Li/Lian-Li.ps1")
 Invoke-WebRequest $($FanUtilities.Content)
 
+$WD = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Standard/Utilities-Hardware/WesternDigital.ps1")
+Invoke-Expression $($WD.Content)
+
 
 Write-Host "Processing install for: System Utilities - Software..." -ForegroundColor DarkBlue -BackgroundColor White
 
