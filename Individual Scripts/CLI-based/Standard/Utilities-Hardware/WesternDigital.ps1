@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\Utilities-Hardware\$env:computername-WD-Dashboard.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Standard\Utilities-Hardware\$env:computername-WD-Dashboard.log"
 
 $Date = Get-Date
 
