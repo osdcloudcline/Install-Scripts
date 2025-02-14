@@ -115,3 +115,11 @@ Write-Host "Processing install for: Cloud Backup software..." -ForegroundColor D
 $UPBR = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Cloud%20Backups/UPBR.ps1")
 Invoke-Expression $($UPBR.Content)
 
+Write-Host "Processing install for: Productivity software..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$AcrobatReaderDC = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Productivity/AcrobatReaderDC.ps1")
+Invoke-Expression $($AcrobatReaderDC.Content)
+
+$Office2024 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Productivity/Office2024.ps1")
+Invoke-Expression $($Office2024.Content)
+
