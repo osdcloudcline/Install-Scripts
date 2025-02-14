@@ -104,3 +104,8 @@ Write-Host "Processing install for: Mandated OS SYSTEM Software..." -ForegroundC
 
 $SYSTEM = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/SYSTEM/OS-Mandated%20Software/Custom/Mike-AWM18R2.ps1")
 Invoke-Expression $($SYSTEM.Content)
+
+Write-Host "Processing install for: Web Browsers..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$Chrome = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Browsers/Chrome.ps1")
+Invoke-Expression $($Chrome.Content)
