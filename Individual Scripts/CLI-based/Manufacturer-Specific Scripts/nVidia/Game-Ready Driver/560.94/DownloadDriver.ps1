@@ -15,7 +15,7 @@ $GF40SeriesURL = "https://us.download.nvidia.com/Windows/560.94/560.94-desktop-w
 ##  Download Directory
 ####################################
 
-$GeForceDownloadDir = "C:\downloads\drivers\video\RTX 4090"
+$GeForceDownloadDir = "C:\downloads\drivers\video\RTX 4090\560.94"
 
 Install-Module -Name OSD -Repository PSGallery -Force -AllowClobber -SkipPublisherCheck
 Import-Module -Name OSD -Force
