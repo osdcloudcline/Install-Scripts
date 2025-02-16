@@ -4,6 +4,7 @@ $Date = Get-Date
 
 $app1 = "Steam"
 
+Import-Module -Name OSD -Force
 
 Write-Host "Installed on: $Date"
 
