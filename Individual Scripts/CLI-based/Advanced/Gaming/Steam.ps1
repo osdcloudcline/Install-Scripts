@@ -8,7 +8,16 @@ $app1 = "Steam"
 Write-Host "Installed on: $Date"
 
 Write-Host
-Write-Host "Installing $app1..." -ForegroundColor Cyan
-winget install --id Valve.Steam --exact --accept-source-agreements  --accept-source-agreements --force
+Write-Verbose "Processing: Steam Setup download..." -Verbose
+$SteamURL = "https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe"
+$SteamDestination = "C:\downloads"
+
+Save-WebFile -SourceUrl $SteamURL -DestinationDirectory $SteamDestination
+
+Write-Host
+
+Write-Verbose "Installing: $app1..." -ForegroundColor Cyan
+$SteamSetup = "C:\downloads\SteamSetup.exe"
+Start-Process -FilePath $SteamSetup
 
 Stop-Transcript
