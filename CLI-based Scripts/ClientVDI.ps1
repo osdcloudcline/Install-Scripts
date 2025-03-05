@@ -5,7 +5,7 @@ Write-Host '          The following software will be installed:              ' -
 Write-Host '                                                                 ' -BackgroundColor White 
 Write-Host '  - Web Browsers: DuckDuckGo                                     ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '  - Media: VLC Player and MediaInfo                              ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '  - Productivity: Microsoft Office 2021 LTSC                     ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '  - Productivity: Microsoft Office 2024 LTSC                     ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '  - Productivity: Adobe Reader DC                                ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '  - Programming: VS Code, AI Code Editor,                        ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '  - Utilities: 7-Zip, CCleaner, DDU,                             ' -ForegroundColor DarkBlue -BackgroundColor White
@@ -76,8 +76,8 @@ Write-Host "Processing install for: Productivity software..." -ForegroundColor D
 $AcrobatReaderDC = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Productivity/AcrobatReaderDC.ps1")
 Invoke-Expression $($AcrobatReaderDC.Content)
 
-$Office2021 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Productivity/Office2021.ps1")
-Invoke-Expression $($Office2021.Content)
+$Office2024 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Productivity/Office2024.ps1")
+Invoke-Expression $($Office2024.Content)
 
 Write-Host "Processing install for: Programming software..." -ForegroundColor DarkBlue -BackgroundColor White
 
