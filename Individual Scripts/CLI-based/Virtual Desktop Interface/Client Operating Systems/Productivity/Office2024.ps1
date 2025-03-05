@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\Logs\OSDCloud\Install\Advanced\Productivity\$env:computername-Office2024.log"
+Start-Transcript -Path "C:\Logs\OSDCloud\Install\Client VDI\Productivity\$env:computername-Office2024.log"
 
 Install-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck
 Import-Module -Name OSD -Force
