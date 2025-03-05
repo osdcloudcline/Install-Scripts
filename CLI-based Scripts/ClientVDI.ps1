@@ -99,12 +99,6 @@ Invoke-Expression $($CCleaner.Content)
 $DDU = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Utilities-Software/DDU.ps1")
 Invoke-Expression $($DDU.Content)
 
-$SmartDefrag = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Utilities-Software/SmartDefrag.ps1")
-Invoke-Expression $($SmartDefrag.Content)
-
-$WiseRegistryCleaner = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Virtual%20Desktop%20Interface/Client%20Operating%20Systems/Utilities-Software/WiseRegistryCleaner.ps1")
-Invoke-Expression $($WiseRegistryCleaner.Content)
-
 
 
 Write-Host "Processing downloads for: Security software..." -ForegroundColor DarkBlue -BackgroundColor White
