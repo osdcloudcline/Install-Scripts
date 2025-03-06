@@ -231,6 +231,4 @@ Invoke-Expression $($HP.Content)
 ElseIf($PCManufacturer -like "*VMWare, Inc.*"){
 Write-Host "This PC is a virtual machine operating in a VDI environment. No OEM Software is needed" -ForegroundColor Cyan
 }
-
-$Uninstall = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Uninstall/UninstallMainMenu.ps1")
-Invoke-Expression $($Uninstall.Content)
+}
