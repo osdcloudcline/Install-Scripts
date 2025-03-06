@@ -200,6 +200,9 @@ Write-Host "Processing install for: Virtualization software..." -ForegroundColor
 $VMWareWSPro = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Virtualization/VMWareWorkstationPro.ps1")
 Invoke-Expression $($VMWareWSPro.Content)
 
+$VMWareWSPro2 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/IT%20Tech/Virtualization/InstallVMWare.ps1")
+Invoke-Expression $($VMWareWSPro2.Content)
+
 Write-Host "Processing downloads for: Security software..." -ForegroundColor DarkBlue -BackgroundColor White
 
 $MBAM = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Security/Anti-Malware/MalwareBytes.ps1")
