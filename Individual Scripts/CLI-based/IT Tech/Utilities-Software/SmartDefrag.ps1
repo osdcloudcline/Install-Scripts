@@ -11,7 +11,7 @@ $app1 = "Smart Defrag"
 Write-Host
 Write-Verbose "Installing $app1..." -Verbose
 
-$DefragURL = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/Wise/WRCFree_11.1.10.725.exe"
+$DefragURL = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/IoBit/Smart%20Defrag/version%2010.3.0.435/smart-defrag-setup.exe"
 $destination = "C:\downloads"
 
 Save-WebFile -SourceUrl $DefragURL -DestinationDirectory $destination
