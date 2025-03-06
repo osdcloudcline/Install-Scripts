@@ -107,7 +107,7 @@ Invoke-Expression $($AdobeReaderDC.Content)
 $MSO365 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Productivity/MSO365.ps1")
 Invoke-Expression $($MSO365.Content)
 
-$Office2021 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Productivity/Office2021.ps1")
+$Office2024 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Corporate/Productivity/Office2024.ps1")
 Invoke-Expression $($Office2021.Content)
 
 $Office365AppsENT = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Productivity/Office365AppsEnterprise.ps1")
