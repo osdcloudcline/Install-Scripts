@@ -132,21 +132,13 @@ Invoke-Expression $($MediaInfo.Content)
 $VLCPlayer = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Media/VLCPlayer.ps1")
 Invoke-Expression $($VLCPlayer.Content)
 
-
 Write-Host "Processing install for: Productivity software..." -ForegroundColor DarkBlue -BackgroundColor White
 
 $AcrobatReaderDC = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Productivity/AdobeReaderDC.ps1")
 Invoke-Expression $($AcrobatReaderDC.Content)
 
-$MSO365 = = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Productivity/MSO365.ps1")
-Invoke-Expression $($MSO365.Content)
-
-$MSO365E = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Productivity/Office365AppsEnterprise.ps1")
-Invoke-Expression $($MSO365E.Content)
-
-$Office2021 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Productivity/Office2021.ps1")
-Invoke-Expression $($Office2021.Content)
-
+$Office2024 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Productivity/Office2021.ps1")
+Invoke-Expression $($Office2024.Content)
 
 Write-Host "Processing install for: Programming software..." -ForegroundColor DarkBlue -BackgroundColor White
 
