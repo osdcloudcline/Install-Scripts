@@ -16,4 +16,8 @@ $destination = "C:\downloads"
 
 Save-WebFile -SourceUrl $WiseURL -DestinationDirectory $destination
 
+$SourceFile = "C:\downloads\WRCFree_11.1.10.725.exe"
+
+Start-Process -FilePath $SourceFFile 
+
 Stop-Transcript
