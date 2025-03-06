@@ -180,6 +180,9 @@ Invoke-Expression $($SmartDefrag.Content)
 $OSKits = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Utilities-Software/Win11-22H2-OSKits.ps1")
 Invoke-Expression $($OSKits.Content)
 
+$DART = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/IT%20Tech/Utilities-Software/DART.ps1")
+Invoke-Expression $($DART.Content)
+
 $WiseRegistryCleaner = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Utilities-Software/WiseRegistryCleaner.ps1")
 Invoke-Expression $($WiseRegistryCleaner.Content)
 
