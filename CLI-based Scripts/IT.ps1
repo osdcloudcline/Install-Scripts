@@ -174,7 +174,7 @@ Invoke-Expression $($CCleaner.Content)
 $DDU = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Utilities-Software/DDU.ps1")
 Invoke-Expression $($DDU.Content)
 
-$SmartDefrag = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Utilities-Software/SmartDefrag.ps1")
+$SmartDefrag = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/IT%20Tech/Utilities-Software/SmartDefrag.ps1")
 Invoke-Expression $($SmartDefrag.Content)
 
 $OSKits = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Utilities-Software/Win11-22H2-OSKits.ps1")
