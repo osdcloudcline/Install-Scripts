@@ -104,15 +104,8 @@ Write-Host "Processing install for: Productivity software..." -ForegroundColor D
 $AdobeReaderDC = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Productivity/AcrobatReaderDC.ps1")
 Invoke-Expression $($AdobeReaderDC.Content)
 
-$MSO365 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Productivity/MSO365.ps1")
-Invoke-Expression $($MSO365.Content)
-
 $Office2024 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Corporate/Productivity/Office2024.ps1")
-Invoke-Expression $($Office2021.Content)
-
-$Office365AppsENT = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Productivity/Office365AppsEnterprise.ps1")
-Invoke-Expression $($Office365AppsENT.Content)
-
+Invoke-Expression $($Office2024.Content)
 
 Write-Host "Processing install for: Vitual Desktop Interface software..." -ForegroundColor DarkBlue -BackgroundColor White
 
