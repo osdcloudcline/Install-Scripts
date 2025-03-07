@@ -129,15 +129,6 @@ Write-Host "Processing install for: Productivity software..." -ForegroundColor D
 $AcrobatReaderDC = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Standard/Productivity/AdobeReaderDC.ps1")
 Invoke-Expression $($AcrobatReaderDC.Content)
 
-$MSO365 = = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Standard/Productivity/MSO365.ps1")
-Invoke-Expression $($MSO365.Content)
-
-$MSO365E = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Standard/Productivity/Office365AppsEnterprise.ps1")
-Invoke-Expression $($MSO365E.Content)
-
-$Office2021 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Standard/Productivity/Office2021.ps1")
-Invoke-Expression $($Office2021.Content)
-
 $Office2024 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Standard/Productivity/Office2024.ps1")
 Invoke-Expression $($Office2024.Content)
 
