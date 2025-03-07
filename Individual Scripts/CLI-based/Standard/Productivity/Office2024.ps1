@@ -1,4 +1,4 @@
-Install-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck
+
 Import-Module -Name OSD -Force
 
 $OfficeGHdownloads = "C:\Office\2024" 
@@ -11,3 +11,8 @@ $Office2024Files3Url = "https://github.com/osdcloudcline/Software/raw/refs/heads
 Save-WebFile -SourceUrl $Office2024Files1Url -DestinationDirectory $OfficeGHdownloads
 Save-WebFile -SourceUrl $Office2024Files2Url -DestinationDirectory $OfficeGHdownloads
 Save-WebFile -SourceUrl $Office2024Files3Url -DestinationDirectory $OfficeGHdownloads
+
+$exe = "C:\Office\2024\setup.exe"
+$arguments = "/configure C:\Office\2024\Configuration-Office2024-EntireSuiteVL.xml"
+
+Start-Process -FilePath $exe -ArgumentList $arguments
