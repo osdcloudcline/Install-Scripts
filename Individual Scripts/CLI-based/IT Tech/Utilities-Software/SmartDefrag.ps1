@@ -16,8 +16,8 @@ $destination = "C:\downloads"
 
 Save-WebFile -SourceUrl $DefragURL -DestinationDirectory $destination
 
-$SourceFile = "C:\downloads\WRCFree_11.1.10.725.exe"
+$SourceFile = "C:\downloads\smart-defrag-setup.exe"
 
-Start-Process -FilePath $SourceFFile 
+Start-Process -FilePath $SourceFile 
 
 Stop-Transcript
