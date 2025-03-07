@@ -11,7 +11,7 @@ Import-Module -Name OSD -Force
 ## Clonezilla URL ######
 ##############################
 
-$ClonezillaURL = "https://sourceforge.net/projects/clonezilla/files/clonezilla_live_stable/3.2.0-5/clonezilla-live-3.2.0-5-amd64.iso/download"
+$ClonezillaURL = "https://sourceforge.net/projects/clonezilla/files/clonezilla_live_stable/3.2.0-5/clonezilla-live-3.2.0-5-amd64.iso/downloadhttps://sourceforge.net/projects/clonezilla/files/clonezilla_live_stable/3.2.0-5/clonezilla-live-3.2.0-5-amd64.iso"
 
 ##############################
 ## Download destination 
