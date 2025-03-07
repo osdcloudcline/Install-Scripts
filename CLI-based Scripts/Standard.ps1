@@ -132,6 +132,7 @@ Invoke-Expression $($AcrobatReaderDC.Content)
 $Office2024 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Standard/Productivity/Office2024.ps1")
 Invoke-Expression $($Office2024.Content)
 
+pause
 
 Write-Host "Processing install for: Programming software..." -ForegroundColor DarkBlue -BackgroundColor White
 
