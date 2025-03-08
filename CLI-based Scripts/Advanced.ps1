@@ -105,7 +105,7 @@ Invoke-Expression $($NextCloudClient.Content)
 $OneDrive = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Cloud%20Backups/OneDrive.ps1")
 Invoke-Expression $($OneDrive.Content)
 
-$UPBR = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Cloud%20Backups/UPBR.ps1")
+$UPBR = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Cloud%20Backups/UPBR.ps1")
 Invoke-Expression $($UPBR.Content)
 
 $iCloud = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Cloud%20Backups/iCloud.ps1")
