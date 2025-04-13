@@ -12,3 +12,14 @@ Write-Host '    Uninstallation of software will be available                 ' -
 Write-Host '    after script completes                                       ' -ForegroundColor DarkRed -BackgroundColor White
 Write-Host '                                                                 ' -BackgroundColor White
 pause
+
+Write-Host "Applying configuration to $env:computername..." -ForegroundColor DarkBlue -BackgroundColor White
+
+Write-Host "Processing: Mandatory System Configuration Pre-Requisites..." -ForegroundColor Cyan
+
+Write-Verbose "Step 1 - PowerShell Package Providers..." -Verbose
+Write-Host
+
+$PSProviders = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/PowerShell%20Modules/Package%20Providers/Install.ps1")
+Invoke-Expression $($PSProviders.Content)
+
