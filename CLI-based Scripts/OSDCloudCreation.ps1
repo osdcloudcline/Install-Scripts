@@ -31,3 +31,9 @@ Invoke-Expression $($PS5Modules.Content)
 
 $PS5Modules1 = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/refs/heads/main/PowerShell%20Modules/OSDCloud%20ISO%20Creation/Import.ps1")
 Invoke-Expression $($PS5Modules1.Content)
+
+Write-Verbose "Step 3 - Merging Registry Entries..." -Verbose
+Write-Host
+
+$ClientRegistry = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/ClientRegistry.ps1")
+Invoke-Expression $($ClientRegistry.Content)
