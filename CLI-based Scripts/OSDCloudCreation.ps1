@@ -23,3 +23,7 @@ Write-Host
 $PSProviders = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/PowerShell%20Modules/Package%20Providers/Install.ps1")
 Invoke-Expression $($PSProviders.Content)
 
+Write-Verbose "Step 2 - PowerShell 5.1 Modules..." -Verbose
+Write-Host
+
+$PS5Modules = Invoke-WebRequest ("")
