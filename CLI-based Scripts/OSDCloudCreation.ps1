@@ -13,6 +13,12 @@ Write-Host '    after script completes                                       ' -
 Write-Host '                                                                 ' -BackgroundColor White
 pause
 
+
+Invoke-WebRequest -Uri "https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.8.6" -OutFile "$env:TEMP\Microsoft.UI.Xaml.2.8.6.nupkg.zip"
+Expand-Archive -Path "$env:TEMP\Microsoft.UI.Xaml.2.8.6.nupkg.zip" -DestinationPath "$env:TEMP\Microsoft.UI.Xaml.2.8" -Force
+Add-AppPackage $env:TEMP\Microsoft.UI.Xaml.2.8\tools\appx\x64\release\Microsoft.UI.Xaml.2.8.appx
+Add-AppPackage https://aka.ms/GetWinGet
+
 Write-Host "Applying configuration to $env:computername..." -ForegroundColor DarkBlue -BackgroundColor White
 
 Write-Host "Processing: Mandatory System Configuration Pre-Requisites..." -ForegroundColor Cyan
