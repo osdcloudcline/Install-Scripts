@@ -59,3 +59,18 @@ Write-Host "Processing install for: Programming software..." -ForegroundColor Da
 $VSCode = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Management%20PC/Programming/VSCode.ps1")
 Invoke-Expression $($VSCode.Content)
 
+Write-Host "Processing install for: System Utilities - Software..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$OSKits = Invoke-WebRequest ("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/IT%20Tech/Utilities-Software/Win11-22H2-OSKits.ps1")
+Invoke-Expression $($OSKits.Content)
+
+$MSDART = Invoke-WebRequest("")
+Invoke-Expression $($MSDART.Content)
+
+$MDT = Invoke-WebRequest("")
+Invoke-Expression $($MDT.Content)
+
+Write-Host "Processing downloads for: Security software..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$MBAM = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Management%20PC/Security/Anti-Malware/MalwareBytes.ps1")
+Invoke-Expression $($MBAM.Content)
