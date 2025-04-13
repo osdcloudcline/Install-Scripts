@@ -26,4 +26,5 @@ Invoke-Expression $($PSProviders.Content)
 Write-Verbose "Step 2 - PowerShell 5.1 Modules..." -Verbose
 Write-Host
 
-$PS5Modules = Invoke-WebRequest ("")
+$PS5Modules = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/refs/heads/main/PowerShell%20Modules/OSDCloud%20ISO%20Creation/Install.ps1")
+Invoke-Expression $($PS5Modules.Content)
