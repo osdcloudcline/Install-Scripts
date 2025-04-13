@@ -28,3 +28,6 @@ Write-Host
 
 $PS5Modules = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/refs/heads/main/PowerShell%20Modules/OSDCloud%20ISO%20Creation/Install.ps1")
 Invoke-Expression $($PS5Modules.Content)
+
+$PS5Modules1 = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/refs/heads/main/PowerShell%20Modules/OSDCloud%20ISO%20Creation/Import.ps1")
+Invoke-Expression $($PS5Modules1.Content)
