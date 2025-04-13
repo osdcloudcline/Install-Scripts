@@ -53,3 +53,9 @@ Write-Host "Processing install for: Cloud Backup software..." -ForegroundColor D
 
 $UPBR = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Management%20PC/Cloud%20Backups/UPBR.ps1")
 Invoke-Expression $($UPBR.Content)
+
+Write-Host "Processing install for: Programming software..." -ForegroundColor DarkBlue -BackgroundColor White
+
+$VSCode = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Management%20PC/Programming/VSCode.ps1")
+Invoke-Expression $($VSCode.Content)
+
