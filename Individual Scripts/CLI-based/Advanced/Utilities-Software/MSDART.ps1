@@ -8,6 +8,5 @@ $DARTUrl = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilit
 Write-Verbose "Processing and Downloading: $app1 Setup File..." -Verbose
 Save-WebFile -SourceUrl $DARTUrl -DestinationDirectory $OSDCloudGHdownloads
 
-Start-Process -FilePath "C:\OSDCloud\GitHub\downloads\MSDaRT100.msi" -ArgumentList "/quiet /norestart"
-
+Start-Process -FilePath "C:\OSDCloud\GitHub\downloads\MSDaRT100.msi" 
 pause
