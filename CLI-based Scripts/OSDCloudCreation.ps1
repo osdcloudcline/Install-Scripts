@@ -37,3 +37,10 @@ Write-Host
 
 $ClientRegistry = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/ClientRegistry.ps1")
 Invoke-Expression $($ClientRegistry.Content)
+
+Write-Verbose "Step 4 - Mandatory OS Pre-Requirements..." -Verbose
+Write-Host
+
+$OS = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/SYSTEM/OS-Mandated%20Software/SYSTEM.ps1")
+Invoke-Expression $($OS.Content)
+
