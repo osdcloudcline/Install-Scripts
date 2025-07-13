@@ -41,7 +41,6 @@ winget install --id Microsoft.WindowsTerminal --silent --exact --accept-source-a
 
 winget install --id Google.Chrome --silent --exact --accept-source-agreements --accept-source-agreements --force
 
-
 winget install --id Dropbox.Dropbox --silent --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Google.GoogleDrive --silent --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Nextcloud.NextcloudDesktop --silent --exact --accept-source-agreements --accept-source-agreements --force
@@ -54,8 +53,6 @@ winget install --id GitHub.GitHubDesktop --silent --exact --accept-source-agreem
 choco install filezilla  -y
 winget install --id PuTTY.PuTTY --silent --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id WinSCP.WinSCP --silent --exact --accept-source-agreements --accept-source-agreements --force
-
-winget install --id Valve.Steam  --silent --exact --accept-source-agreements --accept-source-agreements --force
 
 winget install --id MoritzBunkus.MKVToolNix --silent --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id MediaArea.MediaInfo.GUI --silent --exact --accept-source-agreements --accept-source-agreements --force
