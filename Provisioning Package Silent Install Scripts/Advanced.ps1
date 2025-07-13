@@ -73,9 +73,22 @@ winget install --id Apple.iTunes --silent --exact --accept-source-agreements --a
 
 winget install --id Adobe.Acrobat.Reader.64-bit --silent --exact --accept-source-agreements --accept-source-agreements --force
 
-
 winget install --id Anysphere.Cursor --silent --exact --accept-source-agreements --accept-source-agreements --force
 choco install visualstudio2022enterprise --package-parameters "--allWorkloads --includeRecommended --includeOptional --passive --locale en-US" -y
 winget install --id Microsoft.VisualStudioCode --silent --exact --accept-source-agreements --accept-source-agreements --force
+
+winget install --id Crucial.StorageExecutive --silent --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Logitech.Options --silent --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Logitech.UnifyingSoftware --silent --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.MouseandKeyboardCenter --silent --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Samsung.SamsungMagician --silent --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id WesternDigital.Dashboard --silent --exact --accept-source-agreements --accept-source-agreements --force 
+
+winget install --id 7zip.7zip --silent --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Piriform.CCleaner --silent --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Wagnardsoft.DisplayDriverUninstaller --silent --exact --accept-source-agreements --accept-source-agreements --force 
+
+winget install --id AnyDeskSoftwareGmbH.AnyDesk --silent --exact --accept-source-agreements --accept-source-agreements --force 
+choco install vmware-horizon-client -y
 
 
