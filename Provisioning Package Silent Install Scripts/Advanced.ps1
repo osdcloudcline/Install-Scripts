@@ -91,6 +91,11 @@ winget install --id Wagnardsoft.DisplayDriverUninstaller --silent --exact --acce
 winget install --id AnyDeskSoftwareGmbH.AnyDesk --silent --exact --accept-source-agreements --accept-source-agreements --force 
 choco install vmware-horizon-client -y
 
+Install-Module -Name OSD -Force
+Import-Module -Name OSD -Force
+
+Install-Module -Name 7Zip4Powershell -Force
+Import-Module -Name 7Zip4Powershell -Force
 
 winget install --id Glarysoft.GlaryUtilities --silent --exact --accept-source-agreements --accept-source-agreements --force 
 $OSDCloudGHdownloads = "C:\downloads"
