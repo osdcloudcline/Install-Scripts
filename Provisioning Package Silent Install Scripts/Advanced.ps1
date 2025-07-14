@@ -91,6 +91,14 @@ winget install --id Wagnardsoft.DisplayDriverUninstaller --silent --exact --acce
 winget install --id AnyDeskSoftwareGmbH.AnyDesk --silent --exact --accept-source-agreements --accept-source-agreements --force 
 choco install vmware-horizon-client -y
 
+$WADKDir1 = "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\Media"
+$WADKDir2 = "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs"
+$WADKDir3 = "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\en-us"
+
+New-Item -Path $WADKDir1 -ItemType Directory -Force
+New-Item -Path $WADKDir2 -ItemType Directory -Force
+New-Item -Path $WADKDir3 -ItemType Directory -Force
+
 Install-Module -Name OSD -Force
 Import-Module -Name OSD -Force
 
