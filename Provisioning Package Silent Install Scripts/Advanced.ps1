@@ -87,6 +87,8 @@ winget install --id WesternDigital.Dashboard --silent --exact --accept-source-ag
 winget install --id 7zip.7zip --silent --exact --accept-source-agreements --accept-source-agreements --force 
 winget install --id Piriform.CCleaner --silent --exact --accept-source-agreements --accept-source-agreements --force 
 winget install --id Wagnardsoft.DisplayDriverUninstaller --silent --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Rainmeter.Rainmeter --silent --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id WhirlwindFX.SignalRgb --silent --exact --accept-source-agreements --accept-source-agreements --force
 
 winget install --id AnyDeskSoftwareGmbH.AnyDesk --silent --exact --accept-source-agreements --accept-source-agreements --force 
 choco install vmware-horizon-client -y
