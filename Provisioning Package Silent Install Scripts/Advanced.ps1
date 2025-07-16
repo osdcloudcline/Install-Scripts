@@ -134,3 +134,6 @@ Save-WebFile -SourceUrl $Office2024Files1Url -DestinationDirectory $OfficeGHdown
 Save-WebFile -SourceUrl $Office2024Files2Url -DestinationDirectory $OfficeGHdownloads
 Save-WebFile -SourceUrl $Office2024Files3Url -DestinationDirectory $OfficeGHdownloads
 
+cd $OfficeGHdownloads
+
+$setup = "C:\Office\2024\setup.exe"
