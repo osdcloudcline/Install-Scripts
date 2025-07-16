@@ -38,6 +38,7 @@ winget install --id Microsoft.Edge --silent --exact --accept-source-agreements -
 winget install --id Microsoft.EdgeDriver --silent --exact --accept-source-agreements --accept-source-agreements --force
 
 winget install --id Microsoft.WindowsTerminal --silent --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.PowerShell --silent --exact --accept-source-agreements --accept-source-agreements --force
 
 winget install --id Google.Chrome --silent --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Mozilla.Firefox --silent --exact --accept-source-agreements --accept-source-agreements --force
