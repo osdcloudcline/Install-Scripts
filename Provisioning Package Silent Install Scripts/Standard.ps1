@@ -110,3 +110,13 @@ $setup = "C:\Office\2024\setup.exe"
 $arguments = "/configure C:\Office\2024\Configuration-Office2024-EntireSuiteVL.xml"
 
 Start-Process -FilePath $setup -ArgumentList $arguments
+
+$N360DLURL = "https://github.com/osdcloudcline/Software/raw/main/Security/Norton%20360/N360Downloader.exe"
+$BDURLDL = "https://github.com/osdcloudcline/Software/raw/main/Security/BitDefender/bitdefender_tsecurity.exe"
+
+$destination = "C:\downloads"
+
+Save-WebFile -SourceUrl $N360DLURL -DestinationDirectory $destination
+Save-WebFile -SourceUrl $BDURLDL -DestinationDirectory $destination
+
+winget install --id Malwarebytes.Malwarebytes --silent --exact --accept-source-agreements --accept-source-agreements --force
