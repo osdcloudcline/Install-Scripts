@@ -103,3 +103,10 @@ $Office2024Files3Url = "https://github.com/osdcloudcline/Software/raw/refs/heads
 Save-WebFile -SourceUrl $Office2024Files1Url -DestinationDirectory $OfficeGHdownloads
 Save-WebFile -SourceUrl $Office2024Files2Url -DestinationDirectory $OfficeGHdownloads
 Save-WebFile -SourceUrl $Office2024Files3Url -DestinationDirectory $OfficeGHdownloads
+
+cd $OfficeGHdownloads
+
+$setup = "C:\Office\2024\setup.exe"
+$arguments = "/configure C:\Office\2024\Configuration-Office2024-EntireSuiteVL.xml"
+
+Start-Process -FilePath $setup -ArgumentList $arguments
