@@ -1,4 +1,4 @@
-winget install --id Chocolatey.Chocolatey -e --silent --exact --accept-source-agreements --accept-source-agreements --force --source winget
+winget install --id Chocolatey.Chocolatey --silent --exact --accept-source-agreements --accept-source-agreements --force --source winget
 
 winget install --id Microsoft.DotNet.SDK.8 --silent --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Microsoft.DotNet.AspNetCore.3_1 --silent --exact --accept-source-agreements --accept-source-agreements --force
