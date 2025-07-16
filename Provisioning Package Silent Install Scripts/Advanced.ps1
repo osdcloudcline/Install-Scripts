@@ -137,3 +137,5 @@ Save-WebFile -SourceUrl $Office2024Files3Url -DestinationDirectory $OfficeGHdown
 cd $OfficeGHdownloads
 
 $setup = "C:\Office\2024\setup.exe"
+$arguments = "/configure C:\Office\2024\Configuration-Office2024-EntireSuiteVL.xml"
+
