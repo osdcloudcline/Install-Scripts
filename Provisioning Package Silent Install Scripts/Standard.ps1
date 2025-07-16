@@ -84,6 +84,10 @@ New-Item -Path $WADKDir1 -ItemType Directory -Force
 New-Item -Path $WADKDir2 -ItemType Directory -Force
 New-Item -Path $WADKDir3 -ItemType Directory -Force
 
+winget install --id Microsoft.WindowsADK --silent --accept-package-agreements --accept-source-agreements --scope machine --force 
+winget install --id Microsoft.ADKPEAddon  --silent --accept-package-agreements --accept-source-agreements --scope machine --force 
+winget install --id Microsoft.DeploymentToolkit --silent --accept-package-agreements --accept-source-agreements --scope machine --force
+
 Install-Module -Name OSD -Force
 Import-Module -Name OSD -Force
 
