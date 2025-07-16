@@ -358,9 +358,12 @@ $N360DLURL = "https://github.com/osdcloudcline/Software/raw/main/Security/Norton
 $BDURLDL = "https://github.com/osdcloudcline/Software/raw/main/Security/BitDefender/bitdefender_tsecurity.exe"
 
 $destination = "C:\downloads"
-
+mkdir $destination
 Save-WebFile -SourceUrl $N360DLURL -DestinationDirectory $destination
 Save-WebFile -SourceUrl $BDURLDL -DestinationDirectory $destination
+
+$DART = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/DaRT/version%2010.0%20x64/MSDaRT100.msi"
+Save-WebFile -SourceUrl $DART -DestinationDirectory $destination
 
 winget install --id Malwarebytes.Malwarebytes --silent --exact --accept-source-agreements --accept-source-agreements --force
 
