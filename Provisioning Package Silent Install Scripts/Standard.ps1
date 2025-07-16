@@ -302,6 +302,25 @@ Import-Module -Name OSD -Force
 Install-Module -Name 7Zip4Powershell -Force
 Import-Module -Name 7Zip4Powershell -Force
 
+$scanstateURL1 = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/USMT/scanstate1.zip"
+$scanstateURL2 = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/USMT/scanstate2.zip"
+$scanstateURL3 = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/USMT/scanstate3.zip"
+$scanstateURL4 = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/USMT/scanstate4.zip"
+
+$USMTdestination = "C:\downloads"
+
+$USMTDestination = "C:\USMT"
+
+Save-WebFile -SourceUrl $scanstateURL1 -DestinationDirectory $USMTdestination
+Save-WebFile -SourceUrl $scanstateURL2 -DestinationDirectory $USMTdestination
+Save-WebFile -SourceUrl $scanstateURL3 -DestinationDirectory $USMTdestination
+Save-WebFile -SourceUrl $scanstateURL4 -DestinationDirectory $USMTdestination
+
+Expand-7Zip -ArchiveFileName "$USMTdestination\scanstate1.zip" -TargetPath $USMTDestination
+Expand-7Zip -ArchiveFileName "$USMTdestination\scanstate2.zip" -TargetPath $USMTDestination
+Expand-7Zip -ArchiveFileName "$USMTdestination\scanstate3.zip" -TargetPath $USMTDestination
+Expand-7Zip -ArchiveFileName "$USMTdestination\scanstate4.zip" -TargetPath $USMTDestination
+
 $OfficeGHdownloads = "C:\Office\2024" 
 mkdir $OfficeGHdownloads
 $Office2024Files1Url = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Productivity/Microsoft/Office%202024/Configuration-Office2024-EntireSuiteVL.xml"
