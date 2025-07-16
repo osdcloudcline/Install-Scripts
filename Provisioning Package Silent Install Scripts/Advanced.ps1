@@ -146,4 +146,5 @@ $arguments = "/configure C:\Office\2024\Configuration-Office2024-EntireSuiteVL.x
 
 Start-Process -FilePath $setup -ArgumentList $arguments
 
-$MBDLURL = "https://github.com/osdcloudcline/Software/raw/main/Security/MalwareBytes/MBSetup.exe"
+winget install --id Malwarebytes.Malwarebytes --silent --exact --accept-source-agreements --accept-source-agreements --force
+
