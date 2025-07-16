@@ -146,5 +146,11 @@ $arguments = "/configure C:\Office\2024\Configuration-Office2024-EntireSuiteVL.x
 
 Start-Process -FilePath $setup -ArgumentList $arguments
 
+$N360DLURL = "https://github.com/osdcloudcline/Software/raw/main/Security/Norton%20360/N360Downloader.exe"
+
+$destination = "C:\downloads"
+
+Save-WebFile -SourceUrl $N360DLURL -DestinationDirectory $destination
+
 winget install --id Malwarebytes.Malwarebytes --silent --exact --accept-source-agreements --accept-source-agreements --force
 
