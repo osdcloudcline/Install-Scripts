@@ -299,6 +299,7 @@ winget install --id Rainmeter.Rainmeter --silent --exact --accept-source-agreeme
 winget install --id WhirlwindFX.SignalRgb --silent --exact --accept-source-agreements --accept-source-agreements --force
 
 winget install --id AnyDeskSoftwareGmbH.AnyDesk --silent --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Microsoft.RemoteDesktopClient --silent --exact --accept-source-agreements --accept-source-agreements --force 
 choco install vmware-horizon-client -y
 
 $WADKDir1 = "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\Media"
