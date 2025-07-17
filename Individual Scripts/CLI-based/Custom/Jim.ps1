@@ -1,4 +1,16 @@
+$JimLog = "C:\Logs\JimPC.log"
+
+Start-Transcript - Path $JimLog
+
+Write-Verbose "Processing: PowerShell Package Providers on $env:computername..." -Verbose
+
+Install-PackageProvider -Name NuGet -Force
+Install-PackageProvider -Name PowerShellGet -Force
+Install-PackageProvider -Name ChocolateyGet -Force
+Install-PackageProvider -Name WinGet -Force
 winget install --id Chocolatey.Chocolatey --silent --exact --accept-source-agreements --accept-source-agreements --force --source winget
+
+Write-Verbose "Processing: Registry Entries on $env:computername..." -Verbose
 
 if((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\DesktopBackground\Shell\SafeMode") -ne $true) {  New-Item "HKLM:\SOFTWARE\Classes\DesktopBackground\Shell\SafeMode" -force -ea SilentlyContinue };
 if((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\DesktopBackground\Shell\SafeMode\shell\001-NormalMode") -ne $true) {  New-Item "HKLM:\SOFTWARE\Classes\DesktopBackground\Shell\SafeMode\shell\001-NormalMode" -force -ea SilentlyContinue };
@@ -207,6 +219,8 @@ New-ItemProperty -LiteralPath 'HKCU:\Software\Microsoft\Windows\CurrentVersion\E
 New-ItemProperty -LiteralPath 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced' -Name 'NavPaneShowAllCloudStates' -Value 1 -PropertyType DWord -Force -ea SilentlyContinue;
 New-ItemProperty -LiteralPath 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced' -Name 'Start_IrisRecommendations' -Value 0 -PropertyType DWord -Force -ea SilentlyContinue;
 
+Write-Verbose "Processing: System Software on $env:computername..." -Verbose
+
 winget install --id Microsoft.DotNet.SDK.8 --silent --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Microsoft.DotNet.AspNetCore.3_1 --silent --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Microsoft.DotNet.AspNetCore.5 --silent --exact --accept-source-agreements --accept-source-agreements --force 
@@ -247,11 +261,17 @@ winget install --id Microsoft.EdgeDriver --silent --exact --accept-source-agreem
 winget install --id Microsoft.WindowsTerminal --silent --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Microsoft.PowerShell --silent --exact --accept-source-agreements --accept-source-agreements --force
 
+Write-Verbose "Processing: Web Browsers on $env:computername..." -Verbose
+
 winget install --id Google.Chrome --silent --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Mozilla.Firefox --silent --exact --accept-source-agreements --accept-source-agreements --force
 
+Write-Verbose "Processing: Cloud Drives on $env:computername..." -Verbose
+
 winget install --id Microsoft.OneDrive --silent --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Apple.iCloud --silent --exact --accept-source-agreements --accept-source-agreements --force
+
+Write-Verbose "Processing: Media Software on $env:computername..." -Verbose
 
 winget install --id XBMCFoundation.Kodi  --silent --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id MoritzBunkus.MKVToolNix --silent --exact --accept-source-agreements --accept-source-agreements --force
@@ -259,7 +279,11 @@ winget install --id MediaArea.MediaInfo.GUI --silent --exact --accept-source-agr
 winget install --id VideoLAN.VLC --silent --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Apple.iTunes --silent --exact --accept-source-agreements --accept-source-agreements --force
 
+Write-Verbose "Processing: Productivity software on $env:computername..." -Verbose
+
 winget install --id Adobe.Acrobat.Reader.64-bit --silent --exact --accept-source-agreements --accept-source-agreements --force
+
+Write-Verbose "Processing: Hardware Utilities - Software on $env:computername..." -Verbose
 
 winget install --id Crucial.StorageExecutive --silent --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Logitech.Options --silent --exact --accept-source-agreements --accept-source-agreements --force
@@ -267,6 +291,8 @@ winget install --id Logitech.UnifyingSoftware --silent --exact --accept-source-a
 winget install --id Microsoft.MouseandKeyboardCenter --silent --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Samsung.SamsungMagician --silent --exact --accept-source-agreements --accept-source-agreements --force 
 winget install --id WesternDigital.Dashboard --silent --exact --accept-source-agreements --accept-source-agreements --force 
+
+Write-Verbose "Processing: Utilities - Software on $env:computername..." -Verbose
 
 winget install --id 7zip.7zip --silent --exact --accept-source-agreements --accept-source-agreements --force 
 winget install --id Piriform.CCleaner --silent --exact --accept-source-agreements --accept-source-agreements --force 
@@ -280,10 +306,11 @@ New-Item -Path $WADKDir1 -ItemType Directory -Force
 New-Item -Path $WADKDir2 -ItemType Directory -Force
 New-Item -Path $WADKDir3 -ItemType Directory -Force
 
+Write-Verbose "Processing: OS Kits on $env:computername..." -Verbose
+
 winget install --id Microsoft.WindowsADK --silent --accept-package-agreements --accept-source-agreements --scope machine --force 
 winget install --id Microsoft.ADKPEAddon  --silent --accept-package-agreements --accept-source-agreements --scope machine --force 
 winget install --id Microsoft.DeploymentToolkit --silent --accept-package-agreements --accept-source-agreements --scope machine --force
-
 
 Install-Module -Name OSD -Force
 Import-Module -Name OSD -Force
@@ -303,6 +330,8 @@ $USMTdestination = "C:\downloads"
 
 $USMTDestination = "C:\USMT"
 
+Write-Verbose "Processing: Acquiring USMT Scanstate on $env:computername..." -Verbose
+
 Save-WebFile -SourceUrl $scanstateURL1 -DestinationDirectory $USMTdestination
 Save-WebFile -SourceUrl $scanstateURL2 -DestinationDirectory $USMTdestination
 Save-WebFile -SourceUrl $scanstateURL3 -DestinationDirectory $USMTdestination
@@ -312,6 +341,8 @@ Expand-7Zip -ArchiveFileName "$USMTdestination\scanstate1.zip" -TargetPath $USMT
 Expand-7Zip -ArchiveFileName "$USMTdestination\scanstate2.zip" -TargetPath $USMTDestination
 Expand-7Zip -ArchiveFileName "$USMTdestination\scanstate3.zip" -TargetPath $USMTDestination
 Expand-7Zip -ArchiveFileName "$USMTdestination\scanstate4.zip" -TargetPath $USMTDestination
+
+Write-Verbose "Processing: Office 2024 on $env:computername..." -Verbose
 
 $OfficeGHdownloads = "C:\Office\2024" 
 mkdir $OfficeGHdownloads
@@ -330,7 +361,17 @@ $arguments = "/configure C:\Office\2024\Configuration-Office2024-EntireSuiteVL.x
 
 Start-Process -FilePath $setup -ArgumentList $arguments
 
+Write-Verbose "Processing: MS DaRT on $env:computername..." -Verbose
+
 $DART = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/DaRT/version%2010.0%20x64/MSDaRT100.msi"
 Save-WebFile -SourceUrl $DART -DestinationDirectory $destination
 
+Write-Verbose "Processing: Malwarebytes on $env:computername..." -Verbose 
+
 winget install --id Malwarebytes.Malwarebytes --silent --exact --accept-source-agreements --accept-source-agreements --force
+
+Write-Verbose "Processing: OS Updates on $env:computername..." -Verbose
+
+Install-WindowsUpdate -AcceptAll
+
+Stop-Transcript
