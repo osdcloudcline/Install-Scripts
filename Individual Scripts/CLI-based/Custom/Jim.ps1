@@ -39,12 +39,6 @@ New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Classes\DesktopBackground\Shell\Sa
 New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Classes\DesktopBackground\Shell\SafeMode\shell\004-SafeModeCommandPrompt' -Name 'HasLUAShield' -Value '' -PropertyType String -Force -ea SilentlyContinue;
 New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Classes\DesktopBackground\Shell\SafeMode\shell\004-SafeModeCommandPrompt\command' -Name '(default)' -Value 'powershell -windowstyle hidden -command "Start-Process cmd -ArgumentList '/s,/c,bcdedit /set {current} safeboot minimal & bcdedit /set {current} safebootalternateshell yes & shutdown -r -t 00 -f' -Verb runAs"' -PropertyType String -Force -ea SilentlyContinue;
 
-if((Test-Path -LiteralPath "HKCU:\Software\UL\3DMark") -ne $true) {  New-Item "HKCU:\Software\UL\3DMark" -force -ea SilentlyContinue };
-New-ItemProperty -LiteralPath 'HKCU:\Software\UL\3DMark' -Name 'KeyCode' -Value '3DM-TICFT-20261214-222PZ-LUF2M-HPJ6V-WFE57' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKCU:\Software\UL\3DMark' -Name 'installed' -Value 1 -PropertyType DWord -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKCU:\Software\UL\3DMark' -Name 'SelectedLanguage' -Value 'en-US' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKCU:\Software\UL\3DMark' -Name 'InstallId' -Value '99e89342-34c8-4d6c-9f98-7350880cd423' -PropertyType String -Force -ea SilentlyContinue;
-
 if((Test-Path -LiteralPath "HKLM:\SOFTWARE\WOW6432Node\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown\cServices") -ne $true) {  New-Item "HKLM:\SOFTWARE\WOW6432Node\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown\cServices" -force -ea SilentlyContinue };
 New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown\cServices' -Name 'bToggleAdobeDocumentServices' -Value 1 -PropertyType DWord -Force -ea SilentlyContinue;
 
@@ -86,50 +80,6 @@ New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Policies\Adobe\Adobe A
 New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown\cServices' -Name 'bGoogleDriveConnectorEnabled' -Value 0 -PropertyType DWord -Force -ea SilentlyContinue;
 New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown\cSharePoint' -Name 'bDisableSharePointFeatures' -Value 1 -PropertyType DWord -Force -ea SilentlyContinue;
 New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown\cWebmailProfiles' -Name 'bDisableWebmail' -Value 1 -PropertyType DWord -Force -ea SilentlyContinue;
-
-if((Test-Path -LiteralPath "HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities") -ne $true) {  New-Item "HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities" -force -ea SilentlyContinue };
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities' -Name 'ProductID' -Value 1 -PropertyType DWord -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities' -Name 'ChannelNumber' -Value '10000' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities' -Name 'Date' -Value '45612.7503819444' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities' -Name 'AURunType' -Value 1 -PropertyType DWord -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities' -Name 'AUTimeSpan' -Value 1 -PropertyType DWord -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities' -Name 'ProductStatue' -Value 1 -PropertyType DWord -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities' -Name 'UpgradeTags' -Value '' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities' -Name 'UpdateFile' -Value '' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities' -Name 'RefVersion' -Value '2024-11-11' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities' -Name 'UpdateDate' -Value '2024-11-11' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities' -Name 'LngVersion' -Value '2024-11-11' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities' -Name 'Version' -Value '6.18.0.22' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities' -Name 'RootDir' -Value 'C:\Program Files (x86)\Glary Utilities\' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities' -Name 'RegName' -Value 'Jasi2169@glarysoft.com' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities' -Name 'RegCode' -Value '29HGEJ-O564RN-O8SE01-0HLPU3-0X5QDT' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities' -Name 'ChannelNo' -Value '1000' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\Glarysoft\Glary Utilities' -Name 'AULastRunDate' -Value '45612.750394' -PropertyType String -Force -ea SilentlyContinue;
-
-if((Test-Path -LiteralPath "HKCU:\Software\UL\PCMark 10") -ne $true) {  New-Item "HKCU:\Software\UL\PCMark 10" -force -ea SilentlyContinue };
-New-ItemProperty -LiteralPath 'HKCU:\Software\UL\PCMark 10' -Name 'KeyCode' -Value 'PCM10-PRO-222PZ-JN2XD-6UUW7-63QHV' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKCU:\Software\UL\PCMark 10' -Name 'InstallId' -Value '8ba12188-9afe-4772-b727-4bdeaa63ed7b' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKCU:\Software\UL\PCMark 10' -Name 'KeyStatus' -Value '' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKCU:\Software\UL\PCMark 10' -Name 'installed' -Value 1 -PropertyType DWord -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKCU:\Software\UL\PCMark 10' -Name 'SelectedLanguage' -Value 'en-US' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKCU:\Software\UL\PCMark 10' -Name 'InstallDir' -Value 'C:\Program Files\UL\PCMark 10\' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKCU:\Software\UL\PCMark 10' -Name 'StorageBenchmarkPaths' -Value @("") -PropertyType MultiString -Force -ea SilentlyContinue;
-
-if((Test-Path -LiteralPath "HKLM:\SOFTWARE\WOW6432Node\VMware, Inc.\VMware Workstation\License.ws.17.0.e5.202208") -ne $true) {  New-Item "HKLM:\SOFTWARE\WOW6432Node\VMware, Inc.\VMware Workstation\License.ws.17.0.e5.202208" -force -ea SilentlyContinue };
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\VMware, Inc.\VMware Workstation\License.ws.17.0.e5.202208' -Name 'StartFields' -Value 'Cpt, ProductID, LicenseVersion, LicenseType, LicenseEdition, Option, Epoch' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\VMware, Inc.\VMware Workstation\License.ws.17.0.e5.202208' -Name 'Field2' -Value 'Option, Epoch' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\VMware, Inc.\VMware Workstation\License.ws.17.0.e5.202208' -Name 'Cpt' -Value 'COPYRIGHT (c) VMware, Inc. 1999-2022' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\VMware, Inc.\VMware Workstation\License.ws.17.0.e5.202208' -Name 'ProductID' -Value 'VMware Workstation' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\VMware, Inc.\VMware Workstation\License.ws.17.0.e5.202208' -Name 'LicenseVersion' -Value '17.0' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\VMware, Inc.\VMware Workstation\License.ws.17.0.e5.202208' -Name 'LicenseType' -Value 'Site' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\VMware, Inc.\VMware Workstation\License.ws.17.0.e5.202208' -Name 'LicenseEdition' -Value 'ws.pro.vl' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\VMware, Inc.\VMware Workstation\License.ws.17.0.e5.202208' -Name 'Epoch' -Value '2022-08-01' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\VMware, Inc.\VMware Workstation\License.ws.17.0.e5.202208' -Name 'Option' -Value '19' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\VMware, Inc.\VMware Workstation\License.ws.17.0.e5.202208' -Name 'Data' -Value 'MaxVcpusPerVm=8;mdate=2022-03-21' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\VMware, Inc.\VMware Workstation\License.ws.17.0.e5.202208' -Name 'DataHash' -Value 'a2b7a360-bf9af404-cb47a255-3419e9b0-b799cb32' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\VMware, Inc.\VMware Workstation\License.ws.17.0.e5.202208' -Name 'Hash' -Value '38f406a1-5914d106-d7dcdd2b-ec573e28-24107a07' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\VMware, Inc.\VMware Workstation\License.ws.17.0.e5.202208' -Name 'Serial' -Value 'VV7RA-0YZ0N-M89EP-JFN7C-P62RF' -PropertyType String -Force -ea SilentlyContinue;
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\WOW6432Node\VMware, Inc.\VMware Workstation\License.ws.17.0.e5.202208' -Name 'LastModified' -Value '2022-11-24 @ 10:43:23 UTC' -PropertyType String -Force -ea SilentlyContinue;
 
 if((Test-Path -LiteralPath "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE") -ne $true) {  New-Item "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE" -force -ea SilentlyContinue };
 New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE' -Name 'BypassNRO' -Value 1 -PropertyType DWord -Force -ea SilentlyContinue;
