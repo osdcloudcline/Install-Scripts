@@ -223,88 +223,88 @@ New-ItemProperty -LiteralPath 'HKCU:\Software\Microsoft\Windows\CurrentVersion\E
 Write-Host
 Write-Verbose "Processing: System Software on $env:computername..." -Verbose
 
-winget install --id Microsoft.DotNet.SDK.8 --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.DotNet.AspNetCore.3_1 --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.DotNet.AspNetCore.5 --silent --exact --accept-source-agreements --accept-source-agreements --force 
-winget install --id Microsoft.DotNet.AspNetCore.6 --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.DotNet.AspNetCore.7 --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.DotNet.AspNetCore.8 --silent --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.DotNet.SDK.8 --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.DotNet.AspNetCore.3_1 --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.DotNet.AspNetCore.5 --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Microsoft.DotNet.AspNetCore.6 --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.DotNet.AspNetCore.7 --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.DotNet.AspNetCore.8 --exact --accept-source-agreements --accept-source-agreements --force
 
-winget install --id  Microsoft.DotNet.Runtime.3_1 --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.DotNet.Runtime.5 --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.DotNet.Runtime.6 --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.DotNet.Runtime.7 --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.DotNet.Runtime.8 --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.DotNet.Runtime.9 --silent --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id  Microsoft.DotNet.Runtime.3_1 --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.DotNet.Runtime.5 --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.DotNet.Runtime.6 --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.DotNet.Runtime.7 --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.DotNet.Runtime.8 --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.DotNet.Runtime.9 --exact --accept-source-agreements --accept-source-agreements --force
 
-winget install --id Microsoft.VCRedist.2005.x64 --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.VCRedist.2005.x86 --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.VCRedist.2008.x64 --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.VCRedist.2008.x86 --silent --exact --accept-source-agreements --accept-source-agreements --force 
-winget install --id Microsoft.VCRedist.2010.x64 --silent --exact --accept-source-agreements --accept-source-agreements --force 
-winget install --id Microsoft.VCRedist.2010.x86 --silent --exact --accept-source-agreements --accept-source-agreements --force 
-winget install --id Microsoft.VCRedist.2012.x64 --silent --exact --accept-source-agreements --accept-source-agreements --force 
-winget install --id Microsoft.VCRedist.2012.x86 --silent --exact --accept-source-agreements --accept-source-agreements --force 
-winget install --id Microsoft.VCRedist.2013.x64 --silent --exact --accept-source-agreements --accept-source-agreements --force 
-winget install --id Microsoft.VCRedist.2013.x86 --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.VCRedist.2015+.x64 --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.VCRedist.2015+.x86  --silent --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.VCRedist.2005.x64 --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.VCRedist.2005.x86 --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.VCRedist.2008.x64 --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.VCRedist.2008.x86 --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Microsoft.VCRedist.2010.x64 --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Microsoft.VCRedist.2010.x86 --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Microsoft.VCRedist.2012.x64 --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Microsoft.VCRedist.2012.x86 --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Microsoft.VCRedist.2013.x64 --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Microsoft.VCRedist.2013.x86 --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.VCRedist.2015+.x64 --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.VCRedist.2015+.x86  --exact --accept-source-agreements --accept-source-agreements --force
 choco install vcredist2017 -y
 
-winget install --id Oracle.JavaRuntimeEnvironment --silent --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Oracle.JavaRuntimeEnvironment --exact --accept-source-agreements --accept-source-agreements --force
 
-winget install --id Microsoft.XNARedist --silent --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.XNARedist --exact --accept-source-agreements --accept-source-agreements --force
 
 choco install openal -y
 
-winget install --id Microsoft.Edge --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.EdgeDriver --silent --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.Edge --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.EdgeDriver --exact --accept-source-agreements --accept-source-agreements --force
 
-winget install --id Microsoft.WindowsTerminal --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.PowerShell --silent --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.WindowsTerminal --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.PowerShell --exact --accept-source-agreements --accept-source-agreements --force
 
 Write-Host
 Write-Verbose "Processing: Web Browsers on $env:computername..." -Verbose
 
-winget install --id Google.Chrome --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Mozilla.Firefox --silent --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Google.Chrome --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Mozilla.Firefox --exact --accept-source-agreements --accept-source-agreements --force
 
 Write-Host
 Write-Verbose "Processing: Cloud Drives on $env:computername..." -Verbose
 
-winget install --id Microsoft.OneDrive --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Apple.iCloud --silent --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.OneDrive --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Apple.iCloud --exact --accept-source-agreements --accept-source-agreements --force
 
 Write-Host
 Write-Verbose "Processing: Media Software on $env:computername..." -Verbose
 
-winget install --id XBMCFoundation.Kodi  --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id MoritzBunkus.MKVToolNix --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id MediaArea.MediaInfo.GUI --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id VideoLAN.VLC --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Apple.iTunes --silent --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id XBMCFoundation.Kodi  --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id MoritzBunkus.MKVToolNix --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id MediaArea.MediaInfo.GUI --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id VideoLAN.VLC --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Apple.iTunes --exact --accept-source-agreements --accept-source-agreements --force
 
 Write-Host
 Write-Verbose "Processing: Productivity software on $env:computername..." -Verbose
 
-winget install --id Adobe.Acrobat.Reader.64-bit --silent --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Adobe.Acrobat.Reader.64-bit --exact --accept-source-agreements --accept-source-agreements --force
 
 Write-Host
 Write-Verbose "Processing: Hardware Utilities - Software on $env:computername..." -Verbose
 
-winget install --id Crucial.StorageExecutive --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Logitech.Options --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Logitech.UnifyingSoftware --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.MouseandKeyboardCenter --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Samsung.SamsungMagician --silent --exact --accept-source-agreements --accept-source-agreements --force 
-winget install --id WesternDigital.Dashboard --silent --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Crucial.StorageExecutive --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Logitech.Options --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Logitech.UnifyingSoftware --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.MouseandKeyboardCenter --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Samsung.SamsungMagician --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id WesternDigital.Dashboard --exact --accept-source-agreements --accept-source-agreements --force 
 
 Write-Host
 Write-Verbose "Processing: Utilities - Software on $env:computername..." -Verbose
 
-winget install --id 7zip.7zip --silent --exact --accept-source-agreements --accept-source-agreements --force 
-winget install --id Piriform.CCleaner --silent --exact --accept-source-agreements --accept-source-agreements --force 
-winget install --id Wagnardsoft.DisplayDriverUninstaller --silent --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id 7zip.7zip --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Piriform.CCleaner --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Wagnardsoft.DisplayDriverUninstaller --exact --accept-source-agreements --accept-source-agreements --force 
 
 $WADKDir1 = "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\Media"
 $WADKDir2 = "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs"
@@ -317,9 +317,9 @@ New-Item -Path $WADKDir3 -ItemType Directory -Force
 Write-Host
 Write-Verbose "Processing: OS Kits on $env:computername..." -Verbose
 
-winget install --id Microsoft.WindowsADK --silent --accept-package-agreements --accept-source-agreements --scope machine --force 
-winget install --id Microsoft.ADKPEAddon  --silent --accept-package-agreements --accept-source-agreements --scope machine --force 
-winget install --id Microsoft.DeploymentToolkit --silent --accept-package-agreements --accept-source-agreements --scope machine --force
+winget install --id Microsoft.WindowsADK --exact --accept-source-agreements --accept-source-agreements --scope machine --force --scope machine --force 
+winget install --id Microsoft.ADKPEAddon  --exact --accept-source-agreements --accept-source-agreements --scope machine --force --scope machine --force 
+winget install --id Microsoft.DeploymentToolkit --exact --accept-source-agreements --accept-source-agreements --scope machine --force --scope machine --force
 
 Write-Host
 Write-Verbose "Processing: Installing PowerShell Modules on $env:computername..." -Verbose
