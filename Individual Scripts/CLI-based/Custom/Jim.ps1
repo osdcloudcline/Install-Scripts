@@ -282,7 +282,7 @@ winget install --id XBMCFoundation.Kodi  --exact --accept-source-agreements --ac
 winget install --id MoritzBunkus.MKVToolNix --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id MediaArea.MediaInfo.GUI --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id VideoLAN.VLC --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Apple.iTunes --exact --accept-source-agreements --accept-source-agreements --force
+
 
 Write-Host
 Write-Verbose "Processing: Productivity software on $env:computername..." -Verbose
@@ -305,21 +305,6 @@ Write-Verbose "Processing: Utilities - Software on $env:computername..." -Verbos
 winget install --id 7zip.7zip --exact --accept-source-agreements --accept-source-agreements --force 
 winget install --id Piriform.CCleaner --exact --accept-source-agreements --accept-source-agreements --force 
 winget install --id Wagnardsoft.DisplayDriverUninstaller --exact --accept-source-agreements --accept-source-agreements --force 
-
-$WADKDir1 = "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\Media"
-$WADKDir2 = "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs"
-$WADKDir3 = "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\en-us"
-
-New-Item -Path $WADKDir1 -ItemType Directory -Force
-New-Item -Path $WADKDir2 -ItemType Directory -Force
-New-Item -Path $WADKDir3 -ItemType Directory -Force
-
-Write-Host
-Write-Verbose "Processing: OS Kits on $env:computername..." -Verbose
-
-winget install --id Microsoft.WindowsADK --exact --accept-source-agreements --accept-source-agreements --scope machine --force --scope machine --force 
-winget install --id Microsoft.ADKPEAddon  --exact --accept-source-agreements --accept-source-agreements --scope machine --force --scope machine --force 
-winget install --id Microsoft.DeploymentToolkit --exact --accept-source-agreements --accept-source-agreements --scope machine --force --scope machine --force
 
 Write-Host
 Write-Verbose "Processing: Installing PowerShell Modules on $env:computername..." -Verbose
