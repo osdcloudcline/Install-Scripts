@@ -60,3 +60,11 @@ Write-Verbose "Processing: Cloud Drives on $env:computername..." -Verbose
 winget install --id Microsoft.OneDrive --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Apple.iCloud --exact --accept-source-agreements --accept-source-agreements --force
 
+Write-Host
+Write-Verbose "Processing: Media Software on $env:computername..." -Verbose
+
+winget install --id XBMCFoundation.Kodi  --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id MoritzBunkus.MKVToolNix --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id MediaArea.MediaInfo.GUI --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id VideoLAN.VLC --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id JRiver.MediaCenter --exact --accept-source-agreements --accept-source-agreements --force
