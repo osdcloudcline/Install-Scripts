@@ -154,6 +154,18 @@ Start-Process -FilePath $setup -ArgumentList $arguments
 Write-Host
 Write-Verbose "Processing: MS DaRT on $env:computername..." -Verbose
 
+$WADKDir1 = "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\Media"
+$WADKDir2 = "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs"
+$WADKDir3 = "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\en-us"
+
+New-Item -Path $WADKDir1 -ItemType Directory -Force
+New-Item -Path $WADKDir2 -ItemType Directory -Force
+New-Item -Path $WADKDir3 -ItemType Directory -Force
+
+winget install --id Microsoft.WindowsADK --silent --accept-package-agreements --accept-source-agreements --scope machine --force 
+winget install --id Microsoft.ADKPEAddon  --silent --accept-package-agreements --accept-source-agreements --scope machine --force 
+winget install --id Microsoft.DeploymentToolkit --silent --accept-package-agreements --accept-source-agreements --scope machine --force
+
 $destination = "C:\downloads"
 $DART = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/DaRT/version%2010.0%20x64/MSDaRT100.msi"
 Save-WebFile -SourceUrl $DART -DestinationDirectory $destination
