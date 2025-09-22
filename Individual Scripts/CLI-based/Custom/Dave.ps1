@@ -68,9 +68,24 @@ winget install --id MoritzBunkus.MKVToolNix --exact --accept-source-agreements -
 winget install --id MediaArea.MediaInfo.GUI --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id VideoLAN.VLC --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id JRiver.MediaCenter --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Logitech.MyHarmony --exact --accept-source-agreements --accept-source-agreements --force
+
 
 Write-Host
 Write-Verbose "Processing: Productivity software on $env:computername..." -Verbose
 
 winget install --id Adobe.Acrobat.Reader.64-bit --exact --accept-source-agreements --accept-source-agreements --force
 
+Write-Host
+Write-Verbose "Processing: Hardware Utilities - Software on $env:computername..." -Verbose
+
+winget install --id Crucial.StorageExecutive --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Logitech.Options --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Logitech.UnifyingSoftware --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Logitech.OptionsPlus --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Logitech.SetPoint --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Microsoft.MouseandKeyboardCenter --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Samsung.SamsungMagician --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id WesternDigital.Dashboard --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Dell.CommandUpdate  --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Dell.DisplayAndPeripheralManager --exact --accept-source-agreements --accept-source-agreements --force 
