@@ -2,7 +2,7 @@ $DVLog = "C:\Logs\DVPC.log"
 
 Start-Transcript - Path $DVLog
 
-
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
 Write-Host
 Write-Verbose "Processing: System Software on $env:computername..." -Verbose
