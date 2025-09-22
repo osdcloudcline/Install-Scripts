@@ -89,3 +89,31 @@ winget install --id Samsung.SamsungMagician --exact --accept-source-agreements -
 winget install --id WesternDigital.Dashboard --exact --accept-source-agreements --accept-source-agreements --force 
 winget install --id Dell.CommandUpdate  --exact --accept-source-agreements --accept-source-agreements --force 
 winget install --id Dell.DisplayAndPeripheralManager --exact --accept-source-agreements --accept-source-agreements --force 
+
+Write-Host
+Write-Verbose "Processing: Utilities - Software on $env:computername..." -Verbose
+
+winget install --id 7zip.7zip --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Piriform.CCleaner --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id Wagnardsoft.DisplayDriverUninstaller --exact --accept-source-agreements --accept-source-agreements --force 
+
+Write-Host
+Write-Verbose "Processing: Installing PowerShell Modules on $env:computername..." -Verbose
+
+Install-Module -Name OSD -Force
+Import-Module -Name OSD -Force
+
+Install-Module -Name 7Zip4Powershell -Force
+Import-Module -Name 7Zip4Powershell -Force
+
+Install-Module -Name PSWindowsUpdate -Force
+Import-Module -Name PSWindowsUpdate -Force
+
+$scanstateURL1 = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/USMT/scanstate1.zip"
+$scanstateURL2 = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/USMT/scanstate2.zip"
+$scanstateURL3 = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/USMT/scanstate3.zip"
+$scanstateURL4 = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/USMT/scanstate4.zip"
+
+$USMTdestination = "C:\downloads"
+
+$USMTDestination = "C:\USMT"
