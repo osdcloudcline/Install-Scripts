@@ -150,3 +150,16 @@ $setup = "C:\Office\2024\setup.exe"
 $arguments = "/configure C:\Office\2024\Configuration-Office2024-EntireSuiteVL.xml"
 
 Start-Process -FilePath $setup -ArgumentList $arguments
+
+Write-Host
+Write-Verbose "Processing: MS DaRT on $env:computername..." -Verbose
+
+$destination = "C:\downloads"
+$DART = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/DaRT/version%2010.0%20x64/MSDaRT100.msi"
+Save-WebFile -SourceUrl $DART -DestinationDirectory $destination
+
+cd $destination
+$setupDART = "C:\downloads\MSDaRT100.msi"
+$msiexec = "C:\Windows\System32\msiexec.exe"
+$MSIArgs = "/i"
+$DARTArguments = "ADDLOCAL=CommonFiles,DaRTRecoveryImage,CrashAnalyzer,RemoteViewer /qn"
