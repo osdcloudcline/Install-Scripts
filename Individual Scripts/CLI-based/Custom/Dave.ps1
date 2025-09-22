@@ -117,3 +117,36 @@ $scanstateURL4 = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/
 $USMTdestination = "C:\downloads"
 
 $USMTDestination = "C:\USMT"
+
+Write-Host
+Write-Verbose "Processing: Acquiring USMT Scanstate on $env:computername..." -Verbose
+
+Save-WebFile -SourceUrl $scanstateURL1 -DestinationDirectory $USMTdestination
+Save-WebFile -SourceUrl $scanstateURL2 -DestinationDirectory $USMTdestination
+Save-WebFile -SourceUrl $scanstateURL3 -DestinationDirectory $USMTdestination
+Save-WebFile -SourceUrl $scanstateURL4 -DestinationDirectory $USMTdestination
+
+Expand-7Zip -ArchiveFileName "$USMTdestination\scanstate1.zip" -TargetPath $USMTDestination
+Expand-7Zip -ArchiveFileName "$USMTdestination\scanstate2.zip" -TargetPath $USMTDestination
+Expand-7Zip -ArchiveFileName "$USMTdestination\scanstate3.zip" -TargetPath $USMTDestination
+Expand-7Zip -ArchiveFileName "$USMTdestination\scanstate4.zip" -TargetPath $USMTDestination
+
+Write-Host
+Write-Verbose "Processing: Office 2024 on $env:computername..." -Verbose
+
+$OfficeGHdownloads = "C:\Office\2024" 
+mkdir $OfficeGHdownloads
+$Office2024Files1Url = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Productivity/Microsoft/Office%202024/Configuration-Office2024-EntireSuiteVL.xml"
+$Office2024Files2Url = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Productivity/Microsoft/Office%202024/officedeploymenttool_18227-20162.exe"
+$Office2024Files3Url = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Productivity/Microsoft/Office%202024/setup.exe"
+
+Save-WebFile -SourceUrl $Office2024Files1Url -DestinationDirectory $OfficeGHdownloads
+Save-WebFile -SourceUrl $Office2024Files2Url -DestinationDirectory $OfficeGHdownloads
+Save-WebFile -SourceUrl $Office2024Files3Url -DestinationDirectory $OfficeGHdownloads
+
+cd $OfficeGHdownloads
+
+$setup = "C:\Office\2024\setup.exe"
+$arguments = "/configure C:\Office\2024\Configuration-Office2024-EntireSuiteVL.xml"
+
+Start-Process -FilePath $setup -ArgumentList $arguments
