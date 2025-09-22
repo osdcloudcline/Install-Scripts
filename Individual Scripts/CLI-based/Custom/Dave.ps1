@@ -54,3 +54,9 @@ Write-Verbose "Processing: Web Browsers on $env:computername..." -Verbose
 winget install --id Google.Chrome --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Mozilla.Firefox --exact --accept-source-agreements --accept-source-agreements --force
 
+Write-Host
+Write-Verbose "Processing: Cloud Drives on $env:computername..." -Verbose
+
+winget install --id Microsoft.OneDrive --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Apple.iCloud --exact --accept-source-agreements --accept-source-agreements --force
+
