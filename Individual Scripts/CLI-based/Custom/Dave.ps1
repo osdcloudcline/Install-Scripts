@@ -47,3 +47,10 @@ winget install --id Microsoft.EdgeDriver --exact --accept-source-agreements --ac
 
 winget install --id Microsoft.WindowsTerminal --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Microsoft.PowerShell --exact --accept-source-agreements --accept-source-agreements --force
+
+Write-Host
+Write-Verbose "Processing: Web Browsers on $env:computername..." -Verbose
+
+winget install --id Google.Chrome --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Mozilla.Firefox --exact --accept-source-agreements --accept-source-agreements --force
+
