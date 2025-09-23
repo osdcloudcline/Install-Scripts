@@ -70,6 +70,10 @@ winget install --id VideoLAN.VLC --exact --accept-source-agreements --accept-sou
 winget install --id JRiver.MediaCenter --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Logitech.MyHarmony --exact --accept-source-agreements --accept-source-agreements --force
 
+Write-Host
+Write-Verbose "Processing: Gaming Software on $env:computername..." -Verbose
+
+winget install --id Valve.Steam  --silent --exact --accept-source-agreements --accept-source-agreements --force
 
 Write-Host
 Write-Verbose "Processing: Productivity software on $env:computername..." -Verbose
