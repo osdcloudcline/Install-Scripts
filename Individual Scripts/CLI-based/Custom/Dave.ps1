@@ -96,6 +96,17 @@ Write-Verbose "Processing: Utilities - Software on $env:computername..." -Verbos
 winget install --id 7zip.7zip --exact --accept-source-agreements --accept-source-agreements --force 
 winget install --id Piriform.CCleaner --exact --accept-source-agreements --accept-source-agreements --force 
 winget install --id Wagnardsoft.DisplayDriverUninstaller --exact --accept-source-agreements --accept-source-agreements --force 
+winget install --id RARLab.WinRAR --exact --accept-source-agreements --accept-source-agreements --force
+
+Write-Host
+Write-Verbose "Processing: Remote Desktop VDI on $env:computername..." -Verbose
+winget install --id VMware.HorizonClient --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id AnyDeskSoftwareGmbH.AnyDesk --exact --accept-source-agreements --accept-source-agreements --force
+
+Write-Host
+Write-Verbose "Processing: Social Media Software on $env:computername..." -Verbose
+winget install --id Facebook.Messenger --exact --accept-source-agreements --accept-source-agreements --force
+
 
 Write-Host
 Write-Verbose "Processing: Installing PowerShell Modules on $env:computername..." -Verbose
@@ -175,3 +186,4 @@ $setupDART = "C:\downloads\MSDaRT100.msi"
 $msiexec = "C:\Windows\System32\msiexec.exe"
 $MSIArgs = "/i"
 $DARTArguments = "ADDLOCAL=CommonFiles,DaRTRecoveryImage,CrashAnalyzer,RemoteViewer /qn"
+
