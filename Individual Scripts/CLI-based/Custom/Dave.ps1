@@ -193,3 +193,12 @@ $msiexec = "C:\Windows\System32\msiexec.exe"
 $MSIArgs = "/i"
 $DARTArguments = "ADDLOCAL=CommonFiles,DaRTRecoveryImage,CrashAnalyzer,RemoteViewer /qn"
 
+$N360DLURL = "https://github.com/osdcloudcline/Software/raw/main/Security/Norton%20360/N360Downloader.exe"
+$BDURLDL = "https://github.com/osdcloudcline/Software/raw/main/Security/BitDefender/bitdefender_tsecurity.exe"
+
+$AVdestination = "C:\downloads"
+
+Save-WebFile -SourceUrl $N360DLURL -DestinationDirectory $AVdestination
+Save-WebFile -SourceUrl $BDURLDL -DestinationDirectory $AVdestination
+
+winget install --id Malwarebytes.Malwarebytes --silent --exact --accept-source-agreements --accept-source-agreements --force
