@@ -102,7 +102,7 @@ winget install --id RARLab.WinRAR --exact --accept-source-agreements --accept-so
 
 Write-Host
 Write-Verbose "Processing: Remote Desktop VDI on $env:computername..." -Verbose
-winget install --id VMware.HorizonClient --exact --accept-source-agreements --accept-source-agreements --force
+choco install vmware-horizon-client -y
 winget install --id AnyDeskSoftwareGmbH.AnyDesk --exact --accept-source-agreements --accept-source-agreements --force
 
 Write-Host
