@@ -75,6 +75,8 @@ Write-Host
 Write-Verbose "Processing: Productivity software on $env:computername..." -Verbose
 
 winget install --id Adobe.Acrobat.Reader.64-bit --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Grammarly.Grammarly --exact --accept-source-agreements --accept-source-agreements --force
+winget install --id Grammarly.Grammarly.Office --exact --accept-source-agreements --accept-source-agreements --force
 
 Write-Host
 Write-Verbose "Processing: Hardware Utilities - Software on $env:computername..." -Verbose
