@@ -67,8 +67,6 @@ winget install --id XBMCFoundation.Kodi  --exact --accept-source-agreements --ac
 winget install --id MoritzBunkus.MKVToolNix --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id MediaArea.MediaInfo.GUI --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id VideoLAN.VLC --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id JRiver.MediaCenter --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Logitech.MyHarmony --exact --accept-source-agreements --accept-source-agreements --force
 
 Write-Host
 Write-Verbose "Processing: Gaming Software on $env:computername..." -Verbose
@@ -85,12 +83,11 @@ winget install --id Grammarly.Grammarly.Office --exact --accept-source-agreement
 Write-Host
 Write-Verbose "Processing: Hardware Utilities - Software on $env:computername..." -Verbose
 
-winget install --id Crucial.StorageExecutive --exact --accept-source-agreements --accept-source-agreements --force
+
 winget install --id Logitech.Options --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Logitech.UnifyingSoftware --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Logitech.OptionsPlus --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Logitech.SetPoint --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.MouseandKeyboardCenter --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Samsung.SamsungMagician --exact --accept-source-agreements --accept-source-agreements --force 
 winget install --id WesternDigital.Dashboard --exact --accept-source-agreements --accept-source-agreements --force 
 winget install --id Dell.CommandUpdate  --exact --accept-source-agreements --accept-source-agreements --force 
