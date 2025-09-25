@@ -6,6 +6,12 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 winget install --id Chocolatey.Chocolatey --silent --exact --accept-source-agreements --accept-source-agreements --force --source winget
 
 Write-Host
+Write-Verbose "Processing: System Registry entries on $env:computername..." -Verbose
+
+$OSREG = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/refs/heads/main/Registry%20Modifications/ClientRegistry.ps1")
+Invoke-Expression $($OSREG.Content)
+
+Write-Host
 Write-Verbose "Processing: System Software on $env:computername..." -Verbose
 
 winget install --id Microsoft.DotNet.SDK.8 --exact --accept-source-agreements --accept-source-agreements --force
