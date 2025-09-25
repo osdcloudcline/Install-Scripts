@@ -95,7 +95,6 @@ winget install --id Logitech.UnifyingSoftware --exact --accept-source-agreements
 winget install --id Logitech.OptionsPlus --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Logitech.SetPoint --exact --accept-source-agreements --accept-source-agreements --force
 winget install --id Samsung.SamsungMagician --exact --accept-source-agreements --accept-source-agreements --force 
-winget install --id WesternDigital.Dashboard --exact --accept-source-agreements --accept-source-agreements --force 
 winget install --id Dell.CommandUpdate  --exact --accept-source-agreements --accept-source-agreements --force 
 winget install --id Dell.DisplayAndPeripheralManager --exact --accept-source-agreements --accept-source-agreements --force 
 
