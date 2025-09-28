@@ -29,20 +29,6 @@ foreach ($PpkgFile in $PpkgFiles) {
 
 Write-Host "All provisioning packages have been processed."
 
-
-winget install --id Audacity.Audacity --silent --exact --accept-source-agreements --accept-source-agreements --force
-choco install audacity-ffmpeg -y
-winget install --id GIMP.GIMP --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id HandBrake.HandBrake --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id XBMCFoundation.Kodi  --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id MoritzBunkus.MKVToolNix --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id GuinpinSoft.MakeMKV  --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id MediaArea.MediaInfo.GUI --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Logitech.MyHarmony --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id PowerSoftware.PowerISO --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id VideoLAN.VLC --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Apple.iTunes --silent --exact --accept-source-agreements --accept-source-agreements --force
-
 winget install --id Adobe.Acrobat.Reader.64-bit --silent --exact --accept-source-agreements --accept-source-agreements --force
 
 
@@ -61,12 +47,4 @@ Save-WebFile -SourceUrl $Office2024Files1Url -DestinationDirectory $OfficeGHdown
 Save-WebFile -SourceUrl $Office2024Files2Url -DestinationDirectory $OfficeGHdownloads
 Save-WebFile -SourceUrl $Office2024Files3Url -DestinationDirectory $OfficeGHdownloads
 
-$N360DLURL = "https://github.com/osdcloudcline/Software/raw/main/Security/Norton%20360/N360Downloader.exe"
-$BDURLDL = "https://github.com/osdcloudcline/Software/raw/main/Security/BitDefender/bitdefender_tsecurity.exe"
 
-$destination = "C:\downloads"
-
-Save-WebFile -SourceUrl $N360DLURL -DestinationDirectory $destination
-Save-WebFile -SourceUrl $BDURLDL -DestinationDirectory $destination
-
-winget install --id Malwarebytes.Malwarebytes --silent --exact --accept-source-agreements --accept-source-agreements --force
