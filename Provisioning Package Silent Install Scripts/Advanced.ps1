@@ -1,3 +1,11 @@
+
+Werite-Host "Provisioning $env:computername..." -ForegroundColor Cyan
+Write-Host
+Write-Verbose "Provisioning Client OS SYSTEM Software...."  -Verbose
+Write-Host
+
+
+
 winget install --id Chocolatey.Chocolatey --silent --exact --accept-source-agreements --accept-source-agreements --force --source winget
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
