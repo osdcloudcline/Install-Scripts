@@ -45,57 +45,11 @@ winget install --id Apple.iTunes --silent --exact --accept-source-agreements --a
 
 winget install --id Adobe.Acrobat.Reader.64-bit --silent --exact --accept-source-agreements --accept-source-agreements --force
 
-winget install --id Crucial.StorageExecutive --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Logitech.Options --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Logitech.UnifyingSoftware --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Microsoft.MouseandKeyboardCenter --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id Samsung.SamsungMagician --silent --exact --accept-source-agreements --accept-source-agreements --force 
-winget install --id WesternDigital.Dashboard --silent --exact --accept-source-agreements --accept-source-agreements --force 
-
-winget install --id 7zip.7zip --silent --exact --accept-source-agreements --accept-source-agreements --force 
-winget install --id Piriform.CCleaner --silent --exact --accept-source-agreements --accept-source-agreements --force 
-winget install --id Wagnardsoft.DisplayDriverUninstaller --silent --exact --accept-source-agreements --accept-source-agreements --force 
-winget install --id Rainmeter.Rainmeter --silent --exact --accept-source-agreements --accept-source-agreements --force
-winget install --id WhirlwindFX.SignalRgb --silent --exact --accept-source-agreements --accept-source-agreements --force
 
 winget install --id AnyDeskSoftwareGmbH.AnyDesk --silent --exact --accept-source-agreements --accept-source-agreements --force 
 choco install vmware-horizon-client -y
 
-$WADKDir1 = "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\Media"
-$WADKDir2 = "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs"
-$WADKDir3 = "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\en-us"
 
-New-Item -Path $WADKDir1 -ItemType Directory -Force
-New-Item -Path $WADKDir2 -ItemType Directory -Force
-New-Item -Path $WADKDir3 -ItemType Directory -Force
-
-winget install --id Microsoft.WindowsADK --silent --accept-package-agreements --accept-source-agreements --scope machine --force 
-winget install --id Microsoft.ADKPEAddon  --silent --accept-package-agreements --accept-source-agreements --scope machine --force 
-winget install --id Microsoft.DeploymentToolkit --silent --accept-package-agreements --accept-source-agreements --scope machine --force
-
-
-Install-Module -Name OSD -Force
-Import-Module -Name OSD -Force
-
-Install-Module -Name 7Zip4Powershell -Force
-Import-Module -Name 7Zip4Powershell -Force
-
-winget install --id Glarysoft.GlaryUtilities --silent --exact --accept-source-agreements --accept-source-agreements --force 
-$OSDCloudGHdownloads = "C:\downloads"
-$GlaryZipURL1 = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/Glary%20Utilities/GlaryUtilities1.zip"
-$GlaryZipURL2 = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/Glary%20Utilities/GlaryUtilities2.zip"
-$GlaryUnZipPath = "C:\downloads\GlaryUtilities"
-
-Save-WebFile -SourceUrl $GlaryZipURL1 -DestinationDirectory $OSDCloudGHdownloads
-Save-WebFile -SourceUrl $GlaryZipURL2 -DestinationDirectory $OSDCloudGHdownloads
-Expand-7Zip -ArchiveFileName "$OSDCloudGHdownloads\GlaryUtilities1.zip" -TargetPath $GlaryUnZipPath 
-Expand-7Zip -ArchiveFileName "$OSDCloudGHdownloads\GlaryUtilities2.zip" -TargetPath $GlaryUnZipPath 
-Copy-Item -Path "C:\downloads\GlaryUtilities" -Destination "C:\Program Files (x86)\Glary Utilities" -Recurse -Force 
-Stop-Process -Name Integrator.exe -Force
-Stop-Process -Name MemfilesService.exe -Force
-Copy-Item -Path "C:\Program Files (x86)\Glary Utilities\GlaryUtilities\*.*" -Destination "C:\Program Files (x86)\Glary Utilities" -Recurse -Force 
-Remove-Item -Path "C:\Program Files (x86)\Glary Utilities\GlaryUtilities" -Force -Confirm:$false
-Copy-Item -Path "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Glary Utilities.lnk" -Destination "C:\Users\$env:username\Desktop" -Force
 
 $OfficeGHdownloads = "C:\Office\2024" 
 mkdir $OfficeGHdownloads
