@@ -17,7 +17,7 @@ $ADVSecurityURL = ""
 $OSSystemSoftwareURL = ""
 
 $destination = "C:\Provisioning\Advanced\Software"
-$OSdestination = ""
+$OSdestination = "C:\Provisioning\OS"
 
 Write-Verbose "Processing: Acquiring Client Operating System SYSTEM Software Configuration PPKG File" - Verbose
 Save-WebFile -SourceUrl $OSSystemSoftwareURL -DestrinationDirectory $OSdestination
