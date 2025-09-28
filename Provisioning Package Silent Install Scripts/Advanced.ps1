@@ -9,7 +9,7 @@ $OSPPKGFiles = Get-ChildItem -Path #OSPpkgDirectory -Filter "*.ppkg"
 $AdvancedPPKG = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Advanced.ps1")
 Invoke-Expression $($AdvancedPPKG.Content)
 
-Write-Host "Provisioning $env:computername..." -ForegroundColor Cyan
+Write-Host "Provisioning:$env:computername..." -ForegroundColor Cyan
 Write-Host
 
 # Loop through each .ppkg file and install it
