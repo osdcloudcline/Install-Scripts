@@ -14,7 +14,7 @@ $ADVUtilitiesSoftwareURL = ""
 $ADVSecurityURL = ""
 
 
-$OSSystemSoftwareURL = ""
+$OSSystemSoftwareURL = "https://github.com/osdcloudcline/Install-Scripts/blob/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Client%20OS%20SYSTEM%20Software/Client%20OS%20SYSTEM%20SOFTWARE.ppkg"
 
 $destination = "C:\Provisioning\Advanced\Software"
 $OSdestination = "C:\Provisioning\OS"
