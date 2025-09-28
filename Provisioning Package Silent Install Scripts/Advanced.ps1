@@ -1,5 +1,5 @@
 
-Werite-Host "Provisioning $env:computername..." -ForegroundColor Cyan
+Write-Host "Provisioning $env:computername..." -ForegroundColor Cyan
 Write-Host
 Write-Verbose "Provisioning Client OS SYSTEM Software...."  -Verbose
 Write-Host
