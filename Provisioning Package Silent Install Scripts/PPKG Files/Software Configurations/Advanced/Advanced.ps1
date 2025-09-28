@@ -8,9 +8,9 @@ $ADVGamingURL = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads
 $ADVWebBrowsingURL = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Web%20Browsing/Advanced%20Software%20Configuration%20-%20Web%20Browsers.ppkg"
 $HWSoftwareURL = ""
 $ADVMediaURL = ""
-$ADVProgrammingURL = ""
+$ADVProgrammingURL = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Programming/Advanced%20Software%20Configuration%20-%20Programming.ppkg"
 $ADVProductivityURL = ""
-$ADVUtilitiesSoftwareURL + ""
+$ADVUtilitiesSoftwareURL = ""
 $ADVSecurityURL = ""
 
 
