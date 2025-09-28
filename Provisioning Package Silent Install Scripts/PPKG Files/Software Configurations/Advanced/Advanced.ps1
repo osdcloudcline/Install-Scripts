@@ -12,7 +12,7 @@ $ADVProgrammingURL = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/
 $ADVProductivityURL = ""
 $ADVUtilitiesSoftwareURL = ""
 $ADVSecurityURL = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Security/Advanced%20Software%20Configuration%20-%20Security%20Software.ppkg"
-
+$PCBenchmarkingURL = ""
 
 $OSSystemSoftwareURL = "https://github.com/osdcloudcline/Install-Scripts/blob/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Client%20OS%20SYSTEM%20Software/Client%20OS%20SYSTEM%20SOFTWARE.ppkg"
 
@@ -48,6 +48,9 @@ Save-WebFile -SourceUrl  -DestrinationDirectory $destination
 Write-Host
 Write-Verbose "Processing: Acquiring Advanced Software Configuration - Utility Software PPKG File" - Verbose
 Save-WebFile -SourceUrl $ADVProgrammingURL -DestrinationDirectory $destination
+Write-Host
+Write-Verbose "Processing: Acquiring Advanced Software Configuration - PC Benchmarking Software PPKG File" - Verbose
+Save-WebFile -SourceUrl $PCBenchmarkingURL -DestrinationDirectory $destination
 Write-Host
 Write-Verbose "Processing: Acquiring Advanced Software Configuration - Web Browsing Software PPKG File" - Verbose
 Save-WebFile -SourceUrl $ADVWebBrowsingURL -DestrinationDirectory $destination
