@@ -1,8 +1,20 @@
+# Define the path to the directory containing your .ppkg files
+$PpkgDirectory = "C:\Provisioning"
+
+# Get all .ppkg files in the specified directory
+$PpkgFiles = Get-ChildItem -Path $PpkgDirectory -Filter "*.ppkg"
 
 Write-Host "Provisioning $env:computername..." -ForegroundColor Cyan
 Write-Host
-Write-Verbose "Provisioning Client OS SYSTEM Software...."  -Verbose
-Write-Host
+
+# Loop through each .ppkg file and install it
+foreach ($PpkgFile in $PpkgFiles) {
+    Write-Host "Installing $($PpkgFile.Name)..."
+    Install-ProvisioningPackage -PackagePath $PpkgFile.FullName -QuietInstall -ForceInstall
+    Write-Host "$($PpkgFile.Name) installed."
+}
+
+Write-Host "All provisioning packages have been processed."
 
 
 
