@@ -19,12 +19,13 @@ $OSSystemSoftwareURL = "https://github.com/osdcloudcline/Install-Scripts/blob/ma
 
 $destination = "C:\Provisioning\Advanced\Software"
 $OSdestination = "C:\Provisioning\OS"
+$OSDClouddestination = "C:\Provisioning\OSDCloud"
 
 Write-Verbose "Processing: Acquiring Client Operating System SYSTEM Software Configuration PPKG File" - Verbose
 Save-WebFile -SourceUrl $OSSystemSoftwareURL -DestrinationDirectory $OSdestination
 Write-Host
 Write-Verbose "Processing: Acquiring OSDCloud Version 2.0 PPKG File" - Verbose
-Save-WebFile -SourceUrl $OSDCloud2 -DestrinationDirectory $OSdestination
+Save-WebFile -SourceUrl $OSDCloud2 -DestrinationDirectory $OSDClouddestination
 Write-Host
 Write-Verbose "Processing: Acquiring Advanced Software Configuration - Cloud Storage PPKG File" - Verbose
 Save-WebFile -SourceUrl $ADVCloudStorageURL -DestrinationDirectory $destination
