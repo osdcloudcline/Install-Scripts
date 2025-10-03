@@ -13,7 +13,7 @@ $ADVProductivityURL = ""
 $ADVUtilitiesSoftwareURL = ""
 $ADVSecurityURL = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Security/Advanced%20Software%20Configuration%20-%20Security%20Software.ppkg"
 $PCBenchmarkingURL = ""
-$OSDCloud2 = ""
+$OSDCloud2 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/OSDCloud%20v2%20Pre-Requisites/OSDCloud%20Version%202.0.ppkg"
 
 $OSSystemSoftwareURL = "https://github.com/osdcloudcline/Install-Scripts/blob/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Client%20OS%20SYSTEM%20Software/Client%20OS%20SYSTEM%20SOFTWARE.ppkg"
 
@@ -22,6 +22,9 @@ $OSdestination = "C:\Provisioning\OS"
 
 Write-Verbose "Processing: Acquiring Client Operating System SYSTEM Software Configuration PPKG File" - Verbose
 Save-WebFile -SourceUrl $OSSystemSoftwareURL -DestrinationDirectory $OSdestination
+Write-Host
+Write-Verbose "Processing: Acquiring OSDCloud Version 2.0 PPKG File" - Verbose
+Save-WebFile -SourceUrl $OSDCloud2 -DestrinationDirectory $OSdestination
 Write-Host
 Write-Verbose "Processing: Acquiring Advanced Software Configuration - Cloud Storage PPKG File" - Verbose
 Save-WebFile -SourceUrl $ADVCloudStorageURL -DestrinationDirectory $destination
