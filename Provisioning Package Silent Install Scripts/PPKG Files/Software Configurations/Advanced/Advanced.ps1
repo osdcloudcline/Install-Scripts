@@ -25,15 +25,14 @@ $PS7destination = "C:\Provisioning\PS7-Modules"
 $OSdestination = "C:\Provisioning\OS"
 $OSDClouddestination = "C:\Provisioning\OSDCloud"
 
-
+Write-Verbose "Processing: Acquiring Client Operating System SYSTEM Software Configuration PPKG File" - Verbose
+Save-WebFile -SourceUrl $OSSystemSoftwareURL -DestrinationDirectory $OSdestination
+Write-Host
 Write-Verbose "Processing: Acquiring Client Operating System SYSTEM PowerShell 5.1 Package Providers and Modules PPKG File" - Verbose
 Save-WebFile -SourceUrl $PS5Modules -DestrinationDirectory $PS5destination
 Write-Host
 Write-Verbose "Processing: Acquiring Client Operating System SYSTEM PowerShell 7.x Modules PPKG File" - Verbose
 Save-WebFile -SourceUrl $PS7Modules  -DestrinationDirectory $PS7destination
-Write-Host
-Write-Verbose "Processing: Acquiring Client Operating System SYSTEM Software Configuration PPKG File" - Verbose
-Save-WebFile -SourceUrl $OSSystemSoftwareURL -DestrinationDirectory $OSdestination
 Write-Host
 Write-Verbose "Processing: Acquiring OSDCloud Version 2.0 PPKG File" - Verbose
 Save-WebFile -SourceUrl $OSDCloud2 -DestrinationDirectory $OSDClouddestination
