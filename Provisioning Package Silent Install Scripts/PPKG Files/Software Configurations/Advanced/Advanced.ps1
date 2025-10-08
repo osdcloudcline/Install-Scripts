@@ -11,7 +11,7 @@ $ADVWebBrowsingURL = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/
 $HWSoftwareURL = "https://github.com/osdcloudcline/Install-Scripts/blob/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/System%20Hardware-related%20Software/Advanced%20Software%20Configuration%20-%20System%20Hardware%20Utilities.ppkg"
 $ADVMediaURL = "https://github.com/osdcloudcline/Install-Scripts/blob/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Media/Advanced%20Software%20Configuration%20-%20Media%20Software.ppkg"
 $ADVProgrammingURL = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Programming/Advanced%20Software%20Configuration%20-%20Programming.ppkg"
-$ADVProductivityURL = ""
+$ADVProductivityURL = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Productivity/Advanced%20Software%20Installation%20-%20Productivity%20Software.ppkg"
 $ADVUtilitiesSoftwareURL = ""
 $ADVSecurityURL = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Security/Advanced%20Software%20Configuration%20-%20Security%20Software.ppkg"
 $PCBenchmarkingURL = ""
@@ -59,7 +59,7 @@ Write-Verbose "Processing: Acquiring Advanced Software Configuration - Programmi
 Save-WebFile -SourceUrl $ADVProgrammingURL -DestrinationDirectory $destination
 Write-Host
 Write-Verbose "Processing: Acquiring Advanced Software Configuration - Productivity Software PPKG File" - Verbose
-Save-WebFile -SourceUrl  -DestrinationDirectory $destination
+Save-WebFile -SourceUrl $ADVProductivityURL  -DestrinationDirectory $destination
 Write-Host
 Write-Verbose "Processing: Acquiring Advanced Software Configuration - Utility Software PPKG File" - Verbose
 Save-WebFile -SourceUrl $ADVProgrammingURL -DestrinationDirectory $destination
