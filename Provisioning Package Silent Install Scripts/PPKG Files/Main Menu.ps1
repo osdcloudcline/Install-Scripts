@@ -83,6 +83,83 @@ Write-Host
 Write-Verbose "Your user profile is located at $env:userprofile" -Verbose
 Write-Host
 Write-Host 
-Write-Host ' 
+Write-Host '                                                                              ' -BackgroundColor White                                                              
+Write-Host ' This Git Hub-based deployment scripting solution allows the user to perform: ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '     - Downloads PPKG Files and Scripts                                       ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '                                                                              ' -BackgroundColor White
+Write-Host '                                                                              ' -BackgroundColor White
+pause
+Clear-Host
 
-
+Write-Host "======= $Title ======"
+Write-Host " 1. Download Advanced Software Configuration PPKG Files and related scripts"
+Write-Host " 2. Download Standard Software Configuration PPKG Files and related scripts"
+Write-Host " 3. Download Corporate Software Configuration PPKG Files and related scripts"
+Write-Host " 4. Download Client VDI Software Configuration PPKG Files and related scripts"
+Write-Host " 5. Download Server VDI Software Configuration PPKG Files and related scripts"
+Write-Host " 6. Download Honeypot Software Configuration PPKG Files and related scripts"
+Write-Host " 7. Download IT Tech Software Configuration PPKG Files and related scripts"
+Write-Host " 8. Download OEM Vendor Software Configuration PPKG Files and related scripts"
+Write-Host " 9. Download Custom PC Software Configuration PPKG Files and related scripts"
+Write-Host " 13. Computer File Inventory"
+Write-Host " 14. Exit PowerShell"
+do 
+{
+  $selection = Read-Host 'Please choose an option'
+  switch($selection)
+  {
+  '1'{  cls
+        $Initial = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/AuditMode/MainMenu.ps1")
+        Invoke-Expression $($Initial.Content)
+      }
+  '2' { cls
+        $Domain = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/Domain%20Administration/DomainAdminMain.ps1")
+        Invoke-Expression $($Domain.Content)
+        }
+  '3' { cls
+        $Local = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/Local%20Computer/LocalPCMain.ps1")
+        Invoke-Expression $($Local.Content)
+        }
+  '4' { cls
+        $WinGetMain = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/WinGetMain.ps1")
+        Invoke-Expression $($WinGetMain.Content)
+        }
+  '5' { cls
+        $OSDCloud = Invoke-WebRequest ("https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/Scripts/NEW-OSDCloudMain.ps1")
+        Invoke-Expression $($OSDCloud.Content)
+        }
+  '6' { cls
+        $OSDBuilder = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/OSDBuilder/OSDBuilderMain.ps1")
+        Invoke-Expression $($OSDBuilder.Content)
+        }
+  '7' {cls
+      $AuditMode = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/AuditMode/MainMenu.ps1")
+      Invoke-Expression $($AuditMode.Content)
+     }
+  '8'{cls
+      $DebloatOS = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/PostInstall/OSDebloat/OSDebloatMain.ps1")
+      Invoke-Expression $($DebloatOS.Content)
+     }
+  '9'{
+        Install-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck
+        Import-Module -Name OSD -Force
+        $OSDCloudGHDownloads = "C:\OSDCloud\GitHub\downloads"
+        $UPBR = "https://github.com/osdcloudcline/OSDCloud/raw/main/User%20Profile%20Backup%20Restore/UserProfileBackupRestore.exe"
+        Write-Host "Downloading User Profile Backup and Restore..." -ForegroundColor Yellow
+        Write-Output "Download URL: $UPBR" -Verbose
+        Write-Output "Download Location: $OSDCloudGHDownloads" -Verbose
+        Save-WebFile -SourceUrl $UPBR -DestinationDirectory $OSDCloudGHDownloads
+        $UPBROrgName = "C:\OSDCloud\GitHub\downloads\UserProfileBackupRestore.exe"
+        $UPBRNewName = "C:\OSDCloud\GitHub\downloads\UPBR.exe"
+        Rename-Item -Path $UPBROrgName -NewName $UPBRNewName
+        Start-Process -FilePath "C:\OSDCloud\GitHub\downloads\UPBR.exe"
+        Show-MainMenu
+    }
+    '13'{cls
+         Show-FileInventoryMenu
+    }
+    '14'{exit}
+    }
+    }
+    until ($selection -eq '14'){exit}
+    }
