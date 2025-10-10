@@ -152,19 +152,34 @@ do
         Write-Verbose "Processing: Acquiring Advanced Software Configuration - PPKG Files..." -Verbose
         Write-Host
         Save-WebFile -SourceUrl $PS5Modules -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Install%20Client%20OS%20SYSTEM%20PowerShell%20Modules.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Install Client OS SYSTEM PowerShell Modules.ppkg"
         Save-WebFile -SourceUrl $PS7Modules -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Install%20Client%20OS%20SYSTEM%20PowerShell%207.x%20Modules.ppkg" -New Name "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Install Client OS SYSTEM PowerShell 7.x Modules.ppkg"
         Save-WebFile -SourceUrl $ADVCloudStorage -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Cloud%20Storage.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Cloud Storage.ppkg"
         Save-WebFile -SourceUrl $ADVDevSoftware -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Development%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Development Software.ppkg"
         Save-WebFile -SourceUrl $ADVFileTransfer -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20File%20Transfer.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration File Transfer.ppkg"
         Save-WebFile -SourceUrl $ADVGaming -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20PC%20Gaming.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration PC Gaming.ppkg"
         Save-WebFile -SourceUrl $ADVWebBrowsing -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Web%20Browsers.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Web Browsers.ppkg"
         Save-WebFile -SourceUrl $HWSoftware -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20System%20Hardware%20Utilities.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration System Hardware Utilities.ppkg"
         Save-WebFile -SourceUrl $ADVMedia -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Media%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Media Software.ppkg"
         Save-WebFile -SourceUrl $ADVProgramming -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Programming.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Programming.ppkg"
         Save-WebFile -SourceUrl $ADVProductivity -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Installation%20-%20Productivity%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Installation Productivity Software.ppkg"
         Save-WebFile -SourceUrl $ADVSecurity -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Security%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Security Software.ppkg"
 
         Save-WebFile -SourceUrl $OSDCloud2 -DestinationDirectory $OSDDeploymentPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OSDCloud Version 2\OSDCloud%20Version%202.0.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OSDCloud Version 2\OSDCloud Version 2.0.ppkg"
+
+        
 
         Write-Verbose "Processing: Acquiring Advanced Software Configuration - Script Files..." -Verbose
         Write-Host
@@ -211,18 +226,32 @@ do
         Write-Verbose "Processing: Acquiring Advanced Software Configuration - PPKG Files..." -Verbose
         Write-Host
         Save-WebFile -SourceUrl $PS5Modules -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Install%20Client%20OS%20SYSTEM%20PowerShell%20Modules.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Install Client OS SYSTEM PowerShell Modules.ppkg"
         Save-WebFile -SourceUrl $PS7Modules -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Install%20Client%20OS%20SYSTEM%20PowerShell%207.x%20Modules.ppkg" -New Name "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Install Client OS SYSTEM PowerShell 7.x Modules.ppkg"
         Save-WebFile -SourceUrl $ADVCloudStorage -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Cloud%20Storage.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Cloud Storage.ppkg"
         Save-WebFile -SourceUrl $ADVDevSoftware -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Development%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Development Software.ppkg"
         Save-WebFile -SourceUrl $ADVFileTransfer -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20File%20Transfer.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration File Transfer.ppkg"
         Save-WebFile -SourceUrl $ADVGaming -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20PC%20Gaming.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration PC Gaming.ppkg"
         Save-WebFile -SourceUrl $ADVWebBrowsing -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Web%20Browsers.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Web Browsers.ppkg"
         Save-WebFile -SourceUrl $HWSoftware -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20System%20Hardware%20Utilities.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration System Hardware Utilities.ppkg"
         Save-WebFile -SourceUrl $ADVMedia -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Media%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Media Software.ppkg"
         Save-WebFile -SourceUrl $ADVProgramming -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Programming.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Programming.ppkg"
         Save-WebFile -SourceUrl $ADVProductivity -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Installation%20-%20Productivity%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Installation Productivity Software.ppkg"
         Save-WebFile -SourceUrl $ADVSecurity -DestinationDirectory $ADVdestinationPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Security%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Security Software.ppkg"
+
         Save-WebFile -SourceUrl $OSDCloud2 -DestinationDirectory $OSDDeploymentPPKG
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OSDCloud Version 2\OSDCloud%20Version%202.0.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OSDCloud Version 2\OSDCloud Version 2.0.ppkg"
 
         Write-Verbose "Processing: Acquiring Advanced Software Configuration - Script Files..." -Verbose
         Write-Host
