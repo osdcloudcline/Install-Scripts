@@ -188,7 +188,7 @@ do
         Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Installation%20-%20Productivity%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Installation Productivity Software.ppkg"
         Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Security%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Security Software.ppkg"
         Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OSDCloud Version 2\OSDCloud%20Version%202.0.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OSDCloud Version 2\OSDCloud Version 2.0.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OS SYSTEM Software\Client%20OS%20SYSTEM%20SOFTWARE.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OS SYSTEM Software\Client 0OS SYSTEM SOFTWARE.ppkg"
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OS SYSTEM Software\Client%20OS%20SYSTEM%20SOFTWARE.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OS SYSTEM Software\Client OS SYSTEM SOFTWARE.ppkg"
 
 
         Write-Verbose "Processing: Acquiring Advanced Software Configuration - Script Files..." -Verbose
@@ -277,6 +277,7 @@ do
         Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Installation%20-%20Productivity%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Installation Productivity Software.ppkg"
         Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Security%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Security Software.ppkg"
         Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OSDCloud Version 2\OSDCloud%20Version%202.0.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OSDCloud Version 2\OSDCloud Version 2.0.ppkg"
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OS SYSTEM Software\Client%20OS%20SYSTEM%20SOFTWARE.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OS SYSTEM Software\Client OS SYSTEM SOFTWARE.ppkg"
 
         Write-Verbose "Processing: Acquiring Advanced Software Configuration - Script Files..." -Verbose
         Write-Host
