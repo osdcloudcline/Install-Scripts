@@ -38,9 +38,6 @@ foreach ($PpkgFile in $PpkgFiles) {
 
 Write-Host "All provisioning packages have been processed."
 
-winget install --id Adobe.Acrobat.Reader.64-bit --silent --exact --accept-source-agreements --accept-source-agreements --force
-
-
 winget install --id AnyDeskSoftwareGmbH.AnyDesk --silent --exact --accept-source-agreements --accept-source-agreements --force 
 choco install vmware-horizon-client -y
 
