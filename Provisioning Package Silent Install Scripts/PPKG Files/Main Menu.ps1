@@ -101,8 +101,8 @@ Write-Host " 6. Download Honeypot Software Configuration PPKG Files and related 
 Write-Host " 7. Download IT Tech Software Configuration PPKG Files and related scripts"
 Write-Host " 8. Download OEM Vendor Software Configuration PPKG Files and related scripts"
 Write-Host " 9. Download Custom PC Software Configuration PPKG Files and related scripts"
-Write-Host " 13. Computer File Inventory"
-Write-Host " 14. Exit PowerShell"
+Write-Host " 10. Computer File Inventory"
+Write-Host " 11. Exit PowerShell"
 do 
 {
   $selection = Read-Host 'Please choose an option'
@@ -127,7 +127,7 @@ do
         $ADVProductivity = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Productivity/Advanced%20Software%20Installation%20-%20Productivity%20Software.ppkg"
 
         $ADVScript1 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Advanced.ps1"
-        
+        $ADVScript2 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/Advanced.ps1"
 
         $ADVdestinationPPKG = "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files"
         $ADVdestinationScripts = "C:\Provisioning Packages\Advanced Software Configuration\Scripts"
@@ -154,9 +154,64 @@ do
         Save-WebFile -SourceUrl $ADVProductivity -DestinationDirectory $ADVdestinationPPKG
 
         Write-Verbose "Processing: Acquiring Advanced Software Configuration - Script Files..." -Verbose
+        Write-Host
         Save-WebFile -SourceUrl $ADVScript1 -DestinationDirectory $ADVdestinationScripts
         Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\Scripts\Advanced.ps1" -NewName "C:\Provisioning Packages\Advanced Software Configuration\Scripts\Advanced-PPKGDownload.ps1"
-      }
+        Save-WebFile -SourceUrl $ADVScript2 -DestinationDirectory $ADVdestinationScripts
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\Scripts\Advanced.ps1" -NewName "C:\Provisioning Packages\Advanced Software Configuration\Scripts\Advanced-PPKGInstall.ps1"
+      }else{
+       Write-Verbose "PowerShell Module: OSD is installed" -Verbose
+       Write-Host
+       Import-Module -Name OSD -Force
+
+        $PS5Modules = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/PowerShell%20Modules/Install/Install%20Client%20OS%20SYSTEM%20PowerShell%20Modules.ppkg"
+        $PS7Modules = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/PowerShell%20Modules/Install/Install%20Client%20OS%20SYSTEM%20PowerShell%207.x%20Modules.ppkg"
+        $ADVCloudStorage = "https://github.com/osdcloudcline/Install-Scripts/blob/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Cloud%20Storage/Advanced%20Software%20Configuration%20-%20Cloud%20Storage.ppkg"
+        $ADVDevSoftware = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Development/Advanced%20Software%20Configuration%20-%20Development%20Software.ppkg"
+        $ADVFileTransfer = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/File%20Transfer/Advanced%20Software%20Configuration%20-%20File%20Transfer.ppkg"
+        $ADVGaming = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Gaming/Advanced%20Software%20Configuration%20-%20PC%20Gaming.ppkg"
+        $ADVWebBrowsing = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Web%20Browsing/Advanced%20Software%20Configuration%20-%20Web%20Browsers.ppkg"
+        $HWSoftware = "https://github.com/osdcloudcline/Install-Scripts/blob/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/System%20Hardware-related%20Software/Advanced%20Software%20Configuration%20-%20System%20Hardware%20Utilities.ppkg"
+        $ADVMedia = "https://github.com/osdcloudcline/Install-Scripts/blob/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Media/Advanced%20Software%20Configuration%20-%20Media%20Software.ppkg"
+        $ADVProgramming = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Programming/Advanced%20Software%20Configuration%20-%20Programming.ppkg"
+        $ADVProductivity = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Productivity/Advanced%20Software%20Installation%20-%20Productivity%20Software.ppkg"
+
+        $ADVScript1 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Advanced.ps1"
+        $ADVScript2 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/Advanced.ps1"
+
+        $ADVdestinationPPKG = "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files"
+        $ADVdestinationScripts = "C:\Provisioning Packages\Advanced Software Configuration\Scripts"
+
+        Write-Verbose "Processing: Creating $ADVdestinationPPKG..." -Verbose
+        Write-Host
+        New-Item -Path $ADVdestinationPPKG -ItemType Directory -Force
+        Write-Verbose "Processing: Creating $ADVdestinationScripts..." -Verbose
+        Write-Host
+        New-Item -Path $ADVdestinationScripts -ItemType Directory -Force
+
+        Write-Verbose "Processing: Acquiring Advanced Software Configuration - PPKG Files..." -Verbose
+        Write-Host
+        Save-WebFile -SourceUrl $PS5Modules -DestinationDirectory $ADVdestinationPPKG
+        Save-WebFile -SourceUrl $PS7Modules -DestinationDirectory $ADVdestinationPPKG
+        Save-WebFile -SourceUrl $ADVCloudStorage -DestinationDirectory $ADVdestinationPPKG
+        Save-WebFile -SourceUrl $ADVDevSoftware -DestinationDirectory $ADVdestinationPPKG
+        Save-WebFile -SourceUrl $ADVFileTransfer -DestinationDirectory $ADVdestinationPPKG
+        Save-WebFile -SourceUrl $ADVGaming -DestinationDirectory $ADVdestinationPPKG
+        Save-WebFile -SourceUrl $ADVWebBrowsing -DestinationDirectory $ADVdestinationPPKG
+        Save-WebFile -SourceUrl $HWSoftware -DestinationDirectory $ADVdestinationPPKG
+        Save-WebFile -SourceUrl $ADVMedia -DestinationDirectory $ADVdestinationPPKG
+        Save-WebFile -SourceUrl $ADVProgramming -DestinationDirectory $ADVdestinationPPKG
+        Save-WebFile -SourceUrl $ADVProductivity -DestinationDirectory $ADVdestinationPPKG
+
+        Write-Verbose "Processing: Acquiring Advanced Software Configuration - Script Files..." -Verbose
+        Write-Host
+        Save-WebFile -SourceUrl $ADVScript1 -DestinationDirectory $ADVdestinationScripts
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\Scripts\Advanced.ps1" -NewName "C:\Provisioning Packages\Advanced Software Configuration\Scripts\Advanced-PPKGDownload.ps1"
+        Save-WebFile -SourceUrl $ADVScript2 -DestinationDirectory $ADVdestinationScripts
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\Scripts\Advanced.ps1" -NewName "C:\Provisioning Packages\Advanced Software Configuration\Scripts\Advanced-PPKGInstall.ps1"
+}
+}
+       
   '2' { cls
         $Domain = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/Domain%20Administration/DomainAdminMain.ps1")
         Invoke-Expression $($Domain.Content)
