@@ -154,7 +154,7 @@ do
         Save-WebFile -SourceUrl $PS5Modules -DestinationDirectory $ADVdestinationPPKG
         Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Install%20Client%20OS%20SYSTEM%20PowerShell%20Modules.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Install Client OS SYSTEM PowerShell Modules.ppkg"
         Save-WebFile -SourceUrl $PS7Modules -DestinationDirectory $ADVdestinationPPKG
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Install%20Client%20OS%20SYSTEM%20PowerShell%207.x%20Modules.ppkg" -New Name "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Install Client OS SYSTEM PowerShell 7.x Modules.ppkg"
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Install%20Client%20OS%20SYSTEM%20PowerShell%207.x%20Modules.ppkg" -New Name "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Install Client OS SYSTEM PowerShell 7 Modules.ppkg"
         Save-WebFile -SourceUrl $ADVCloudStorage -DestinationDirectory $ADVdestinationPPKG
         Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Cloud%20Storage.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Cloud Storage.ppkg"
         Save-WebFile -SourceUrl $ADVDevSoftware -DestinationDirectory $ADVdestinationPPKG
