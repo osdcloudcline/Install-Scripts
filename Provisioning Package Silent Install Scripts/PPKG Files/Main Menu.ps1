@@ -126,12 +126,15 @@ do
         $ADVProgramming = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Programming/Advanced%20Software%20Configuration%20-%20Programming.ppkg"
         $ADVProductivity = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Productivity/Advanced%20Software%20Installation%20-%20Productivity%20Software.ppkg"
         $ADVSecurity = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Security/Advanced%20Software%20Configuration%20-%20Security%20Software.ppkg"
+        $OSDCloud2 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/OSDCloud%20v2%20Pre-Requisites/OSDCloud%20Version%202.0.ppkg"
+        
 
         $ADVScript1 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Advanced.ps1"
         $ADVScript2 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/Advanced.ps1"
 
-        $ADVdestinationPPKG = "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files"
+        $ADVdestinationPPKG = "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software"
         $ADVdestinationScripts = "C:\Provisioning Packages\Advanced Software Configuration\Scripts"
+        $OSDDeploymentPPKG = "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OSDCloud Version 2"
 
         Write-Verbose "Processing: Creating $ADVdestinationPPKG..." -Verbose
         Write-Host
@@ -139,6 +142,12 @@ do
         Write-Verbose "Processing: Creating $ADVdestinationScripts..." -Verbose
         Write-Host
         New-Item -Path $ADVdestinationScripts -ItemType Directory -Force
+        Write-Verbose "Processing: Creating $OSDDeploymentPPKG..." -Verbose
+        Write-Host
+        New-Item -Path $OSDDeploymentPPKG -ItemType Directory -Force
+
+
+        
 
         Write-Verbose "Processing: Acquiring Advanced Software Configuration - PPKG Files..." -Verbose
         Write-Host
@@ -154,6 +163,8 @@ do
         Save-WebFile -SourceUrl $ADVProgramming -DestinationDirectory $ADVdestinationPPKG
         Save-WebFile -SourceUrl $ADVProductivity -DestinationDirectory $ADVdestinationPPKG
         Save-WebFile -SourceUrl $ADVSecurity -DestinationDirectory $ADVdestinationPPKG
+
+        Save-WebFile -SourceUrl $OSDCloud2 -DestinationDirectory $OSDDeploymentPPKG
 
         Write-Verbose "Processing: Acquiring Advanced Software Configuration - Script Files..." -Verbose
         Write-Host
@@ -178,12 +189,14 @@ do
         $ADVProgramming = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Programming/Advanced%20Software%20Configuration%20-%20Programming.ppkg"
         $ADVProductivity = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Productivity/Advanced%20Software%20Installation%20-%20Productivity%20Software.ppkg"
         $ADVSecurity = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Security/Advanced%20Software%20Configuration%20-%20Security%20Software.ppkg"
+        $OSDCloud2 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/OSDCloud%20v2%20Pre-Requisites/OSDCloud%20Version%202.0.ppkg"
 
         $ADVScript1 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Advanced.ps1"
         $ADVScript2 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/Advanced.ps1"
 
-        $ADVdestinationPPKG = "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files"
+        $ADVdestinationPPKG = "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software"
         $ADVdestinationScripts = "C:\Provisioning Packages\Advanced Software Configuration\Scripts"
+        $OSDDeploymentPPKG = "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OSDCloud Version 2"
 
         Write-Verbose "Processing: Creating $ADVdestinationPPKG..." -Verbose
         Write-Host
@@ -191,6 +204,9 @@ do
         Write-Verbose "Processing: Creating $ADVdestinationScripts..." -Verbose
         Write-Host
         New-Item -Path $ADVdestinationScripts -ItemType Directory -Force
+        Write-Verbose "Processing: Creating $OSDDeploymentPPKG..." -Verbose
+        Write-Host
+        New-Item -Path $OSDDeploymentPPKG -ItemType Directory -Force
 
         Write-Verbose "Processing: Acquiring Advanced Software Configuration - PPKG Files..." -Verbose
         Write-Host
@@ -206,6 +222,7 @@ do
         Save-WebFile -SourceUrl $ADVProgramming -DestinationDirectory $ADVdestinationPPKG
         Save-WebFile -SourceUrl $ADVProductivity -DestinationDirectory $ADVdestinationPPKG
         Save-WebFile -SourceUrl $ADVSecurity -DestinationDirectory $ADVdestinationPPKG
+        Save-WebFile -SourceUrl $OSDCloud2 -DestinationDirectory $OSDDeploymentPPKG
 
         Write-Verbose "Processing: Acquiring Advanced Software Configuration - Script Files..." -Verbose
         Write-Host
