@@ -34,7 +34,7 @@ Write-Host
 Write-Verbose "Processing: Acquiring Client Operating System SYSTEM PowerShell 7.x Modules PPKG File" -Verbose
 Save-WebFile -SourceUrl $PS7Modules  -DestinationDirectory $PS7destination
 Write-Host
-Write-Verbose "Processing: Acquiring OSDCloud Version 2.0 PPKG File" - Verbose
+Write-Verbose "Processing: Acquiring OSDCloud Version 2.0 PPKG File" -Verbose
 Save-WebFile -SourceUrl $OSDCloud2 -DestinationDirectory $OSDClouddestination
 Write-Host
 Write-Verbose "Processing: Acquiring Advanced Software Configuration - Cloud Storage PPKG File" -Verbose
