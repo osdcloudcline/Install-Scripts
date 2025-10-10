@@ -126,6 +126,9 @@ do
         $ADVProgramming = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Programming/Advanced%20Software%20Configuration%20-%20Programming.ppkg"
         $ADVProductivity = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Productivity/Advanced%20Software%20Installation%20-%20Productivity%20Software.ppkg"
 
+        $ADVScript1 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Advanced.ps1"
+        
+
         $ADVdestinationPPKG = "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files"
         $ADVdestinationScripts = "C:\Provisioning Packages\Advanced Software Configuration\Scripts"
 
@@ -151,7 +154,8 @@ do
         Save-WebFile -SourceUrl $ADVProductivity -DestinationDirectory $ADVdestinationPPKG
 
         Write-Verbose "Processing: Acquiring Advanced Software Configuration - Script Files..." -Verbose
-        
+        Save-WebFile -SourceUrl $ADVScript1 -DestinationDirectory $ADVdestinationScripts
+        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\Scripts\Advanced.ps1" -NewName "C:\Provisioning Packages\Advanced Software Configuration\Scripts\Advanced-PPKGDownload.ps1"
       }
   '2' { cls
         $Domain = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/Domain%20Administration/DomainAdminMain.ps1")
