@@ -109,8 +109,11 @@ do
   switch($selection)
   {
   '1'{  cls
-        $Initial = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/AuditMode/MainMenu.ps1")
-        Invoke-Expression $($Initial.Content)
+        If(-not(Get-Module -ListAvailable -Name OSD)){
+        Write-Verbose "PowerShell Module: 'OSD' is not installed. Please wait while Windows installs the module..." -Verbose
+        Install-Module -Name OSD -AllowClobber -Force
+        Import-Module -Name OSD -Force
+        
       }
   '2' { cls
         $Domain = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/Domain%20Administration/DomainAdminMain.ps1")
