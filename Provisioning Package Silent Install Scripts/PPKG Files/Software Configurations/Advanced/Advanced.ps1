@@ -25,52 +25,52 @@ $PS7destination = "C:\Provisioning\PS7-Modules"
 $OSdestination = "C:\Provisioning\OS"
 $OSDClouddestination = "C:\Provisioning\OSDCloud"
 
-Write-Verbose "Processing: Acquiring Client Operating System SYSTEM Software Configuration PPKG File" - Verbose
+Write-Verbose "Processing: Acquiring Client Operating System SYSTEM Software Configuration PPKG File" -Verbose
 Save-WebFile -SourceUrl $OSSystemSoftware -DestinationDirectory $OSdestination
 Write-Host
-Write-Verbose "Processing: Acquiring Client Operating System SYSTEM PowerShell 5.1 Package Providers and Modules PPKG File" - Verbose
+Write-Verbose "Processing: Acquiring Client Operating System SYSTEM PowerShell 5.1 Package Providers and Modules PPKG File" -Verbose
 Save-WebFile -SourceUrl $PS5Modules -DestinationDirectory $PS5destination
 Write-Host
-Write-Verbose "Processing: Acquiring Client Operating System SYSTEM PowerShell 7.x Modules PPKG File" - Verbose
+Write-Verbose "Processing: Acquiring Client Operating System SYSTEM PowerShell 7.x Modules PPKG File" -Verbose
 Save-WebFile -SourceUrl $PS7Modules  -DestinationDirectory $PS7destination
 Write-Host
 Write-Verbose "Processing: Acquiring OSDCloud Version 2.0 PPKG File" - Verbose
 Save-WebFile -SourceUrl $OSDCloud2 -DestinationDirectory $OSDClouddestination
 Write-Host
-Write-Verbose "Processing: Acquiring Advanced Software Configuration - Cloud Storage PPKG File" - Verbose
+Write-Verbose "Processing: Acquiring Advanced Software Configuration - Cloud Storage PPKG File" -Verbose
 Save-WebFile -SourceUrl $ADVCloudStorage -DestinationDirectory $destination
 Write-Host
-Write-Verbose "Processing: Acquiring Advanced Software Configuration - Development Software PPKG File" - Verbose
+Write-Verbose "Processing: Acquiring Advanced Software Configuration - Development Software PPKG File" -Verbose
 Save-WebFile -SourceUrl $ADVDevSoftware -DestinationDirectory $destination
 Write-Host
-Write-Verbose "Processing: Acquiring Advanced Software Configuration - File Transfer Software PPKG File" - Verbose
+Write-Verbose "Processing: Acquiring Advanced Software Configuration - File Transfer Software PPKG File" -Verbose
 Save-WebFile -SourceUrl $ADVFileTransfer -DestinationDirectory $destination
 Write-Host
-Write-Verbose "Processing: Acquiring Advanced Software Configuration - Hardware relateds Software PPKG File" - Verbose
+Write-Verbose "Processing: Acquiring Advanced Software Configuration - Hardware relateds Software PPKG File" -Verbose
 Save-WebFile -SourceUrl $HWSoftware -DestinationDirectory $destination
 Write-Host
-Write-Verbose "Processing: Acquiring Advanced Software Configuration - Gaming Software PPKG File" - Verbose
+Write-Verbose "Processing: Acquiring Advanced Software Configuration - Gaming Software PPKG File" -Verbose
 Save-WebFile -SourceUrl $ADVGaming -DestinationDirectory $destination
 Write-Host
-Write-Verbose "Processing: Acquiring Advanced Software Configuration - Media Software PPKG File" - Verbose
+Write-Verbose "Processing: Acquiring Advanced Software Configuration - Media Software PPKG File" -Verbose
 Save-WebFile -SourceUrl $ADVMedia -DestinationDirectory $destination
 Write-Host
-Write-Verbose "Processing: Acquiring Advanced Software Configuration - Programming Software PPKG File" - Verbose
+Write-Verbose "Processing: Acquiring Advanced Software Configuration - Programming Software PPKG File" -Verbose
 Save-WebFile -SourceUrl $ADVProgramming -DestinationDirectory $destination
 Write-Host
-Write-Verbose "Processing: Acquiring Advanced Software Configuration - Productivity Software PPKG File" - Verbose
+Write-Verbose "Processing: Acquiring Advanced Software Configuration - Productivity Software PPKG File" -Verbose
 Save-WebFile -SourceUrl $ADVProductivity  -DestinationDirectory $destination
 Write-Host
-Write-Verbose "Processing: Acquiring Advanced Software Configuration - Utility Software PPKG File" - Verbose
+Write-Verbose "Processing: Acquiring Advanced Software Configuration - Utility Software PPKG File" -Verbose
 Save-WebFile -SourceUrl $ADVProgrammingURL -DestinationDirectory $destination
 Write-Host
-Write-Verbose "Processing: Acquiring Advanced Software Configuration - PC Benchmarking Software PPKG File" - Verbose
+Write-Verbose "Processing: Acquiring Advanced Software Configuration - PC Benchmarking Software PPKG File" -Verbose
 Save-WebFile -SourceUrl $PCBenchmarking -DestinationDirectory $destination
 Write-Host
-Write-Verbose "Processing: Acquiring Advanced Software Configuration - Web Browsing Software PPKG File" - Verbose
+Write-Verbose "Processing: Acquiring Advanced Software Configuration - Web Browsing Software PPKG File" -Verbose
 Save-WebFile -SourceUrl $ADVWebBrowsing -DestinationDirectory $destination
 Write-Host
-Write-Verbose "Processing: Acquiring Advanced Software Configuration - Security Software PPKG File" - Verbose
+Write-Verbose "Processing: Acquiring Advanced Software Configuration - Security Software PPKG File" -Verbose
 Save-WebFile -SourceUrl $ADVSecurity -DestinationDirectory $destination
 Write-Host
 
