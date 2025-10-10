@@ -46,7 +46,7 @@ Write-Host
 Write-Verbose "Processing: Acquiring Advanced Software Configuration - File Transfer Software PPKG File" -Verbose
 Save-WebFile -SourceUrl $ADVFileTransfer -DestinationDirectory $destination
 Write-Host
-Write-Verbose "Processing: Acquiring Advanced Software Configuration - Hardware relateds Software PPKG File" -Verbose
+Write-Verbose "Processing: Acquiring Advanced Software Configuration - Hardware-related Software PPKG File" -Verbose
 Save-WebFile -SourceUrl $HWSoftware -DestinationDirectory $destination
 Write-Host
 Write-Verbose "Processing: Acquiring Advanced Software Configuration - Gaming Software PPKG File" -Verbose
