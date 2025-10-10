@@ -125,6 +125,7 @@ do
         $ADVMedia = "https://github.com/osdcloudcline/Install-Scripts/blob/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Media/Advanced%20Software%20Configuration%20-%20Media%20Software.ppkg"
         $ADVProgramming = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Programming/Advanced%20Software%20Configuration%20-%20Programming.ppkg"
         $ADVProductivity = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Productivity/Advanced%20Software%20Installation%20-%20Productivity%20Software.ppkg"
+        $ADVSecurity = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Security/Advanced%20Software%20Configuration%20-%20Security%20Software.ppkg"
 
         $ADVScript1 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Advanced.ps1"
         $ADVScript2 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/Advanced.ps1"
@@ -152,6 +153,7 @@ do
         Save-WebFile -SourceUrl $ADVMedia -DestinationDirectory $ADVdestinationPPKG
         Save-WebFile -SourceUrl $ADVProgramming -DestinationDirectory $ADVdestinationPPKG
         Save-WebFile -SourceUrl $ADVProductivity -DestinationDirectory $ADVdestinationPPKG
+        Save-WebFile -SourceUrl $ADVSecurity -DestinationDirectory $ADVdestinationPPKG
 
         Write-Verbose "Processing: Acquiring Advanced Software Configuration - Script Files..." -Verbose
         Write-Host
@@ -175,6 +177,7 @@ do
         $ADVMedia = "https://github.com/osdcloudcline/Install-Scripts/blob/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Media/Advanced%20Software%20Configuration%20-%20Media%20Software.ppkg"
         $ADVProgramming = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Programming/Advanced%20Software%20Configuration%20-%20Programming.ppkg"
         $ADVProductivity = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Productivity/Advanced%20Software%20Installation%20-%20Productivity%20Software.ppkg"
+        $ADVSecurity = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Security/Advanced%20Software%20Configuration%20-%20Security%20Software.ppkg"
 
         $ADVScript1 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Advanced.ps1"
         $ADVScript2 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/Advanced.ps1"
@@ -202,6 +205,7 @@ do
         Save-WebFile -SourceUrl $ADVMedia -DestinationDirectory $ADVdestinationPPKG
         Save-WebFile -SourceUrl $ADVProgramming -DestinationDirectory $ADVdestinationPPKG
         Save-WebFile -SourceUrl $ADVProductivity -DestinationDirectory $ADVdestinationPPKG
+        Save-WebFile -SourceUrl $ADVSecurity -DestinationDirectory $ADVdestinationPPKG
 
         Write-Verbose "Processing: Acquiring Advanced Software Configuration - Script Files..." -Verbose
         Write-Host
