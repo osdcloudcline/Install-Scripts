@@ -95,8 +95,7 @@ Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Confi
 Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20PC%20Benchmarking.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced Software Configuration PC Benchmarking.ppkg"
 Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Remote%20Desktop,%20Help%20Desk%20Support%20and%20VDI.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced Software Configuration Remote Desktop, Help Desk Support and VDI.ppkg"
 Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Utilities%20Software.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced Software Configuration Utilities Software.ppkg"
-
-
 Rename-Item -Path "C:\Provisioning\OSDCloud\OSDCloud%20Version%202.0.ppkg" -NewName "C:\Provisioning\OSDCloud\OSDCloud Version 2.0.ppkg"
 Rename-Item -Path "C:\Provisioning\OS\Client%20OS%20SYSTEM%20SOFTWARE.ppkg" -NewName "C:\Provisioning\OS\Client OS SYSTEM SOFTWARE.ppkg"
-
+Write-Host
+Write-Verbose "Completed: Renaming PPKG Files..." -Verbose
