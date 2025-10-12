@@ -63,7 +63,7 @@ Write-Verbose "Processing: Acquiring Advanced Software Configuration - Productiv
 Save-WebFile -SourceUrl $ADVProductivity  -DestinationDirectory $destination
 Write-Host
 Write-Verbose "Processing: Acquiring Advanced Software Configuration - Utility Software PPKG File" -Verbose
-Save-WebFile -SourceUrl $ADVProgrammingURL -DestinationDirectory $destination
+Save-WebFile -SourceUrl $ADVUtilitiesSoftware -DestinationDirectory $destination
 Write-Host
 Write-Verbose "Processing: Acquiring Advanced Software Configuration - PC Benchmarking Software PPKG File" -Verbose
 Save-WebFile -SourceUrl $PCBenchmarking -DestinationDirectory $destination
