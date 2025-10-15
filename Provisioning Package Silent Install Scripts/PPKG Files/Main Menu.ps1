@@ -181,20 +181,28 @@ do
 
        
         Write-Verbose "Processing: Renaming PPKG Files..." -Verbose
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\PowerShell Modules\Install%20Client%20OS%20SYSTEM%20PowerShell%20Modules.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\PowerShell Modules\Install Client OS SYSTEM PowerShell Modules.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\PowerShell Modules\Install%20Client%20OS%20SYSTEM%20PowerShell%207.x%20Modules.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\PowerShell Modules\Install Client OS SYSTEM PowerShell 7 Modules.ppkg" -Force
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Cloud%20Storage.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Cloud Storage.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Development%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Development Software.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20File%20Transfer.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration File Transfer.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20PC%20Gaming.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration PC Gaming.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Web%20Browsers.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Web Browsers.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20System%20Hardware%20Utilities.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration System Hardware Utilities.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Media%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Media Software.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Programming.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Programming.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Installation%20-%20Productivity%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Installation Productivity Software.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Security%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Security Software.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OSDCloud Version 2\OSDCloud%20Version%202.0.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OSDCloud Version 2\OSDCloud Version 2.0.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OS SYSTEM Software\Client%20OS%20SYSTEM%20SOFTWARE.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OS SYSTEM Software\Client OS SYSTEM SOFTWARE.ppkg"
+       Write-Host
+       Rename-Item -Path "C:\Provisioning\PS5-Modules\Install%20Client%20OS%20SYSTEM%20PowerShell%20Modules.ppkg" -NewName "C:\Provisioning\PS5-Modules\PS5Modules.ppkg"
+       Rename-Item -Path "C:\Provisioning\PS7-Modules\Install%20Client%20OS%20SYSTEM%20PowerShell%207.x%20Modules.ppkg" -NewName "C:\Provisioning\PS7-Modules\PS7Moduless.ppkg" -Force
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Cloud%20Storage.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-CloudStorage.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Development%20Software.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-DevelopmentSoftware.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20File%20Transfer.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-FileTransfer.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20PC%20Gaming.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-Gaming.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Web%20Browsers.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-WebBrowsers.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20System%20Hardware%20Utilities.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-SystemHardwareUtilities.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Media%20Software.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-Media.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Programming.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-Programming.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Installation%20-%20Productivity%20Software.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-Productivity.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Security%20Software.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-Security.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20PC%20Benchmarking.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-SystemBenchmarking.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Remote%20Desktop,%20Help%20Desk%20Support%20and%20VDI.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-RemoteConnections.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Utilities%20Software.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-SystemUtilities.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20DataBase%20Management.PPKG" -NewName "C:\Provisioning\Advanced\Software\Advanced-DatabaseManagement.ppkg"
+       Rename-Item -Path "C:\Provisioning\OSDCloud\OSDCloud%20Version%202.0.ppkg" -NewName "C:\Provisioning\OSDCloud\OSDCloud2.ppkg"
+       Rename-Item -Path "C:\Provisioning\OS\Client%20OS%20SYSTEM%20SOFTWARE.ppkg" -NewName "C:\Provisioning\OS\SYSTEMSOFTWARE.ppkg"
+       Rename-Item -Path "C:\Provisioning\OS\Client%20Operating%20System%20Registry%20Modifications.ppkg" -NewName "C:\Provisioning\OS\Client-Registry.ppkg"
+      Write-Host
+      Write-Verbose "Completed: Renaming PPKG Files..." -Verbose
 
 
         Write-Verbose "Processing: Acquiring Advanced Software Configuration - Script Files..." -Verbose
@@ -274,20 +282,28 @@ do
         Save-WebFile -SourceUrl $ADVDatabaseManagement -DestinationDirectory  $ADVdestinationPPKG
 
         Write-Verbose "Processing: Renaming PPKG Files..." -Verbose
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\PowerShell Modules\Install%20Client%20OS%20SYSTEM%20PowerShell%20Modules.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\PowerShell Modules\Install Client OS SYSTEM PowerShell Modules.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\PowerShell Modules\Install%20Client%20OS%20SYSTEM%20PowerShell%207.x%20Modules.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\PowerShell Modules\Install Client OS SYSTEM PowerShell 7 Modules.ppkg" -Force
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Cloud%20Storage.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Cloud Storage.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Development%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Development Software.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20File%20Transfer.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration File Transfer.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20PC%20Gaming.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration PC Gaming.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Web%20Browsers.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Web Browsers.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20System%20Hardware%20Utilities.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration System Hardware Utilities.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Media%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Media Software.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Programming.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Programming.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Installation%20-%20Productivity%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Installation Productivity Software.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced%20Software%20Configuration%20-%20Security%20Software.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\Software\Advanced Software Configuration Security Software.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OSDCloud Version 2\OSDCloud%20Version%202.0.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OSDCloud Version 2\OSDCloud Version 2.0.ppkg"
-        Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OS SYSTEM Software\Client%20OS%20SYSTEM%20SOFTWARE.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\OS SYSTEM Software\Client OS SYSTEM SOFTWARE.ppkg"
+       Write-Host
+       Rename-Item -Path "C:\Provisioning\PS5-Modules\Install%20Client%20OS%20SYSTEM%20PowerShell%20Modules.ppkg" -NewName "C:\Provisioning\PS5-Modules\PS5Modules.ppkg"
+       Rename-Item -Path "C:\Provisioning\PS7-Modules\Install%20Client%20OS%20SYSTEM%20PowerShell%207.x%20Modules.ppkg" -NewName "C:\Provisioning\PS7-Modules\PS7Moduless.ppkg" -Force
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Cloud%20Storage.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-CloudStorage.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Development%20Software.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-DevelopmentSoftware.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20File%20Transfer.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-FileTransfer.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20PC%20Gaming.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-Gaming.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Web%20Browsers.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-WebBrowsers.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20System%20Hardware%20Utilities.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-SystemHardwareUtilities.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Media%20Software.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-Media.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Programming.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-Programming.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Installation%20-%20Productivity%20Software.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-Productivity.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Security%20Software.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-Security.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20PC%20Benchmarking.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-SystemBenchmarking.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Remote%20Desktop,%20Help%20Desk%20Support%20and%20VDI.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-RemoteConnections.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20Utilities%20Software.ppkg" -NewName "C:\Provisioning\Advanced\Software\Advanced-SystemUtilities.ppkg"
+       Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20DataBase%20Management.PPKG" -NewName "C:\Provisioning\Advanced\Software\Advanced-DatabaseManagement.ppkg"
+       Rename-Item -Path "C:\Provisioning\OSDCloud\OSDCloud%20Version%202.0.ppkg" -NewName "C:\Provisioning\OSDCloud\OSDCloud2.ppkg"
+       Rename-Item -Path "C:\Provisioning\OS\Client%20OS%20SYSTEM%20SOFTWARE.ppkg" -NewName "C:\Provisioning\OS\SYSTEMSOFTWARE.ppkg"
+       Rename-Item -Path "C:\Provisioning\OS\Client%20Operating%20System%20Registry%20Modifications.ppkg" -NewName "C:\Provisioning\OS\Client-Registry.ppkg"
+      Write-Host
+      Write-Verbose "Completed: Renaming PPKG Files..." -Verbose
 
         Write-Verbose "Processing: Acquiring Advanced Software Configuration - Script Files..." -Verbose
         Write-Host
