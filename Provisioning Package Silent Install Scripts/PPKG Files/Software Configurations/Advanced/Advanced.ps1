@@ -19,6 +19,7 @@ $ADVRDCVDI = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/ma
 $OSDCloud2 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/OSDCloud%20v2%20Pre-Requisites/OSDCloud%20Version%202.0.ppkg"
 $DBManagement = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Database%20Management/Advanced%20Software%20Configuration%20-%20DataBase%20Management.ppkg"
 $OSSystemSoftware = "https://github.com/osdcloudcline/Install-Scripts/blob/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Client%20OS%20SYSTEM%20Software/Client%20OS%20SYSTEM%20SOFTWARE.ppkg"
+$ClientOSRegistry = ""
 
 $destination = "C:\Provisioning\Advanced\Software"
 $PS5destination = "C:\Provisioning\PS5-Modules"
