@@ -53,7 +53,7 @@ Write-Host "All provisioning packages have been processed."
 
 Import-Module -Name PSWindowsUpdate -Force
 Install-WindowsUpdate -AcceptAll
-
+Restart-Computer
 
 
 
