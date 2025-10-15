@@ -105,5 +105,6 @@ Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Confi
 Rename-Item -Path "C:\Provisioning\Advanced\Software\Advanced%20Software%20Configuration%20-%20DataBase%20Management.PPKG" -NewName "C:\Provisioning\Advanced\Software\Advanced Software Configuration Database Management.ppkg"
 Rename-Item -Path "C:\Provisioning\OSDCloud\OSDCloud%20Version%202.0.ppkg" -NewName "C:\Provisioning\OSDCloud\OSDCloud Version 2.0.ppkg"
 Rename-Item -Path "C:\Provisioning\OS\Client%20OS%20SYSTEM%20SOFTWARE.ppkg" -NewName "C:\Provisioning\OS\Client OS SYSTEM SOFTWARE.ppkg"
+Rename-Item -Path "C:\Provisioning\OS\Client%20Operating%20System%20Registry%20Modifications.ppkg" -NewName "C:\Provisioning\OS\Client OS Registry Modifications.ppkg"
 Write-Host
 Write-Verbose "Completed: Renaming PPKG Files..." -Verbose
