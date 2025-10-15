@@ -25,11 +25,6 @@ foreach ($PS5PPKGFile in $PS5PPKGFiles) {
     Install-ProvisioningPackage -PackagePath $PS5PPKGFile.FullName -QuietInstall -ForceInstall
     Write-Host "$($PS5PPKGFile.Name) installed."
 }
-foreach ($PS5PPKGFile in $PS5PPKGFiles) {
-    Write-Host "Installing $($PS5PPKGFile.Name)..."
-    Install-ProvisioningPackage -PackagePath $PS5PPKGFile.FullName -QuietInstall -ForceInstall
-    Write-Host "$($PS5PPKGFile.Name) installed."
-}
 foreach ($PS7PPKGFile in $PS7PPKGFiles) {
     Write-Host "Installing $($PS7PPKGFile.Name)..."
     Install-ProvisioningPackage -PackagePath $PS7PPKGFile.FullName -QuietInstall -ForceInstall
@@ -40,7 +35,6 @@ foreach ($OSPpkgFile in $OSPpkgFiles) {
     Install-ProvisioningPackage -PackagePath $OSPpkgFile.FullName -QuietInstall -ForceInstall
     Write-Host "$($OSPpkgFile.Name) installed."
 }
-
 # Loop through each .ppkg file and install it
 foreach ($OSDCloudPpkgFile in $OSDCloudPpkgFiles) {
     Write-Host "Installing $($PpkgFile.Name)..."
@@ -57,8 +51,8 @@ foreach ($PpkgFile in $PpkgFiles) {
 
 Write-Host "All provisioning packages have been processed."
 
-winget install --id AnyDeskSoftwareGmbH.AnyDesk --silent --exact --accept-source-agreements --accept-source-agreements --force 
-choco install vmware-horizon-client -y
+Import-Module -Name PSWindowsUpdate -Force
+Install-WindowsUpdate -AcceptAll
 
 
 
