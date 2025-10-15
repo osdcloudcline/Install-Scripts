@@ -30,16 +30,16 @@ foreach ($PS7PPKGFile in $PS7PPKGFiles) {
     Install-ProvisioningPackage -PackagePath $PS7PPKGFile.FullName -QuietInstall -ForceInstall
     Write-Host "$($PS7PPKGFile.Name) installed."
 }
-foreach ($OSPpkgFile in $OSPpkgFiles) {
-    Write-Host "Installing $($OSPpkgFile.Name)..."
-    Install-ProvisioningPackage -PackagePath $OSPpkgFile.FullName -QuietInstall -ForceInstall
-    Write-Host "$($OSPpkgFile.Name) installed."
+foreach ($OSPPKGFile in $OSPPKGFiles) {
+    Write-Host "Installing $($OSPPKGFile.Name)..."
+    Install-ProvisioningPackage -PackagePath $OSPPKGFile.FullName -QuietInstall -ForceInstall
+    Write-Host "$($OSPPKGFile.Name) installed."
 }
 # Loop through each .ppkg file and install it
-foreach ($OSDCloudPpkgFile in $OSDCloudPpkgFiles) {
-    Write-Host "Installing $($PpkgFile.Name)..."
-    Install-ProvisioningPackage -PackagePath $PpkgFile.FullName -QuietInstall -ForceInstall
-    Write-Host "$($PpkgFile.Name) installed."
+foreach ($OSDCloudPpkgFile in $OSDCloudPPKGFiles) {
+    Write-Host "Installing $($OSDCloudPpkgFile.Name)..."
+    Install-ProvisioningPackage -PackagePath $OSDCloudPpkgFile.FullName -QuietInstall -ForceInstall
+    Write-Host "$($OSDCloudPpkgFile.Name) installed."
 }
 
 # Loop through each .ppkg file and install it
