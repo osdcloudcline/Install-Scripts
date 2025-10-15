@@ -117,6 +117,7 @@ do
         $PS5Modules = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/PowerShell%20Modules/Install/Install%20Client%20OS%20SYSTEM%20PowerShell%20Modules.ppkg"
         $PS7Modules = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/PowerShell%20Modules/Install/Install%20Client%20OS%20SYSTEM%20PowerShell%207.x%20Modules.ppkg"
         $ADVCloudStorage = "https://github.com/osdcloudcline/Install-Scripts/blob/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Cloud%20Storage/Advanced%20Software%20Configuration%20-%20Cloud%20Storage.ppkg"
+        $ADVDatabaseManagement = ""
         $ADVDevSoftware = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Development/Advanced%20Software%20Configuration%20-%20Development%20Software.ppkg"
         $ADVFileTransfer = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/File%20Transfer/Advanced%20Software%20Configuration%20-%20File%20Transfer.ppkg"
         $ADVGaming = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Gaming/Advanced%20Software%20Configuration%20-%20PC%20Gaming.ppkg"
@@ -129,7 +130,7 @@ do
         $OSDCloud2 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/OSDCloud%20v2%20Pre-Requisites/OSDCloud%20Version%202.0.ppkg"
         $OSSystemSoftware = "https://github.com/osdcloudcline/Install-Scripts/blob/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Client%20OS%20SYSTEM%20Software/Client%20OS%20SYSTEM%20SOFTWARE.ppkg"
         $ADVRDCVDI = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Remote%20Desktop%20Connections%20and%20VDI/Advanced%20Software%20Configuration%20-%20Remote%20Desktop,%20Help%20Desk%20Support%20and%20VDI.ppkg"
-
+        $ClientOSRegistry = ""
         $ADVScript1 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Advanced.ps1"
         $ADVScript2 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/Advanced.ps1"
 
@@ -162,6 +163,7 @@ do
         Write-Host
         Save-WebFile -SourceUrl $PS5Modules -DestinationDirectory $PSdestinationPPKG
         Save-WebFile -SourceUrl $PS7Modules -DestinationDirectory $PSdestinationPPKG
+        Save-WebFile -SourceUrl $ClientOSRegistry -DestinationDirectory $OSDDeploymentPPKG
         Save-WebFile -SourceUrl $ADVCloudStorage -DestinationDirectory $ADVdestinationPPKG
         Save-WebFile -SourceUrl $ADVDevSoftware -DestinationDirectory $ADVdestinationPPKG
         Save-WebFile -SourceUrl $ADVFileTransfer -DestinationDirectory $ADVdestinationPPKG
@@ -175,7 +177,9 @@ do
         Save-WebFile -SourceUrl $OSDCloud2 -DestinationDirectory $OSDDeploymentPPKG
         Save-WebFile -SourceUrl $OSSystemSoftware -DestinationDirectory $OSSYSTEMdestinationPPKG
         Save-WebFile -SourceUrl $ADVRDCVDI -DestinationDirectory  $ADVdestinationPPKG
+        Save-WebFile -SourceUrl $ADVDatabaseManagement -DestinationDirectory  $ADVdestinationPPKG
 
+       
         Write-Verbose "Processing: Renaming PPKG Files..." -Verbose
         Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\PowerShell Modules\Install%20Client%20OS%20SYSTEM%20PowerShell%20Modules.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\PowerShell Modules\Install Client OS SYSTEM PowerShell Modules.ppkg"
         Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\PowerShell Modules\Install%20Client%20OS%20SYSTEM%20PowerShell%207.x%20Modules.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\PowerShell Modules\Install Client OS SYSTEM PowerShell 7 Modules.ppkg" -Force
@@ -207,6 +211,7 @@ do
         $PS5Modules = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/PowerShell%20Modules/Install/Install%20Client%20OS%20SYSTEM%20PowerShell%20Modules.ppkg"
         $PS7Modules = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/PowerShell%20Modules/Install/Install%20Client%20OS%20SYSTEM%20PowerShell%207.x%20Modules.ppkg"
         $ADVCloudStorage = "https://github.com/osdcloudcline/Install-Scripts/blob/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Cloud%20Storage/Advanced%20Software%20Configuration%20-%20Cloud%20Storage.ppkg"
+        $ADVDatabaseManagement = ""
         $ADVDevSoftware = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Development/Advanced%20Software%20Configuration%20-%20Development%20Software.ppkg"
         $ADVFileTransfer = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/File%20Transfer/Advanced%20Software%20Configuration%20-%20File%20Transfer.ppkg"
         $ADVGaming = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Gaming/Advanced%20Software%20Configuration%20-%20PC%20Gaming.ppkg"
@@ -219,7 +224,8 @@ do
         $OSDCloud2 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/OSDCloud%20v2%20Pre-Requisites/OSDCloud%20Version%202.0.ppkg"
         $OSSystemSoftware = "https://github.com/osdcloudcline/Install-Scripts/blob/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Client%20OS%20SYSTEM%20Software/Client%20OS%20SYSTEM%20SOFTWARE.ppkg"
         $ADVRDCVDI = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Remote%20Desktop%20Connections%20and%20VDI/Advanced%20Software%20Configuration%20-%20Remote%20Desktop,%20Help%20Desk%20Support%20and%20VDI.ppkg"
-
+        $ClientOSRegistry = ""
+        
         $ADVScript1 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Advanced.ps1"
         $ADVScript2 = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/Advanced.ps1"
 
@@ -252,6 +258,7 @@ do
         Write-Host
         Save-WebFile -SourceUrl $PS5Modules -DestinationDirectory $PSdestinationPPKG
         Save-WebFile -SourceUrl $PS7Modules -DestinationDirectory $PSdestinationPPKG
+        Save-WebFile -SourceUrl $ClientOSRegistry -DestinationDirectory $OSDDeploymentPPKG
         Save-WebFile -SourceUrl $ADVCloudStorage -DestinationDirectory $ADVdestinationPPKG
         Save-WebFile -SourceUrl $ADVDevSoftware -DestinationDirectory $ADVdestinationPPKG
         Save-WebFile -SourceUrl $ADVFileTransfer -DestinationDirectory $ADVdestinationPPKG
@@ -264,7 +271,7 @@ do
         Save-WebFile -SourceUrl $ADVSecurity -DestinationDirectory $ADVdestinationPPKG
         Save-WebFile -SourceUrl $OSDCloud2 -DestinationDirectory $OSDDeploymentPPKG
         Save-WebFile -SourceUrl $OSSystemSoftware -DestinationDirectory $OSSYSTEMdestinationPPKG
-        
+        Save-WebFile -SourceUrl $ADVDatabaseManagement -DestinationDirectory  $ADVdestinationPPKG
 
         Write-Verbose "Processing: Renaming PPKG Files..." -Verbose
         Rename-Item -Path "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\PowerShell Modules\Install%20Client%20OS%20SYSTEM%20PowerShell%20Modules.ppkg" -NewName "C:\Provisioning Packages\Advanced Software Configuration\PPKG Files\PowerShell Modules\Install Client OS SYSTEM PowerShell Modules.ppkg"
