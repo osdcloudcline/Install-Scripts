@@ -110,7 +110,7 @@ do
   switch($selection)
   {
   '1'{  cls
-        $ADVPPKGInstall = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/ADV-PPKGInstall.ps1")
+        $ADVPPKGInstall = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/Advanced.ps1")
         Invoke-Expression $($ADVPPKGInstall.Content)
 }
        
