@@ -12,7 +12,7 @@ $PS7Modules = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/m
 
 $ASPNETCore = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Client%20OS%20SYSTEM%20Software/ASPRedistributables.ppkg"
 $OracleJRE = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Client%20OS%20SYSTEM%20Software/OracleJRE.ppkg"
-$PackageProviders = ""
+$PackageProviders = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Client%20OS%20SYSTEM%20Software/PackageProviders.ppkg"
 $SYSTEMSoftware = ""
 $NETFramework = ""
 $OpenAL = ""
