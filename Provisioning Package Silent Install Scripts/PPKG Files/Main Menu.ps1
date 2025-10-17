@@ -92,7 +92,7 @@ pause
 Clear-Host
 
 Write-Host "======= $Title ======"
-Write-Host " 1. Download Advanced Software Configuration PPKG Files and related scripts"
+Write-Host " 1. Install Advanced Software Configuration"
 Write-Host " 2. Download Standard Software Configuration PPKG Files and related scripts"
 Write-Host " 3. Download Corporate Software Configuration PPKG Files and related scripts"
 Write-Host " 4. Download Client VDI Software Configuration PPKG Files and related scripts"
