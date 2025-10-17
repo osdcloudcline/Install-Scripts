@@ -74,3 +74,5 @@ foreach ($OSDCloudPpkgFile in $OSDCloudPPKGFiles) {
     Install-ProvisioningPackage -PackagePath $OSDCloudPpkgFile.FullName -QuietInstall -ForceInstall
     Write-Host "$($OSDCloudPpkgFile.Name) installed."
 }
+
+Write-Host "All provisioning packages have been processed."
