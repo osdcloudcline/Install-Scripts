@@ -25,7 +25,7 @@ Write-Host
 $OS = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Client%20OS%20SYSTEM%20Software/SYSTEMSoftware.ps1")
 Invoke-Expression $($OS.Content)
 
-$ClientOSRegistry = Invoke-WebRequest("")
+$ClientOSRegistry = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Client%20OS%20Registry%20Modifications/ClientOSRegistry.ps1")
 Invoke-Expression $($ClientOSRegistry.Content)
 
 $OSDCloud2 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/OSDCloud%20v2%20Pre-Requisites/OSDCloud2.ps1")
