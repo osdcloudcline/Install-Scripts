@@ -18,5 +18,5 @@ $SYSTEMSoftwarePPKGFiles = Get-ChildItem -Path $SYSTEMSoftwarePpkgDirectory -Fil
 $NETPPKGFiles = Get-ChildItem -Path $NETPpkgDirectory -Filter "*.ppkg"
 $OracleJREFiles = Get-ChildItem -Path $OracleJREPpkgDirectory -Filter "*.ppkg"
 $ASPFiles = Get-ChildItem -Path $ASPPpkgDirectory -Filter "*.ppkg"
-
+$OSDCloudPPKGFiles = Get-ChildItem -Path $OSDCloudPpkgDirectory -Filter "*.ppkg"
 
