@@ -28,7 +28,7 @@ Invoke-Expression $($OS.Content)
 $ClientOSRegistry = Invoke-WebRequest("")
 Invoke-Expression $($ClientOSRegistry.Content)
 
-$OSDCloud2 = Invoke-WebRequest("")
+$OSDCloud2 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/OSDCloud%20v2%20Pre-Requisites/OSDCloud2.ps1")
 Invoke-Expression $($OSDCloud2.Content)
 
 $ADVSoftware = Invoke-WebReuest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/ADV-PPKGInstall.ps1")
