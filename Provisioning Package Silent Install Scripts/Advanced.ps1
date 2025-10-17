@@ -26,8 +26,17 @@ Invoke-Expression $($AdvancedPPKG.Content)
 Write-Host "Provisioning:$env:computername..." -ForegroundColor Cyan
 Write-Host
 
-$OS = Invoke-WebRequest("")
+$OS = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Client%20OS%20SYSTEM%20Software/SYSTEMSoftware.ps1")
 Invoke-Expression $($OS.Content)
+
+$ClientOSRegistry = Invoke-WebRequest("")
+Invoke-Expression $($ClientOSRegistry.Content)
+
+$OSDCloud2 = Invoke-WebRequest("")
+Invoke-Expression $($OSDCloud2.Content)
+
+$ADVSoftware = Invoke-WebReuest("")
+Invoke-Expression $$ADVSoftware.Content)
 
 # Loop through each .ppkg file and install it
 foreach ($PpkgFile in $PpkgFiles) {
