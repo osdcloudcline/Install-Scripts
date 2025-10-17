@@ -45,7 +45,7 @@ foreach ($PpkgFile in $PpkgFiles) {
     Write-Host "$($PpkgFile.Name) installed."
 }
 
-Write-Host "All provisioning packages have been processed."
+
 
 Import-Module -Name PSWindowsUpdate -Force
 Install-WindowsUpdate -AcceptAll
