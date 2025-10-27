@@ -86,6 +86,7 @@ Write-Host
 Write-Host '                                                                              ' -BackgroundColor White                                                              
 Write-Host ' This Git Hub-based deployment scripting solution allows the user to perform: ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - Downloads PPKG Files and Scripts                                       ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '     - Installs PPKG Files                                                   ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '                                                                              ' -BackgroundColor White
 Write-Host '                                                                              ' -BackgroundColor White
 pause
@@ -101,9 +102,10 @@ Write-Host " 6. Install Honeypot Software Configuration"
 Write-Host " 7. Install IT Tech Software Configuration"
 Write-Host " 8. Install OEM Vendor Specific Software Configuration"
 Write-Host " 9. Install Custom PC Software Configuration"
-Write-Host " 10. # Server Roles PPKG Sub-Menu 
-Write-Host " 11. Computer File Inventory"
-Write-Host " 12. Exit PowerShell"
+Write-Host " 10. Download PPKG Configuration Files and Scripts"
+Write-Host " 11. # Server Roles PPKG Sub-Menu" 
+Write-Host " 12. Computer File Inventory"
+Write-Host " 13. Exit PowerShell"
 do 
 {
   $selection = Read-Host 'Please choose an option'
@@ -157,13 +159,17 @@ do
         Start-Process -FilePath "C:\OSDCloud\GitHub\downloads\UPBR.exe"
         Show-MainMenu
     }
-    '13'{cls
+'10'{
+    }
+'11'{
+   }
+'12'{cls
          Show-FileInventoryMenu
+   } 
+'13'{exit}
     }
-    '14'{exit}
     }
-    }
-    until ($selection -eq '11'){exit}
+    until ($selection -eq '13'){exit}
     }
 
 Show-MainMenu
