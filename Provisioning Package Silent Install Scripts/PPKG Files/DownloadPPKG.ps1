@@ -131,7 +131,7 @@ do
         $OSSystemSoftware = "https://github.com/osdcloudcline/Install-Scripts/blob/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Client%20OS%20SYSTEM%20Software/Client%20OS%20SYSTEM%20SOFTWARE.ppkg"
         $ADVRDCVDI = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Software%20Configurations/Advanced/Remote%20Desktop%20Connections%20and%20VDI/Advanced%20Software%20Configuration%20-%20Remote%20Desktop,%20Help%20Desk%20Support%20and%20VDI.ppkg"
         $ClientOSRegistry = ""
-        $OSASPRedistributables = ""
+        $OSASPRedistributables = "https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Provisioning%20Package%20Silent%20Install%20Scripts/PPKG%20Files/Client%20OS%20SYSTEM%20Software/ASPRedistributables.ppkg"
         $NETFramework = ""
         $OracleJRE = ""
         $PackageProviders = ""
