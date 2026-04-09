@@ -1,6 +1,40 @@
 $OSSoftLogs = "C:\Logs\OSDCloud\Install\SYSTEM\$env:computername-OSSoftware.log"
 Start-Transcript -Path $OSSoftLogs
 
+###### NEW SCRIPT #######
+
+# Define the SYSTEM Software
+$SYSTEMSoftware = @(
+   @( Name = "Microsoft ASP .Net Core 3.1"; ID = "Microsoft.DotNet.AspNetCore.3_1" )
+   @( Name = "Microsoft ASP .Net Core 5.0"; ID = "Microsoft.DotNet.AspNetCore.5" )
+   @( Name = "Microsoft ASP .Net Core 6.0"; ID = "Microsoft.DotNet.AspNetCore.6" )
+   @( Name = "Microsoft ASP .Net Core 7.0"; ID = "Microsoft.DotNet.AspNetCore.7" )
+   @( Name = "Microsoft ASP .Net Core 8.0"; ID = "Microsoft.DotNet.AspNetCore.8" )
+   @( Name = "Microsoft ASP .Net Core 9.0"; ID = "Microsoft.DotNet.AspNetCore.9" )
+   @( Name = "Microsoft ASP .Net Core 10.0"; ID = "Microsoft.DotNet.AspNetCore.10" )
+   @( Name = "Microsoft .NET Desktop Runtime 3.1"; ID = "Microsoft.DotNet.DesktopRuntime.3_1" )
+   @( Name = "Microsoft .NET Desktop Runtimee 5.0"; ID = "Microsoft.DotNet.DesktopRuntime.5" )
+   @( Name = "Microsoft .NET Desktop Runtime 6.0"; ID = "Microsoft.DotNet.DesktopRuntime.6" )
+   @( Name = "Microsoft .NET Desktop Runtime 7.0"; ID = "Microsoft.DotNet.DesktopRuntime.7" )
+   @( Name = "Microsoft .NET Desktop Runtime 8.0"; ID = "Microsoft.DotNet.DesktopRuntime.8" )
+   @( Name = "Microsoft .NET Desktop Runtime 9.0"; ID = "Microsoft.DotNet.DesktopRuntime.9" )
+   @( Name = "Microsoft .NET Desktop Runtime 10.0"; ID = "Microsoft.DotNet.DesktopRuntime.10" )
+   @( Name = "Microsoft .NET Runtime 2.2.8.28209"; ID = "Microsoft.DotNet.Runtime.2_2" )
+   @( Name = "Microsoft .NET Runtime "3.1.32; ID = "Microsoft.DotNet.Runtime.3_1" )
+   @( Name = "Microsoft .NET Runtime 7.0"; ID = "Microsoft.DotNet.Runtime.7" )
+   @( Name = "Microsoft .NET Runtime 8.0"; ID = "Microsoft.DotNet.Runtime.8" )
+   @( Name = "Microsoft .NET Runtime 9.0"; ID = "Microsoft.DotNet.Runtime.9" )
+   @( Name = "Microsoft .NET Runtime 10.0"; ID = "Microsoft.DotNet.Runtime.10" )
+   @( Name = "Microsoft .NET Framework 4.8.1"; ID = "Microsoft.DotNet.Framework.Runtime" )
+)
+
+foreach($App in $SYSTEMSoftware){
+    Write-Host "`nProcessing install for: $($App.Name)" -ForegroundColor Cyan
+    Write-Host   
+        winget install --id $App.ID
+   Write-Host
+   Write-Host "Completed: $($App.Name) install`n" -ForegroundColor Green
+}
 #####################################################################
 ####                 SOFTWARE VARIABLES                    ##########
 #####################################################################
