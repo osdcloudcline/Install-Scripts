@@ -49,13 +49,23 @@ $SYSTEMSoftware = @(
    @( Name = "Microsoft Edge Web Browser"; ID = "Microsoft.Edge" )
 )
 
-$ChocoSYSTEMSoftware = @(
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
+$ChocoSYSTEMSoftware = @(
+    @( Name = "Microsoft Visual C++ 2017 Redistributable 14.16.27052"; ID = "vcredist2017" )
 )
 foreach($App in $SYSTEMSoftware){
     Write-Host "`nProcessing install for: $($App.Name)" -ForegroundColor Cyan
     Write-Host   
         winget install --id $App.ID --exact --accept-source-agreements --accept-source-agreements --force
+   Write-Host
+   Write-Host "Completed: $($App.Name) install`n" -ForegroundColor Green
+}
+
+foreach($App in $ChocoSYSTEMSoftware){
+    Write-Host "`nProcessing install for: $($App.Name)" -ForegroundColor Cyan
+    Write-Host   
+        choco install $App.ID -y
    Write-Host
    Write-Host "Completed: $($App.Name) install`n" -ForegroundColor Green
 }
