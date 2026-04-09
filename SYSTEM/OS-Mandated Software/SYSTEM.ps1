@@ -54,6 +54,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 $ChocoSYSTEMSoftware = @(
     @( Name = "Microsoft Visual C++ 2017 Redistributable 14.16.27052"; ID = "vcredist2017" )
 )
+
 foreach($App in $SYSTEMSoftware){
     Write-Host "`nProcessing install for: $($App.Name)" -ForegroundColor Cyan
     Write-Host   
