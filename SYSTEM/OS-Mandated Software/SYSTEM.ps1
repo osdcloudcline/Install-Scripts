@@ -5,13 +5,15 @@ Start-Transcript -Path $OSSoftLogs
 
 # Define the SYSTEM Software
 $SYSTEMSoftware = @(
-   @( Name = "Microsoft ASP .Net Core 3.1"; ID = "Microsoft.DotNet.AspNetCore.3_1" )
-   @( Name = "Microsoft ASP .Net Core 5.0"; ID = "Microsoft.DotNet.AspNetCore.5" )
-   @( Name = "Microsoft ASP .Net Core 6.0"; ID = "Microsoft.DotNet.AspNetCore.6" )
-   @( Name = "Microsoft ASP .Net Core 7.0"; ID = "Microsoft.DotNet.AspNetCore.7" )
-   @( Name = "Microsoft ASP .Net Core 8.0"; ID = "Microsoft.DotNet.AspNetCore.8" )
-   @( Name = "Microsoft ASP .Net Core 9.0"; ID = "Microsoft.DotNet.AspNetCore.9" )
-   @( Name = "Microsoft ASP .Net Core 10.0"; ID = "Microsoft.DotNet.AspNetCore.10" )
+   @( Name = "Chocolatey Package Manager"; ID = "Chocolatey.Chocolatey" )
+   @( Name = "Microsoft .NET SDK 10.0"; ID = "Microsoft.DotNet.SDK.10" ) 
+   @( Name = "Microsoft ASP .NET Core 3.1"; ID = "Microsoft.DotNet.AspNetCore.3_1" )
+   @( Name = "Microsoft ASP .NET Core 5.0"; ID = "Microsoft.DotNet.AspNetCore.5" )
+   @( Name = "Microsoft ASP .NET Core 6.0"; ID = "Microsoft.DotNet.AspNetCore.6" )
+   @( Name = "Microsoft ASP .NET Core 7.0"; ID = "Microsoft.DotNet.AspNetCore.7" )
+   @( Name = "Microsoft ASP .NET Core 8.0"; ID = "Microsoft.DotNet.AspNetCore.8" )
+   @( Name = "Microsoft ASP .NET Core 9.0"; ID = "Microsoft.DotNet.AspNetCore.9" )
+   @( Name = "Microsoft ASP .NET Core 10.0"; ID = "Microsoft.DotNet.AspNetCore.10" )
    @( Name = "Microsoft .NET Desktop Runtime 3.1"; ID = "Microsoft.DotNet.DesktopRuntime.3_1" )
    @( Name = "Microsoft .NET Desktop Runtimee 5.0"; ID = "Microsoft.DotNet.DesktopRuntime.5" )
    @( Name = "Microsoft .NET Desktop Runtime 6.0"; ID = "Microsoft.DotNet.DesktopRuntime.6" )
@@ -26,12 +28,34 @@ $SYSTEMSoftware = @(
    @( Name = "Microsoft .NET Runtime 9.0"; ID = "Microsoft.DotNet.Runtime.9" )
    @( Name = "Microsoft .NET Runtime 10.0"; ID = "Microsoft.DotNet.Runtime.10" )
    @( Name = "Microsoft .NET Framework 4.8.1"; ID = "Microsoft.DotNet.Framework.Runtime" )
+   @( Name = "Microsoft Visual C++ 2005 Redistributable x64"; ID = "Microsoft.VCRedist.2005.x64" )
+   @( Name = "Microsoft Visual C++ 2005 Redistributable x86"; ID = "Microsoft.VCRedist.2005.x86" )
+   @( Name = "Microsoft Visual C++ 2008 Redistributable x64"; ID = "Microsoft.VCRedist.2008.x64" )
+   @( Name = "Microsoft Visual C++ 2008 Redistributable x86"; ID = "Microsoft.VCRedist.2008.x86" )
+   @( Name = "Microsoft Visual C++ 2010 Redistributable x64"; ID = "Microsoft.VCRedist.2010.x64" )
+   @( Name = "Microsoft Visual C++ 2010 Redistributable x86"; ID = "Microsoft.VCRedist.2010.x86" )
+   @( Name = "Microsoft Visual C++ 2012 Redistributable x64"; ID = "Microsoft.VCRedist.2012.x64" )
+   @( Name = "Microsoft Visual C++ 2012 Redistributable x86"; ID = "Microsoft.VCRedist.2012.x86" )
+   @( Name = "Microsoft Visual C++ 2013 Redistributable x64"; ID = "Microsoft.VCRedist.2013.x64" )
+   @( Name = "Microsoft Visual C++ 2013 Redistributable x86"; ID = "Microsoft.VCRedist.2013.x86" )
+   @( Name = "Microsoft Visual C++ 2015+ Redistributable x64"; ID = "Microsoft.VCRedist.2015+.x64" )
+   @( Name = "Microsoft Visual C++ 2015+ Redistributable x86"; ID = "Microsoft.VCRedist.2015+.x86" )
+   @( Name = "Oracle JAVA 8.0"; ID = "Oracle.JavaRuntimeEnvironment" )
+   @( Name = "Microsoft XNA Framework Redistributable 4.0.309801.0"; ID = "Microsoft.XNARedist" )
+   @( Name = "Open AL"; ID = "CreativeTechnology.OpenAL" )
+   @( Name = "Microsoft DirectX 9.29.1974.0"; ID = "Microsoft.DirectX" )
+   @( Name = "Microsoft Windows App - Remote VDI Cloud PC Connections"; ID = "Microsoft.WindowsApp" )
+   @( Name = "Microsoft Windows App Runtime 1.8 - Remote VDI Cloud PC Connections"; ID = "Microsoft.WindowsAppRuntime.1.8" )
+   @( Name = "Microsoft Edge Web Browser"; ID = "Microsoft.Edge" )
 )
 
+$ChocoSYSTEMSoftware = @(
+
+)
 foreach($App in $SYSTEMSoftware){
     Write-Host "`nProcessing install for: $($App.Name)" -ForegroundColor Cyan
     Write-Host   
-        winget install --id $App.ID
+        winget install --id $App.ID --exact --accept-source-agreements --accept-source-agreements --force
    Write-Host
    Write-Host "Completed: $($App.Name) install`n" -ForegroundColor Green
 }
