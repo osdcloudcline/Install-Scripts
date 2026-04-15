@@ -1,3 +1,6 @@
+# Set PSGallery to Trusted once to avoid prompts during the loop
+Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
+
 # Combined arrays (Fixed missing commas in $MSGraph)
 
 $OSD = @('OSD','OSDBuilder','OSDSUS','OSDUpdate','AutopilotOOBE','OSDDrivers','OSDEploy','OSDSoftware','OSDCatalog','OSDProgress','PSWindowsUpdate')
@@ -22,7 +25,7 @@ foreach ($module in $AllModules){
 try{
 Write-Host "'nProcessing: $module PowerShell Module for installtion" -ForegroundColor Cyan
 Write-Host 
-        Install-Module -Name $module -Force -AllowClobber -Repository PSGallery -SkipPublisherCheck
+        Install-Module -Name $module -Force -AllowClobber -Repository PSGallery -SkipPublisherCheck -Scope CurrentUser -Confirm:$false
 Write-Host
 Write-Host "Processing: $module PowerShell Module for import" -ForegroundColor Cyan
        Import-Module -Name $module -Force
