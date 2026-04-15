@@ -58,7 +58,7 @@ $ChocoSYSTEMSoftware = @(
 foreach($App in $SYSTEMSoftware){
     Write-Host "`nProcessing install for: $($App.Name)" -ForegroundColor Cyan
     Write-Host   
-        winget install --id $App.ID --exact --accept-source-agreements --accept-source-agreements --force
+        winget install --id $($App.ID) --exact --accept-source-agreements --accept-source-agreements --force
    Write-Host
    Write-Host "Completed: $($App.Name) install`n" -ForegroundColor Green
 }
@@ -66,7 +66,7 @@ foreach($App in $SYSTEMSoftware){
 foreach($App in $ChocoSYSTEMSoftware){
     Write-Host "`nProcessing install for: $($App.Name)" -ForegroundColor Cyan
     Write-Host   
-        choco install $App.ID -y
+        choco install $($App.ID) -y
    Write-Host
    Write-Host "Completed: $($App.Name) install`n" -ForegroundColor Green
 }
