@@ -11,7 +11,7 @@ $providers = @('NuGet',
 foreach($provider in $providers){
 Write-Host "Installing Windows PowerShell Package Provider: $provider" -ForegroundColor Cyan
 Write-Host
-            Install-PackageProvider -Name $provider -Force -Verbose
+            Install-PackageProvider -Name $provider -Force -Verbose -AllowClobber
 Write-Host
 Write-Host "Completed installation of Windows PowerShell Package Provider: $provider" -ForegroundColor Green
 
