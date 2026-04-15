@@ -1,7 +1,3 @@
-$OSSoftLogs = "C:\Logs\OSDCloud\Install\SYSTEM\$env:computername-OSSoftware.log"
-Start-Transcript -Path $OSSoftLogs
-
-###### NEW SCRIPT #######
 
 # Define the SYSTEM Software using Hash Tables @{ }
 $SYSTEMSoftware = @(
