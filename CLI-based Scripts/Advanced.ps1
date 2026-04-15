@@ -41,7 +41,7 @@ Write-Host "Processing: Mandatory System Configuration Pre-Requisites..." -Foreg
 Write-Verbose "Step 1 - PowerShell Package Providers..." -Verbose
 Write-Host
 
-$PSProviders = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/PowerShell%20Modules/PackageProviders.ps1")
+$PSProviders = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/PowerShell%20Modules/Package%20Providers/Install.ps1")
 Invoke-Expression $($PSProviders.Content)
 
 Write-Verbose "Step 2 - PowerShell 5.1 Modules..." -Verbose
