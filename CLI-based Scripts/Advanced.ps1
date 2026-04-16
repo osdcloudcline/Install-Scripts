@@ -59,7 +59,7 @@ pwsh Invoke-Expression $($PS7Modules.Content)
 Write-Verbose "Step 4 - Merging Registry Entries..." -Verbose
 Write-Host
 
-$ClientRegistry = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/Registry%20Modifications/ClientRegistry.ps1")
+$ClientRegistry = Invoke-WebRequest ("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Registry%20Modifications/ClientOSRegistry.ps1")
 Invoke-Expression $($ClientRegistry.Content)
 
 Write-Verbose "Step 5 - Client Operating System RSAT Tools..." -Verbose
