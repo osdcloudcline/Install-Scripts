@@ -77,18 +77,8 @@ Invoke-Expression $($Chrome.Content)
 
 Write-Host "Processing install for: Cloud Backup software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$DropBox = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Cloud%20Backups/DropBox.ps1")
-Invoke-Expression $($DropBox.Content)
-
-$GDrive = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Cloud%20Backups/GDrive.ps1")
-Invoke-Expression $($GDrive.Content)
-
-$OneDrive = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Cloud%20Backups/OneDrive.ps1")
-Invoke-Expression $($OneDrive.Content)
-
-$UPBR = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Cloud%20Backups/UPBR.ps1")
-Invoke-Expression $($UPBR.Content)
-
+$CorporateCloudBackups = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Corporate/Cloud%20Backups/CorporateCloudBackups.ps1")
+Invoke-Expression $($CorporateCloudBackups.Content)
 
 Write-Host "Processing install for: Media software..." -ForegroundColor DarkBlue -BackgroundColor White
 
