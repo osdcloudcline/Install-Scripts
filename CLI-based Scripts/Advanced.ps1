@@ -92,11 +92,8 @@ Invoke-Expression $($CloudBackups.Content)
 
 Write-Host "Processing install for: Dev Tools software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$DockerDesktop = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Dev%20Tools/DockerDesktop.ps1")
-Invoke-Expression $($DockerDesktop.Content)
-
-$GitHubDesktop = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Dev%20Tools/GitHubDesktop.ps1")
-Invoke-Expression $($GitHubDesktop.Content)
+$DevTools = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Dev%20Tools/AdvancedDevTools.ps1")
+Invoke-Expression $($DevTools.Content)
 
 
 Write-Host "Processing install for: File Transfer software..." -ForegroundColor DarkBlue -BackgroundColor White
