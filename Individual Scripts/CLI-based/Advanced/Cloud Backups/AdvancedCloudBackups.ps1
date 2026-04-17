@@ -17,5 +17,6 @@ foreach($App in $ADVBrowsers){
     Write-Host "Completed: $($App.Name) install`n" -ForegroundColor Green
 }
 
-Import-Module -Name OSD -Force
+$UPBR = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Cloud%20Backups/UPBR.ps1")
+Invoke-Expression $($UPBR.Content)
 
