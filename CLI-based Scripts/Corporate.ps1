@@ -71,9 +71,8 @@ Invoke-Expression $($CustomOSThemePacks.Content)
 
 Write-Host "Processing install for: Web Browsers..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$Chrome = Invoke-WebRequest ("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Corporate/Browsers/Chrome.ps1")
-Invoke-Expression $($Chrome.Content)
-
+$CorporateBrowsers = Invoke-WEbRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Corporate/Browsers/CorporateBrowsers.ps1")
+Invoke-Expression $($CorporateBrowsers.Content)
 
 Write-Host "Processing install for: Cloud Backup software..." -ForegroundColor DarkBlue -BackgroundColor White
 
