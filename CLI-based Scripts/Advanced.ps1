@@ -110,8 +110,8 @@ Invoke-Expression $($WinSCP.Content)
 
 Write-Host "Processing install for: Gaming software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$Steam = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Gaming/Steam.ps1")
-Invoke-Expression $($Steam.Content)
+$AdvancedGaming = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Gaming/AdvancedGaming.ps1")
+Invoke-Expression $($AdvancedGaming.Content)
 
 
 Write-Host "Processing install for: Media software..." -ForegroundColor DarkBlue -BackgroundColor White
