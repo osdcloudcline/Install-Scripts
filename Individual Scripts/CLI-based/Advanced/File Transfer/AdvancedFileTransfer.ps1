@@ -14,7 +14,7 @@ $ChocoAdvancedFTPTools = @(
 
 
 # Process WinGet Items
-foreach($App in $ADVDevTools){
+foreach($App in $ADVFTPTools){
     Write-Host "`nProcessing install for: $($App.Name)" -ForegroundColor Cyan
     # Added --silent and --accept-package-agreements for better automation
     winget install --id $($App.ID) --exact --silent --accept-package-agreements --accept-source-agreements --force
