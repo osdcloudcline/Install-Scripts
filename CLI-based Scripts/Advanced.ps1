@@ -98,21 +98,13 @@ Invoke-Expression $($DevTools.Content)
 
 Write-Host "Processing install for: File Transfer software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$FileZilla = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/File%20Transfer/FileZilla.ps1")
-Invoke-Expression $($FileZilla.Content)
-
-$PuTTY = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/File%20Transfer/PuTTY.ps1")
-Invoke-Expression $($PuTTY.Content)
-
-$WinSCP = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/File%20Transfer/WinSCP.ps1")
-Invoke-Expression $($WinSCP.Content)
-
+$AdvancedFileTransfer = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/File%20Transfer/AdvancedFileTransfer.ps1")
+Invoke-Expression $($AdvancedFileTransfer.Content)
 
 Write-Host "Processing install for: Gaming software..." -ForegroundColor DarkBlue -BackgroundColor White
 
 $AdvancedGaming = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Gaming/AdvancedGaming.ps1")
 Invoke-Expression $($AdvancedGaming.Content)
-
 
 Write-Host "Processing install for: Media software..." -ForegroundColor DarkBlue -BackgroundColor White
 
