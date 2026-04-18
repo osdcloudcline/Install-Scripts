@@ -1,5 +1,5 @@
 # Define the Advanced Media Software using Hash Tables @{ }
-$ADVGaming = @(
+$ADVMedia = @(
    @{ Name = "Audacity"; ID = "Audacity.Audacity" }
    @{ Name = "FFMPEG for Audacity"; ID = "BtbN.FFmpeg.GPL.Shared.8.1" }
    @{ Name = "GIMP"; ID = "GIMP.GIMP.3" }
@@ -19,7 +19,7 @@ $ADVGaming = @(
 
 
 # Process WinGet Items
-foreach($App in $ADVGaming){
+foreach($App in $ADVMedia){
     Write-Host "`nProcessing install for: $($App.Name)" -ForegroundColor Cyan
     # Added --silent and --accept-package-agreements for better automation
     winget install --id $($App.ID) --exact --silent --accept-package-agreements --accept-source-agreements --force
