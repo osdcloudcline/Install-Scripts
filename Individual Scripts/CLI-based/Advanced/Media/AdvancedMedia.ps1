@@ -25,3 +25,6 @@ foreach($App in $ADVGaming){
     winget install --id $($App.ID) --exact --silent --accept-package-agreements --accept-source-agreements --force
     Write-Host "Completed: $($App.Name) install`n" -ForegroundColor Green
 }
+
+$HDVideoFactory = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Media/HDVideoConverterPro.ps1")
+Invoke-Expression $($HDVideoFactory.Content)
