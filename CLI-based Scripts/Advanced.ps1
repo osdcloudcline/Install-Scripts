@@ -123,14 +123,8 @@ pause
 
 Write-Host "Processing install for: Programming software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$VSCode = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Programming/VSCode.ps1")
-Invoke-Expression $($VSCode.Content)
-
-$AICursor = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Programming/AICursorEditor.ps1")
-Invoke-Expression $($AICursor.Content)
-
-$VS2022Enterprise = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Programming/VS2022Enterprise.ps1")
-Invoke-Expression $($VS2022Enterprise.Content)
+$AdvancedProgramming = InvokeWebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Programming/AdvancedProgramming.ps1")
+Invoke-Expression $($AdvancedProgramming.Content)
 
 Write-Host "Processing install for: Vitual Desktop Interface software..." -ForegroundColor DarkBlue -BackgroundColor White
 
