@@ -17,3 +17,9 @@ Save-WebFile -SourceUrl $VMWareWSProDLURL -DestinationDirectory $destination
 Write-Host 
 Write-Host "Extracting: $app1 ..." -ErrorAction SilentlyContinue -WarningAction SilentlyContinue -InformationAction SilentlyContinue -ForegroundColor Cyan 
 Expand-7Zip -ArchiveFileName "C:\downloads\VMware-Workstation-Full-25H2-24995812.zip" -TargetPath $destination
+
+$Filelocation = "C:\downloads\VVMware-Workstation-Full-25H2-24995812.exe"
+
+Write-Verbose "Installing VMWare Workstation Professional 25H2 Build 24583834..." -Verbose
+Write-Host
+Start-Process -FilePath $Filelocation -ArgumentList '/s','/v"/qn"'
