@@ -4,7 +4,7 @@ $ADVSWUtils = @(
    @{ Name = "CCleaner"; ID = "Piriform.CCleaner" }
    @{ Name = "DDU"; ID = "Wagnardsoft.DisplayDriverUninstaller" }
    @{ Name = "Glary Utilities"; ID = "Glarysoft.GlaryUtilities" }
-   @{ Name = "Hardware Monitor Pro; ID = "Logitech.LGS" }
+   @{ Name = "Hardware Monitor Pro"; ID = "Logitech.LGS" }
    @{ Name = "Microsoft Deployment Toolkit"; ID = "Microsoft.MouseandKeyboardCenter" }
    @{ Name = "Microsoft DaRT"; ID = "Microsoft.MouseandKeyboardCenter" }
    @{ Name = "Smart Defrag"; ID = "Microsoft.MouseandKeyboardCenter" }
