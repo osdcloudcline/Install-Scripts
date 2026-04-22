@@ -1,11 +1,15 @@
 # Define the Advanced Hardware Utilities Software using Hash Tables @{ }
 $ADVHWUtils = @(
-   @{ Name = "Crucial Storage"; ID = "" }
-   @{ Name = "Logitech Options"; ID = "" }
-   @{ Name = "Logitech Unifying Software"; ID = "" }
-   @{ Name = "Microsoft Keyboard and Mouse"; ID = "" }
-   @{ Name = "Samsung Magician"; ID = "" }
-   @{ Name = "Western Digital SSD"; ID = "" }
+   @{ Name = "Crucial Storage"; ID = "Crucial.StorageExecutive" }
+   @{ Name = "Logitech Options"; ID = "Logitech.Options" }
+   @{ Name = "Logitech Unifying Software"; ID = "Logitech.UnifyingSoftware" }
+   @{ Name = "Logitech G-Hub"; ID = "Logitech.GHUB" }
+   @{ Name = "Logitech Gaming Software"; ID = "Logitech.LGS" }
+   @{ Name = "Microsoft Keyboard and Mouse"; ID = "Microsoft.MouseandKeyboardCenter" }
+)
+$ADVChocoHWUtils = @(
+   @{ Name = "Samsung Magician"; ID = "samsung-magician" }
+   @{ Name = "Western Digital SSD"; ID = "choco install data-lifeguard-diagnostic --version=1.36" }
 )
 
 
