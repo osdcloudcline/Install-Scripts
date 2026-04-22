@@ -1,7 +1,7 @@
 # Define the Advanced Programming Software using Hash Tables @{ }
 $ADVProgramming = @(
    @{ Name = "AI Cursor Editor"; ID = "Anysphere.Cursor" }
-   @{ Name = "VS Code for Windows "; ID = "Microsoft.VisualStudioCode" }
+   @{ Name = "VS Code for Windows"; ID = "Microsoft.VisualStudioCode" }
    @{ Name = "Microsoft Visual Studio 2026 Enterprise"; ID = "Microsoft.VisualStudio.Enterprise" }
 )
 
