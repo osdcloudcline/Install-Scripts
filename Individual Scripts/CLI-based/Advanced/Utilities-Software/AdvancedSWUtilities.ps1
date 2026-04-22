@@ -57,7 +57,7 @@ $Win11_26H1ADKUrl = "https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/ma
 Write-Verbose "Processing and Downloading: $app2 Setup File..." -Verbose
 Save-WebFile -SourceUrl $Win11_26H1ADKUrl -DestinationDirectory $OSDCloudGHdownloads
 
-Start-Process -FilePath "C:\downloads\adksetup.exe" -ArgumentList "/quiet /norestart"
+Start-Process -FilePath "C:\downloads\adksetup.exe" -ArgumentList "/features + /ceip off /quiet /norestart"
 
 Write-Host
 Write-Verbose "Acquiring $app3 setup file from OSDCloudCline GitHub OSDCloud\OS Kits repository...." -Verbose
