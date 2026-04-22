@@ -65,6 +65,10 @@ Start-Process -FilePath "C:\downloads\adksetup.exe" -ArgumentList "/quiet /nores
 
 New-Item -Path "C:\downloads\ADKPatch" -ItemType Directory
 
+$ADKPatchURL = "https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/OS%20Kits/Windows_ADK_10.1.28000.1_Update_KB5079489.zip"
+$ADKPatchdownloads = "C:\downloads\ADKPatch"
+Write-Verbose "Processing and downloading: Windows_ADK_10.1.28000.1_Update_KB5079489.zip..." -Verbose
+Save-WebFile -SourceUrl $ADKPatchURL -DestinationDirectory $ADKPatchdownloads
 pause
 
 Write-Host
