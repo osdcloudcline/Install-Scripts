@@ -73,7 +73,7 @@ Save-WebFile -SourceUrl $Win11_26H1PEADKUrl -DestinationDirectory $OSDCloudGHdow
 
 Start-Process -FilePath "C:\downloads\adkwinpesetup.exe" -ArgumentList "/quiet /norestart"
 
-New-Item -Path "C:\downloads\ADKPatch" -ItemType Directory
+New-Item -Path "C:\downloads\ADKPatch" -ItemType Directory -Force
 
 $ADKPatchURL = "https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/OS%20Kits/Windows_ADK_10.1.28000.1_Update_KB5079489.zip"
 $ADKPatchdownloads = "C:\downloads\ADKPatch"
@@ -98,6 +98,18 @@ Write-Verbose "Processing and Downloading: $app1 Setup File..." -Verbose
 Save-WebFile -SourceUrl $MDTKUrl -DestinationDirectory $OSDCloudGHdownloads
 
 Start-Process -FilePath "C:\downloads\MicrosoftDeploymentToolkit_x64.msi" -ArgumentList "/quiet /norestart"
+
+# Define the paths in an array
+$paths = @(
+    "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\Media",
+    "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs",
+    "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\en-us"
+)
+
+# Create the directories
+foreach ($path in $paths) {
+    New-Item -Path $path -ItemType Directory -Force
+}
 
 $app1 = "MS DART"
 
