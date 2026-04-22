@@ -63,14 +63,6 @@ Save-WebFile -SourceUrl $Win11_26H1ADKUrl -DestinationDirectory $OSDCloudGHdownl
 
 Start-Process -FilePath "C:\downloads\adksetup.exe" -ArgumentList "/quiet /norestart"
 
-New-Item -Path "C:\downloads\ADKPatch" -ItemType Directory
-
-$ADKPatchURL = "https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/OS%20Kits/Windows_ADK_10.1.28000.1_Update_KB5079489.zip"
-$ADKPatchdownloads = "C:\downloads\ADKPatch"
-Write-Verbose "Processing and downloading: Windows_ADK_10.1.28000.1_Update_KB5079489.zip..." -Verbose
-Save-WebFile -SourceUrl $ADKPatchURL -DestinationDirectory $ADKPatchdownloads
-pause
-
 Write-Host
 Write-Verbose "Acquiring $app3 setup file from OSDCloudCline GitHub OSDCloud\OS Kits repository...." -Verbose
 $OSDCloudGHdownloads = "C:\downloads"
@@ -80,6 +72,20 @@ Write-Verbose "Processing and Downloading: $app3 Setup File..." -Verbose
 Save-WebFile -SourceUrl $Win11_26H1PEADKUrl -DestinationDirectory $OSDCloudGHdownloads
 
 Start-Process -FilePath "C:\downloads\adkwinpesetup.exe" -ArgumentList "/quiet /norestart"
+
+New-Item -Path "C:\downloads\ADKPatch" -ItemType Directory
+
+$ADKPatchURL = "https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/OS%20Kits/Windows_ADK_10.1.28000.1_Update_KB5079489.zip"
+$ADKPatchdownloads = "C:\downloads\ADKPatch"
+$ADKPatchdownloadsExtract = "C:\downloads\ADKPatch\extract"
+Write-Verbose "Processing and downloading: Windows_ADK_10.1.28000.1_Update_KB5079489.zip..." -Verbose
+Save-WebFile -SourceUrl $ADKPatchURL -DestinationDirectory $ADKPatchdownloads
+Expand-7Zip -ArchiveFileName "$ADKPatchdownloads\Windows_ADK_10.1.28000.1_Update_KB5079489.zip" -TargetPath $ADKPatchdownloadsExtract
+
+Get-ChildItem "*.msp" | ForEach-Object {
+    Start-Process msiexec.exe -ArgumentList "/p `"$($_.FullName)`" /qn /l* `"$env:TEMP\adkupdate\msiexec-$($_.Name).log`"" -Wait
+}
+pause
 
 $app1 = "Microsoft Deployment Toolkit Build 8456"
 
