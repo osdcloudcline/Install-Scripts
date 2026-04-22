@@ -63,6 +63,8 @@ Save-WebFile -SourceUrl $Win11_26H1ADKUrl -DestinationDirectory $OSDCloudGHdownl
 
 Start-Process -FilePath "C:\downloads\adksetup.exe" -ArgumentList "/quiet /norestart"
 
+New-Item -Path "C:\downloads\ADKPatch" -ItemType Directory
+
 pause
 
 Write-Host
