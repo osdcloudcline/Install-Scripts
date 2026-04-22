@@ -9,7 +9,7 @@ $ADVHWUtils = @(
 )
 $ADVChocoHWUtils = @(
    @{ Name = "Samsung Magician"; ID = "samsung-magician" }
-   @{ Name = "Western Digital SSD"; ID = "choco install data-lifeguard-diagnostic --version=1.36" }
+   @{ Name = "Western Digital SSD"; ID = "data-lifeguard-diagnostic --version=1.36" }
 )
 
 
