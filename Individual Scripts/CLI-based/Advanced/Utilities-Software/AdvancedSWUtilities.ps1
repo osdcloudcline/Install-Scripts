@@ -6,6 +6,7 @@ $ADVSWUtils = @(
    @{ Name = "Glary Utilities"; ID = "Glarysoft.GlaryUtilities" }
    @{ Name = "Smart Defrag"; ID = "IObit.SmartDefrag" }
    @{ Name = "Wise Registry Cleaner"; ID = "WiseCleaner.WiseRegistryCleaner" }
+   @{ Name = "Windows Debugging Toolsr"; ID = "Microsoft.WinDbg" }
 )
 
 # Process WinGet Items
