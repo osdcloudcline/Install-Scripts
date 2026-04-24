@@ -45,7 +45,7 @@ $Win11_22H2SDK = "C:\downloads\winsdksetup.exe"
 $Win11_22H2SDKUrl = "https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/OS%20Kits/winsdksetup.exe"
 Write-Verbose "Processing and Downloading: $app1 Setup File..." -Verbose
 Save-WebFile -SourceUrl $Win11_22H2SDKUrl -DestinationDirectory $OSDCloudGHdownloads
-
+Write-Verbose "Installing: $app1..." -Verbose
 Start-Process -FilePath "C:\OSDCloud\GitHub\downloads\winsdksetup.exe" -ArgumentList "/quiet /norestart"
 
 pause
@@ -57,7 +57,7 @@ $Win11_26H1ADK = "C:\downloads\adksetup.exe"
 $Win11_26H1ADKUrl = "https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/OS%20Kits/adksetup.exe"
 Write-Verbose "Processing and Downloading: $app2 Setup File..." -Verbose
 Save-WebFile -SourceUrl $Win11_26H1ADKUrl -DestinationDirectory $OSDCloudGHdownloads
-
+Write-Verbose "Installing: $app2..." -Verbose
 Start-Process -FilePath "C:\downloads\adksetup.exe" -ArgumentList "/features + /ceip off /quiet /norestart"
 
 Write-Host
@@ -67,7 +67,7 @@ $Win11_26H1PEADK = "C:\downloads\adkwinpesetup.exe"
 $Win11_26H1PEADKUrl = "https://github.com/osdcloudcline/OSDCloud/raw/refs/heads/main/OS%20Kits/adkwinpesetup.exe"
 Write-Verbose "Processing and Downloading: $app3 Setup File..." -Verbose
 Save-WebFile -SourceUrl $Win11_26H1PEADKUrl -DestinationDirectory $OSDCloudGHdownloads
-
+Write-Verbose "Installing: $app3..." -Verbose
 Start-Process -FilePath "C:\downloads\adkwinpesetup.exe" -ArgumentList "/quiet /norestart"
 
 New-Item -Path "C:\downloads\ADKPatch" -ItemType Directory -Force
@@ -80,7 +80,7 @@ Save-WebFile -SourceUrl $ADKPatchURL -DestinationDirectory $ADKPatchdownloads
 Expand-7Zip -ArchiveFileName "$ADKPatchdownloads\Windows_ADK_10.1.28000.1_Update_KB5079489.zip" -TargetPath $ADKPatchdownloadsExtract
 
 Get-ChildItem "*.msp" | ForEach-Object {
-    Start-Process msiexec.exe -ArgumentList "/p `"$($_.FullName)`" /qn /l* `"$env:TEMP\adkupdate\msiexec-$($_.Name).log`"" -Wait
+    Start-Process msiexec.exe -ArgumentList "/p `"$($_.FullName)`" /qn /l* `"C:\downloads\ADKPatch\extract-$($_.Name).log`"" -Wait
 }
 pause
 
