@@ -22,7 +22,7 @@ $ADVMedia = @(
 foreach($App in $ADVMedia){
     Write-Host "`nProcessing install for: $($App.Name)" -ForegroundColor Cyan
     # Added --silent and --accept-package-agreements for better automation
-    winget install --id $($App.ID) --exact --silent --accept-package-agreements --accept-source-agreements --force
+    winget install --id $($App.ID) --exact --silent --accept-package-agreements --accept-source-agreements --force --source winget
     Write-Host "Completed: $($App.Name) install`n" -ForegroundColor Green
 }
 
@@ -37,3 +37,5 @@ $HDVideoSetup = "C:\downloads\hd-video-converter-pro.exe"
 Save-WebFile -SourceUrl $HDVideoSource  -DestinationDirectory $HDVideoDestination
 
 Write-Host ' ATTN: Manual install needed!  ' -ForegroundColor DarkRed -BackgroundColor White
+
+Start-Process -Path $HDVideoSource
