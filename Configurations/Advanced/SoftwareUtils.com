@@ -13,7 +13,7 @@ $ADVSWUtils = @(
 foreach($App in $ADVSWUtils){
     Write-Host "`nProcessing install for: $($App.Name)" -ForegroundColor Cyan
     # Added --silent and --accept-package-agreements for better automation
-    winget install --id $($App.ID) --exact --silent --accept-package-agreements --accept-source-agreements --force
+    winget install --id $($App.ID) --exact --silent --accept-package-agreements --accept-source-agreements --force --source winget
     Write-Host "Completed: $($App.Name) install`n" -ForegroundColor Green
 }
 
@@ -118,4 +118,4 @@ $DARTUrl = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilit
 Write-Verbose "Processing and Downloading: $app1 Setup File..." -Verbose
 Save-WebFile -SourceUrl $DARTUrl -DestinationDirectory $OSDCloudGHdownloads
 
-Start-Process -FilePath "C:\downloads\MSDaRT100.msi"  -ArgumentList "/qn ADDLOCAL=ALL"
+Start-Process -FilePath "C:\downloads\MSDaRT100.msi"  -ArgumentList "/norestart ADDLOCAL=ALL"
