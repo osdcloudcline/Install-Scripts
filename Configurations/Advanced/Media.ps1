@@ -26,5 +26,14 @@ foreach($App in $ADVMedia){
     Write-Host "Completed: $($App.Name) install`n" -ForegroundColor Green
 }
 
-$HDVideoFactory = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Media/HDVideoConverterPro.ps1")
-Invoke-Expression $($HDVideoFactory.Content)
+$app1 = "HD Video Converter Factory Pro"
+
+Write-Verbose "Processing: $app1..." -Verbose
+Write-Host 
+Write-Host "Acquiring $app1 from vendor website..." -ForegroundColor Cyan
+$HDVideoSource = "https://us.videoconverterfactory.com/download/hd-video-converter-pro.exe"
+$HDVideoDestination = "C:\downloads"
+$HDVideoSetup = "C:\downloads\hd-video-converter-pro.exe"
+Save-WebFile -SourceUrl $HDVideoSource  -DestinationDirectory $HDVideoDestination
+
+Write-Host ' ATTN: Manual install needed!  ' -ForegroundColor DarkRed -BackgroundColor White
