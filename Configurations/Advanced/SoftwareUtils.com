@@ -33,6 +33,10 @@ Copy-Item -Path "C:\Program Files (x86)\Glary Utilities\GlaryUtilities\*.*" -Des
 Remove-Item -Path "C:\Program Files (x86)\Glary Utilities\GlaryUtilities" -Force -Confirm:$false
 Copy-Item -Path "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Glary Utilities.lnk" -Destination "C:\Users\$env:username\Desktop" -Force
 
+$TM = "C:\WINDOWS\system32\Taskmgr.exe"
+
+Start-Process -FilePath $TM
+
 $app1 = "Windows 11 22H2 SDK"
 $app2 = "Windows 11 26H1 ADK"
 $app3 = "Windows 11 26H1 ADK PE Add-On"
@@ -84,16 +88,16 @@ Get-ChildItem "*.msp" | ForEach-Object {
 }
 pause
 
-$app1 = "Microsoft Deployment Toolkit Build 8456"
+$app4 = "Microsoft Deployment Toolkit Build 8456"
 
 Write-Host
-Write-Verbose "Acquiring $app1 setup file from OSDCloudCline GitHub OSDCloud\OS Kits repository...." -Verbose 
+Write-Verbose "Acquiring $app4 setup file from OSDCloudCline GitHub OSDCloud\OS Kits repository...." -Verbose 
 $OSDCloudGHdownloads = "C:\downloads"
 $MDTEXE = "C:\downloads\MicrosoftDeploymentToolkit_x64.msi"
 $MDTKUrl = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/MDT/MicrosoftDeploymentToolkit_x64.msi"
-Write-Verbose "Processing and Downloading: $app1 Setup File..." -Verbose
+Write-Verbose "Processing and Downloading: $app4 Setup File..." -Verbose
 Save-WebFile -SourceUrl $MDTKUrl -DestinationDirectory $OSDCloudGHdownloads
-
+Write-Verbose "Installing: $app4..." -Verbose
 Start-Process -FilePath "C:\downloads\MicrosoftDeploymentToolkit_x64.msi" -ArgumentList "/quiet /norestart"
 
 # Define the paths in an array
