@@ -112,14 +112,16 @@ foreach ($path in $paths) {
     New-Item -Path $path -ItemType Directory -Force
 }
 
-$app1 = "MS DART"
+pause
+
+$app5 = "MS DART"
 
 Write-Host
-Write-Verbose "Acquiring $app1 setup file from OSDCloudCline GitHub OSDCloud\OS Kits repository...." -Verbose 
+Write-Verbose "Acquiring $app5 setup file from OSDCloudCline GitHub OSDCloud\OS Kits repository...." -Verbose 
 $OSDCloudGHdownloads = "C:\downloads"
 $MSDARTEXE = "C:\downloads\MSDaRT100.msi"
 $DARTUrl = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/DaRT/version%2010.0%20x64/MSDaRT100.msi"
-Write-Verbose "Processing and Downloading: $app1 Setup File..." -Verbose
+Write-Verbose "Processing and Downloading: $app5 Setup File..." -Verbose
 Save-WebFile -SourceUrl $DARTUrl -DestinationDirectory $OSDCloudGHdownloads
-
+Write-Verbose "Installing: $app4..." -Verbose
 Start-Process -FilePath "C:\downloads\MSDaRT100.msi"  -ArgumentList "/norestart ADDLOCAL=ALL"
