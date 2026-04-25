@@ -21,8 +21,24 @@ Write-Host "Processing: Mandatory System Configuration Pre-Requisites..." -Foreg
 Write-Verbose "Step 1 - PowerShell Package Providers..." -Verbose
 Write-Host
 
-$PSProviders = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/PowerShell%20Modules/Package%20Providers/Install.ps1")
-Invoke-Expression $($PSProviders.Content)
+$providers = @('NuGet',
+'Chocolatey',
+'PowerShellGet',
+'DockerMsftProvider',
+'ChocolateyGet',
+'WinGet',
+'ChocoOneGet',
+'OfficeProvider'
+)
+
+foreach($provider in $providers){
+Write-Host "Installing Windows PowerShell Package Provider: $provider" -ForegroundColor Cyan
+Write-Host
+            Install-PackageProvider -Name $provider -Force -Verbose -AllowClobber
+Write-Host
+Write-Host "Completed installation of Windows PowerShell Package Provider: $provider" -ForegroundColor Green
+
+}
 
 Write-Verbose "Step 2 - PowerShell 5.1 Modules..." -Verbose
 Write-Host
