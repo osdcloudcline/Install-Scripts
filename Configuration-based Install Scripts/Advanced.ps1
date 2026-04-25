@@ -35,9 +35,9 @@ pause
 
 
 Write-Host "Applying configuration to $env:computername..." -ForegroundColor DarkBlue -BackgroundColor White
-
+Write-Host
 Write-Host "Processing: Mandatory System Configuration Pre-Requisites..." -ForegroundColor Cyan
-
+Write-Host
 Write-Verbose "Step 1 - PowerShell Package Providers..." -Verbose
 Write-Host
 
@@ -81,38 +81,38 @@ $CustomOSThemePacks = Invoke-WebRequest("https://github.com/osdcloudcline/Instal
 Invoke-Expression $($CustomOSThemePacks.Content)
 
 Write-Host "Processing install for: Web Browsers..." -ForegroundColor DarkBlue -BackgroundColor White
-
-$Browsers = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Browsers/AdvancedBrowsers.ps1")
+Write-Host
+$Browsers = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Configurations/Advanced/Browsers.ps1")
 Invoke-Expression $($Browsers.Content)
 
 Write-Host "Processing install for: Cloud Backup software..." -ForegroundColor DarkBlue -BackgroundColor White
-
-$CloudBackups = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Cloud%20Backups/AdvancedCloudBackups.ps1")
+Write-Host
+$CloudBackups = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Configurations/Advanced/CloudBackups.ps1")
 Invoke-Expression $($CloudBackups.Content)
 
 Write-Host "Processing install for: Dev Tools software..." -ForegroundColor DarkBlue -BackgroundColor White
-
-$DevTools = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Dev%20Tools/AdvancedDevTools.ps1")
+Write-Host
+$DevTools = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Configurations/Advanced/DevTools.ps1")
 Invoke-Expression $($DevTools.Content)
 
 
 Write-Host "Processing install for: File Transfer software..." -ForegroundColor DarkBlue -BackgroundColor White
-
-$AdvancedFileTransfer = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/File%20Transfer/AdvancedFileTransfer.ps1")
-Invoke-Expression $($AdvancedFileTransfer.Content)
+Write-Host
+$FileTransfer = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Configurations/Advanced/FileTransfers.ps1")
+Invoke-Expression $($FileTransfer.Content)
 
 Write-Host "Processing install for: Gaming software..." -ForegroundColor DarkBlue -BackgroundColor White
-
-$AdvancedGaming = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Gaming/AdvancedGaming.ps1")
-Invoke-Expression $($AdvancedGaming.Content)
+Write-Host
+$Gaming = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Configurations/Advanced/Gaming.ps1")
+Invoke-Expression $($Gaming.Content)
 
 Write-Host "Processing install for: Media software..." -ForegroundColor DarkBlue -BackgroundColor White
-
-$AdvancedMedia = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Media/AdvancedMedia.ps1")
+Write-Host
+$Media = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Configurations/Advanced/Media.ps1")
 Invoke-Expression $($AdvancedMedia.Content)
 
 Write-Host "Processing install for: Productivity software..." -ForegroundColor DarkBlue -BackgroundColor White
-
+Write-Host
 $AcrobatReaderDC = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Productivity/AcrobatReaderDC.ps1")
 Invoke-Expression $($AcrobatReaderDC.Content)
 
@@ -122,52 +122,36 @@ Invoke-Expression $($Office2024.Content)
 pause
 
 Write-Host "Processing install for: Programming software..." -ForegroundColor DarkBlue -BackgroundColor White
-
-$AdvancedProgramming = InvokeWebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Programming/AdvancedProgramming.ps1")
-Invoke-Expression $($AdvancedProgramming.Content)
+Write-Host
+$Programming = InvokeWebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Configurations/Advanced/Programming.ps1")
+Invoke-Expression $($Programming.Content)
 
 Write-Host "Processing install for: Vitual Desktop Interface software..." -ForegroundColor DarkBlue -BackgroundColor White
-
-$AdvancedVDIRemoteSessions = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/VDI-RemoteDesktop/Advanced-VDIRemoteDesktop.ps1")
-Invoke-Expression $($AdvancedVDIRemoteSessions.Content)
-
+Write-Host
+$VDIRemoteSessions = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Configurations/Advanced/VDI.ps1")
+Invoke-Expression $($VDIRemoteSessions.Content)
 
 Write-Host "Processing install for: Virtualization software..." -ForegroundColor DarkBlue -BackgroundColor White
-
-$AdvancedVirtualization = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Virtualization/AdvancedVirtualization.ps1")
+Write-Host
+$Virtualization = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Configurations/Advanced/Virtualization.ps1")
 Invoke-Expression $($AdvancedVirtualization.Content)
 
 Write-Host "Processing install for: System Utilities - Hardware..." -ForegroundColor DarkBlue -BackgroundColor White
-
-$AdvancedHardwareUtilities = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Utilities-Hardware/AdvancedHardwareUtilities.ps1")
-Invoke-Expression $($AdvancedHardwareUtilities.Content)
+Write-Host
+$HardwareUtilities = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Configurations/Advanced/HardwareUtils.ps1")
+Invoke-Expression $($HardwareUtilities.Content)
 
 Write-Host "Processing install for: System Utilities - Software..." -ForegroundColor DarkBlue -BackgroundColor White
-
-$AdvancedSoftwareUtilities = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/Advanced/Utilities-Software/AdvancedSWUtilities.ps1")
-Invoke-Expression $($AdvancedSoftwareUtilities.Content)
+Write-Host
+$SoftwareUtilities = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Configurations/Advanced/SoftwareUtils.com")
+Invoke-Expression $($SoftwareUtilities.Content)
 
 Write-Host "Processing downloads for: Security software..." -ForegroundColor DarkBlue -BackgroundColor White
-
-$MBAM = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Security/Anti-Malware/MalwareBytes.ps1")
-Invoke-Expression $($MBAM.Content)
-
-$BDTS = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Security/Anti-Virus/BitDefender.ps1")
-Invoke-Expression $($BDTS.Content)
-
-$N360 = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Security/Anti-Virus/Norton360.ps1")
-Invoke-Expression $($N360.Content)
-
-$IPVanish = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Security/VPN/IPVanish.ps1")
-Invoke-Expression $($IPVanish.Content)
-
-$NordVPN = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Security/VPN/NordVPN.ps1")
-Invoke-Expression $($NordVPN.Content)
+Write-Host
+$Security = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Configurations/Advanced/Security.ps1")
+Invoke-Expression $($Security.Content)
 
 Write-Host "Processing install for: System Rescue Downloads..." -ForegroundColor DarkBlue -BackgroundColor White
-
-$Clonezilla = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/System%20Rescue/Clonezilla.ps1")
-Invoke-Expression $($Clonezilla.Content)
-
-$HirenBootCD = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Individual%20Scripts/CLI-based/System%20Rescue/HirenBootCD.ps1")
-Invoke-Expression $($HirenBootCD.Content)
+Write-Host
+$SystemRescue = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Configurations/Advanced/SystemRescue.ps1")
+Invoke-Expression $($SystemRescue.Content)
