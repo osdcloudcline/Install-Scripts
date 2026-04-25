@@ -18,3 +18,12 @@ $destination = "C:\downloads"
 
 Write-Verbose "Processing $app2 for download..." -Verbose
 Save-WebFile -SourceUrl $N360DLURL -DestinationDirectory $destination
+
+$app3 = "MalwareBytes"
+
+$MBDLURL = "https://github.com/osdcloudcline/Software/raw/main/Security/MalwareBytes/MBSetup.exe"
+
+$destination = "C:\downloads"
+
+Write-Verbose "Processing $app3 for download..." -Verbose
+Save-WebFile -SourceUrl $MBDLURL -DestinationDirectory $destination
