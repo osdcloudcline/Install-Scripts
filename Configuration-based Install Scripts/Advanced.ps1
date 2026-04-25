@@ -155,3 +155,8 @@ Write-Host "Processing install for: System Rescue Downloads..." -ForegroundColor
 Write-Host
 $SystemRescue = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Configurations/Advanced/SystemRescue.ps1")
 Invoke-Expression $($SystemRescue.Content)
+
+Write-Host "Processing PowerShell Module for: Microsoft Deployment Toolkit..." -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host
+$MDTPSDModule = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/PowerShell%20Modules/MDT/MDT.psd1")
+Invoke-Expression $($MDTPSModule.Content)
