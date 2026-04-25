@@ -3,7 +3,7 @@ Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
 
 # Combined arrays (Fixed missing commas in $MSGraph)
 
-$OSD = @('OSD','OSDBuilder','OSDSUS','OSDUpdate','AutopilotOOBE','OSDDrivers','OSDEploy','OSDSoftware','OSDCatalog','OSDProgress','PSWindowsUpdate')
+$OSD = @('OSD','OSDBuilder','OSDSUS','OSDUpdate','AutopilotOOBE','OSDEploy','OSDSoftware','OSDProgress','PSWindowsUpdate')
 $OSDCloud2 = @('OSDCloud','OSDCloud.Workspace','platyPS')
 $Cloud = @('OSDCloudCLI','OSDCloudGUI','OSDCloudAzure','Azure','AzureAD','Az.Accounts','Az.Storage','Az.Resources','Az.KeyVault','Az.Compute','Az.Automation','Az.Network','Az.ApiManagement','Az.Advisor','Az.AnalysisServices','Az.Billing','Az.ApplicationInsights','Az.Cdn','Az.Batch','Az.Monitor')
 $MSGraph = @('Microsoft.Graph','Microsoft.Graph.Intune','Microsoft.Graph.Groups','Microsoft.Graph.Users','Microsoft.Graph.Sites','Microsoft.Graph.Mail','Microsoft.Graph.Identity.DirectoryManagement','Microsoft.Graph.Teams','Microsoft.Graph.DeviceManagement')
