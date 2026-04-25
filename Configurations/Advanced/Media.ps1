@@ -8,6 +8,8 @@ $ADVMedia = @(
    @{ Name = "MKV Toolnix"; ID = "MoritzBunkus.MKVToolNix" }
    @{ Name = "MakeMKV"; ID = "GuinpinSoft.MakeMKV" }
    @{ Name = "MediaInfo"; ID = "MediaArea.MediaInfo.GUI" }
+   @{ Name = "Media Monkey 2024"; ID = "VentisMedia.MediaMonkey.2024" }
+   @{ Name = "Exact Audio Copy"; ID = "AndreWiethoff.ExactAudioCopy" }
    @{ Name = "Logitech Harmony Universal Remote Control"; ID = "Logitech.MyHarmony" }
    @{ Name = "PowerISO"; ID = "PowerSoftware.PowerISO" }
    @{ Name = "VLC Player"; ID = "VideoLAN.VLC" }
