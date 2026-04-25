@@ -11,7 +11,7 @@ Import-Module -Name OSD -Force
 ## Clonezilla URL ######
 ##############################
 
-$ClonezillaURL = "https://free.nchc.org.tw/clonezilla-live/stable/clonezilla-live-3.2.0-5-amd64.iso"
+$ClonezillaURL = "https://free.nchc.org.tw/clonezilla-live/stable/clonezilla-live-3.3.1-35-amd64.iso"
 
 ##############################
 ## Download destination 
@@ -20,7 +20,7 @@ $ClonezillaURL = "https://free.nchc.org.tw/clonezilla-live/stable/clonezilla-liv
 $DLDestination = "C:\downloads\SystemRescue"
 
 
-Write-Verbose "Processing: Downloading Clonezilla x64 3.2.0-5..."
+Write-Verbose "Processing: Downloading Clonezilla x64 3.3.1.35..."
 
 Save-WebFile -SourceUrl $ClonezillaURL -DestinationDirectory $DLDestination
 
