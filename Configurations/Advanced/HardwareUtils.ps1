@@ -1,14 +1,14 @@
 # Define the Advanced Hardware Utilities Software using Hash Tables @{ }
 $ADVHWUtils = @(
-   @{ Name = "Crucial Storage"; ID = "Crucial.StorageExecutive" }
-   @{ Name = "Logitech Options"; ID = "Logitech.Options" }
-   @{ Name = "Logitech Unifying Software"; ID = "Logitech.UnifyingSoftware" }
-   @{ Name = "Logitech G-Hub"; ID = "Logitech.GHUB" }
-   @{ Name = "Logitech Gaming Software"; ID = "Logitech.LGS" }
-   @{ Name = "Microsoft Keyboard and Mouse"; ID = "Microsoft.MouseandKeyboardCenter" }
+   @{ Name = "Crucial Storage"; ID = "Crucial.StorageExecutive" },
+   @{ Name = "Logitech Options"; ID = "Logitech.Options" },
+   @{ Name = "Logitech Unifying Software"; ID = "Logitech.UnifyingSoftware" },
+   @{ Name = "Logitech G-Hub"; ID = "Logitech.GHUB" },
+   @{ Name = "Logitech Gaming Software"; ID = "Logitech.LGS" },
+   @{ Name = "Microsoft Keyboard and Mouse"; ID = "Microsoft.MouseandKeyboardCenter" },
 )
 $ADVChocoHWUtils = @(
-   @{ Name = "Samsung Magician"; ID = "samsung-magician" }
+   @{ Name = "Samsung Magician"; ID = "samsung-magician" },
    @{ Name = "Western Digital SSD"; ID = "data-lifeguard-diagnostic --version=1.36" }
 )
 
@@ -28,3 +28,13 @@ foreach($App in $ADVChocoHWUtils){
     choco install $($App.ID) -y
     Write-Host "Completed: $($App.Name) install`n" -ForegroundColor Green
 }
+
+
+$CPUManufacturer = Get-CimInstance Win32_Processor | Select-Object Manufacturer
+
+If($CPUManufacturer -eq "AuthenticAMD"){
+$AMDCPU = Invoke-WebRequest("")
+Invoke-Expression $($AMDCPU.Content)
+elseif($CPUManufacturer -eq "GenuineIntel"){
+$IntelCPU = Invoke-WebRequest("")
+Invoke-Expression $($IntelCPU.Content)
