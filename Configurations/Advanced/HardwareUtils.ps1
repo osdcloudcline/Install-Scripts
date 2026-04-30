@@ -33,7 +33,7 @@ foreach($App in $ADVChocoHWUtils){
 $CPUManufacturer = Get-CimInstance Win32_Processor | Select-Object Manufacturer
 
 If($CPUManufacturer -eq "AuthenticAMD"){
-$AMDCPU = Invoke-WebRequest("")
+$AMDCPU = Invoke-WebRequest("https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Chipset/AMD/AMDChipsets.ps1")
 Invoke-Expression $($AMDCPU.Content)
 elseif($CPUManufacturer -eq "GenuineIntel"){
 $IntelCPU = Invoke-WebRequest("https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Chipset/Intel/IntelChipsets.ps1")
