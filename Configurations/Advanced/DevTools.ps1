@@ -1,11 +1,9 @@
 # Define the Advanced Dev Tools Software using Hash Tables @{ }
 $ADVDevTools = @(
-   @{ Name = "Docker Desktop"; ID = "Docker.DockerDesktop" }
-   @{ Name = "Git for Windows"; ID = "Git.Git" } 
+   @{ Name = "Docker Desktop"; ID = "Docker.DockerDesktop" },
+   @{ Name = "Git for Windows"; ID = "Git.Git" }, 
    @{ Name = "GitHub Desktop"; ID = "GitHub.GitHubDesktop" }
 )
-
-
 
 # Process WinGet Items
 foreach($App in $ADVDevTools){
