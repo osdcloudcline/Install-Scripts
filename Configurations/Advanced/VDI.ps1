@@ -1,6 +1,6 @@
 # Define the Advanced VDI/Remote Desktop Software using Hash Tables @{ }
 $ADVVDIRemote = @(
-   @{ Name = "AnyDesk"; ID = "AnyDesk.AnyDesk" }
+   @{ Name = "AnyDesk"; ID = "AnyDesk.AnyDesk" },
    @{ Name = "Microsoft Remote Desktop"; ID = "Microsoft.RemoteDesktopClient" }
    
 )
