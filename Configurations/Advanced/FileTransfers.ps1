@@ -1,6 +1,6 @@
 # Define the Advanced File Transfer Software using Hash Tables @{ }
 $ADVFTPTools = @(
-   @{ Name = "PuTTY"; ID = "PuTTY.PuTTY" }
+   @{ Name = "PuTTY"; ID = "PuTTY.PuTTY" },
    @{ Name = "WinSCP"; ID = "WinSCP.WinSCP" } 
    
 )
