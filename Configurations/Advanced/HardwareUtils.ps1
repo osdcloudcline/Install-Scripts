@@ -36,5 +36,5 @@ If($CPUManufacturer -eq "AuthenticAMD"){
 $AMDCPU = Invoke-WebRequest("")
 Invoke-Expression $($AMDCPU.Content)
 elseif($CPUManufacturer -eq "GenuineIntel"){
-$IntelCPU = Invoke-WebRequest("")
+$IntelCPU = Invoke-WebRequest("https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Chipset/Intel/IntelChipsets.ps1")
 Invoke-Expression $($IntelCPU.Content)
