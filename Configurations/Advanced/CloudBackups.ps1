@@ -1,13 +1,11 @@
 # Define the Advanced Cloud Backups Software using Hash Tables @{ }
 $ADVCloudBackups = @(
-   @{ Name = "Dropbox"; ID = "Dropbox.Dropbox" }
-   @{ Name = "Google Drive"; ID = "Google.GoogleDrive" } 
-   @{ Name = "NextCloud Desktop Client"; ID = "Nextcloud.NextcloudDesktop" }
-   @{ Name = "Microsoft OneDrive"; ID = "Microsoft.OneDrive" }
+   @{ Name = "Dropbox"; ID = "Dropbox.Dropbox" },
+   @{ Name = "Google Drive"; ID = "Google.GoogleDrive" }, 
+   @{ Name = "NextCloud Desktop Client"; ID = "Nextcloud.NextcloudDesktop" },
+   @{ Name = "Microsoft OneDrive"; ID = "Microsoft.OneDrive" },
    @{ Name = "Apple iCloud"; ID = "Apple.iCloud" }
 )
-
-
 
 # Process WinGet Items
 foreach($App in $ADVCloudBackups){
