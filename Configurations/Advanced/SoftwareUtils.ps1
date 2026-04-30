@@ -1,11 +1,11 @@
 # Define the Advanced Software Utilities Software using Hash Tables @{ }
 $ADVSWUtils = @(
-   @{ Name = "7-Zip"; ID = "7zip.7zip" }
-   @{ Name = "CCleaner"; ID = "Piriform.CCleaner" }
-   @{ Name = "DDU"; ID = "Wagnardsoft.DisplayDriverUninstaller" }
-   @{ Name = "Glary Utilities"; ID = "Glarysoft.GlaryUtilities" }
-   @{ Name = "Smart Defrag"; ID = "IObit.SmartDefrag" }
-   @{ Name = "Wise Registry Cleaner"; ID = "WiseCleaner.WiseRegistryCleaner" }
+   @{ Name = "7-Zip"; ID = "7zip.7zip" },
+   @{ Name = "CCleaner"; ID = "Piriform.CCleaner" },
+   @{ Name = "DDU"; ID = "Wagnardsoft.DisplayDriverUninstaller" },
+   @{ Name = "Glary Utilities"; ID = "Glarysoft.GlaryUtilities" },
+   @{ Name = "Smart Defrag"; ID = "IObit.SmartDefrag" },
+   @{ Name = "Wise Registry Cleaner"; ID = "WiseCleaner.WiseRegistryCleaner" },
    @{ Name = "Windows Debugging Toolsr"; ID = "Microsoft.WinDbg" }
 )
 
