@@ -31,4 +31,15 @@ Write-Host "HP System Detected. Processing HP-specific tools..." -ForegroundColo
       winget install --id $($App.ID) --exact --silent --accept-package-agreements --accept-source-agreements --force --source winget
 Write-Host "Completed: $($App.Name) install`n" -ForegroundColor Green
 }
+}elseif($PCManufacturer -like "*ASUS*"){
+
+$ASUSApps = @(
+  @{Name= ""; ID="" }
+)
+
+foreach($App in $ASUSApps){
+Write-Host "HP System Detected. Processing HP-specific tools..." -ForegroundColor Yellow
+      winget install --id $($App.ID) --exact --silent --accept-package-agreements --accept-source-agreements --force --source winget
+Write-Host "Completed: $($App.Name) install`n" -ForegroundColor Green
+}
 }
