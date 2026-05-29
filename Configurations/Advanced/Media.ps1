@@ -16,7 +16,8 @@ $ADVMedia = @(
    @{ Name = "Apple iTunes"; ID = "Apple.iTunes" },
    @{ Name = "Apple Application Support 64-bit"; ID = "Apple.AppleApplicationSupport.x64" },
    @{ Name = "Apple Mobile Device Support"; ID = "Apple.AppleMobileDeviceSupport" },
-   @{ Name = "Apple Bonjour"; ID = "Apple.Bonjour" }
+   @{ Name = "Apple Bonjour"; ID = "Apple.Bonjour" },
+   @{ Name = "MusicBrainz Picard"; ID = "MusicBrainz.Picard" }
 )
 
 # Process WinGet Items
