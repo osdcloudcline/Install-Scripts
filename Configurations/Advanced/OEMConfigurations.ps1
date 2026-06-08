@@ -34,7 +34,9 @@ Write-Host "Completed: $($App.Name) install`n" -ForegroundColor Green
 }elseif($PCManufacturer -like "*ASUS*"){
 
 $ASUSApps = @(
-  @{Name= ""; ID="" }
+  @{Name= "CPUID ROG CPU-Z"; ID="CPUID.CPU-Z.ROG" },
+  @{Name= "GPU Tweak III (Stable)"; ID="Asus.GpuTweak3.Stable" },
+  @{Name= "ASUS Armoury Crate"; ID="Asus.ArmouryCrate" },
 )
 
 foreach($App in $ASUSApps){
