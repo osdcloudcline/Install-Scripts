@@ -9,7 +9,7 @@ $app1 = "VMWare Workstation Professional"
 Install-Module -Name OSD -Force -AllowClobber -SkipPublisherCheck
 Import-Module -Name OSD -Force
 
-$VMWareWSProDLURL = "https://dl.bobpony.com/software/vmware/workstation/VMware-Workstation-Full-25H2-24995812.zip"
+$VMWareWSProDLURL = "https://files.softunwrap.com/vmware/VMware-Workstation-Full-26H1-25388281.zip"
 $destination = "C:\downloads"
 
 
@@ -18,7 +18,7 @@ Save-WebFile -SourceUrl $VMWareWSProDLURL -DestinationDirectory $destination
 
 Write-Host 
 Write-Host "Extracting: $app1 ..." -ErrorAction SilentlyContinue -WarningAction SilentlyContinue -InformationAction SilentlyContinue -ForegroundColor Cyan 
-Expand-7Zip -ArchiveFileName "C:\downloads\VMware-Workstation-Full-25H2-24995812.zip" -TargetPath $destination
+Expand-7Zip -ArchiveFileName "C:\downloads\VMware-Workstation-Full-26H1-25388281.zip" -TargetPath $destination
 
 Stop-Transcript
 
