@@ -56,29 +56,11 @@ Write-Host
 $PS7Modules = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/PowerShell%20Modules/Version%207.x/Install.ps1")
 pwsh Invoke-Expression $($PS7Modules.Content)
 
-Write-Verbose "Step 4 - Merging Registry Entries..." -Verbose
-Write-Host
-
-$ClientRegistry = Invoke-WebRequest ("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Registry%20Modifications/ClientOSRegistry.ps1")
-Invoke-Expression $($ClientRegistry.Content)
-
-Write-Verbose "Step 5 - Client Operating System RSAT Tools..." -Verbose
-Write-Host
-
-$ClientRSAT = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/PostInstall/Client%20OS%20Roles%20/InstallClientRSAT.ps1")
-Invoke-Expression $($ClientRSAT.Content)
-
-Write-Verbose "Step 6 - Mandatory OS Pre-Requirements..." -Verbose
+Write-Verbose "Step 4 - Mandatory OS Pre-Requirements..." -Verbose
 Write-Host
 
 $OS = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/SYSTEM/OS-Mandated%20Software/SYSTEM.ps1")
 Invoke-Expression $($OS.Content)
-
-$OSThemePacks = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/SYSTEM/OS-Mandated%20Software/OS-ThemePacks.ps1")
-Invoke-Expression $($OSThemePacks.Content)
-
-$CustomOSThemePacks = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/SYSTEM/OS-Mandated%20Software/Custom-OS-ThemePacks.ps1")
-Invoke-Expression $($CustomOSThemePacks.Content)
 
 Write-Host "Processing install for: Web Browsers..." -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host
