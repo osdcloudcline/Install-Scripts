@@ -18,7 +18,7 @@ $DellApps = @(
      winget install --id $($App.ID) --exact --silent --accept-package-agreements --accept-source-agreements --force --source winget
  Write-Host "Completed: $($App.Name) install`n" -ForegroundColor Green
  }
-)
+}
 
 }elseif($PCManufacturer -like "*HP*"){
 
