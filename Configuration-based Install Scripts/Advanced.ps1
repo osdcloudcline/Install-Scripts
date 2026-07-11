@@ -59,7 +59,7 @@ pwsh Invoke-Expression $($PS7Modules.Content)
 Write-Verbose "Step 4 - Mandatory OS Pre-Requirements..." -Verbose
 Write-Host
 
-$OS = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/SYSTEM/OS-Mandated%20Software/SYSTEM.ps1")
+$OS = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/SYSTEM/OS-Mandated%20Software/SYSTEM.ps1")
 Invoke-Expression $($OS.Content)
 
 Write-Verbose "Step 5 - Advanced Software Configuration..." -Verbose
