@@ -62,6 +62,9 @@ Write-Host
 $OS = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/main/SYSTEM/OS-Mandated%20Software/SYSTEM.ps1")
 Invoke-Expression $($OS.Content)
 
+Write-Verbose "Step 5 - Advanced Software Configuration..." -Verbose
+Write-Host
+
 Write-Host "Processing install for: Web Browsers..." -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host
 $Browsers = Invoke-WebRequest("https://github.com/osdcloudcline/Install-Scripts/raw/refs/heads/main/Configurations/Advanced/Browsers.ps1")
