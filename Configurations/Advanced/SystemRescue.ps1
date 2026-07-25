@@ -1,7 +1,7 @@
 Import-Module -Name OSD -Force
 
 
-$ClonezillaURL = "https://free.nchc.org.tw/clonezilla-live/stable/clonezilla-live-3.3.1-35-amd64.iso"
+$ClonezillaURL = "https://free.nchc.org.tw/clonezilla-live/stable/clonezilla-live-3.3.3-15-amd64.iso"
 $HirenBootCDPEURL = "https://www.hirensbootcd.org/files/HBCD_PE_x64.iso"
 
 $DLDestination = "C:\downloads\SystemRescue"
