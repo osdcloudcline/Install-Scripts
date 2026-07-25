@@ -1,3 +1,6 @@
+$MaximumFunctionCount = 32768
+$MaximumVariableCount = 32768
+
 # Set PSGallery to Trusted once to avoid prompts during the loop
 Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
 
