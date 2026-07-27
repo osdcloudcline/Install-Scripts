@@ -5,7 +5,7 @@ $ADVHWUtils = @(
    @{ Name = "Logitech Unifying Software"; ID = "Logitech.UnifyingSoftware" },
    @{ Name = "Logitech G-Hub"; ID = "Logitech.GHUB" },
    @{ Name = "Logitech Gaming Software"; ID = "Logitech.LGS" },
-   @{ Name = "Microsoft Keyboard and Mouse"; ID = "Microsoft.MouseandKeyboardCenter" },
+   @{ Name = "Microsoft Keyboard and Mouse"; ID = "Microsoft.MouseandKeyboardCenter" }
 )
 $ADVChocoHWUtils = @(
    @{ Name = "Samsung Magician"; ID = "samsung-magician" },
