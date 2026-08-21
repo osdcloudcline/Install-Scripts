@@ -1,0 +1,15 @@
+# Define the Advanced Gaming Software using Hash Tables @{ }
+$STDGaming = @(
+   @{ Name = "Steam Online Gaming"; ID = "Valve.Steam" }
+   
+   
+)
+
+
+# Process WinGet Items
+foreach($App in $STDGaming){
+    Write-Host "`nProcessing install for: $($App.Name)" -ForegroundColor Cyan
+    # Added --silent and --accept-package-agreements for better automation
+    winget install --id $($App.ID) --exact --silent --accept-package-agreements --accept-source-agreements --force --source winget
+    Write-Host "Completed: $($App.Name) install`n" -ForegroundColor Green
+}
